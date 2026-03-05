@@ -1,0 +1,961 @@
+{
+  "navbar": {
+    "brand": "NaviGate Academy",
+    "cta": "Book Free Level Test",
+    "links": {
+      "home": "Home",
+      "courses": "Courses",
+      "results": "Results",
+      "teachers": "Teachers",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "languageLabel": "Change language",
+    "languages": {
+      "en": "English",
+      "ru": "�������",
+      "uz": "O�zbek"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Global Examination Excellence",
+      "titleStart": "Prepare for",
+      "titleHighlight": "IELTS, SAT, and GMAT",
+      "titleEnd": "with NaviGate Academy",
+      "subtitle": "Master the world's most recognized international exams with expert coaching, measurable plans and personalized mentoring.",
+      "primaryButton": "Get Started Today",
+      "secondaryButton": "View All Courses"
+    },
+    "stats": {
+      "students": {
+        "value": "1200+",
+        "label": "Students"
+      },
+      "scores": {
+        "value": "200+",
+        "label": "Top Scores"
+      },
+      "coaches": {
+        "value": "Certified",
+        "label": "Coaches"
+      },
+      "plans": {
+        "value": "Flexible",
+        "label": "Prep Plans"
+      }
+    },
+    "programs": {
+      "title": "Our Core Programs",
+      "subtitle": "Industry-leading preparation for your next milestone.",
+      "explore": "Explore All",
+      "enroll": "Enroll Now",
+      "cards": {
+        "ielts": {
+          "badge": "IELTS Academic",
+          "title": "IELTS Academic",
+          "duration": "Duration: 8-12 Weeks",
+          "target": "Target score: 7.5+",
+          "price": "$349.00"
+        },
+        "sat": {
+          "badge": "SAT Prep",
+          "title": "SAT Prep",
+          "duration": "Duration: 10 Weeks",
+          "target": "Target score: 1500+",
+          "price": "$499.00"
+        },
+        "gmat": {
+          "badge": "GMAT Track",
+          "title": "GMAT Track",
+          "duration": "Duration: 14 Weeks",
+          "target": "Target score: 700+",
+          "price": "$599.00"
+        },
+        "general": {
+          "badge": "General English",
+          "title": "General English",
+          "duration": "Duration: Flexible",
+          "target": "Level: A1-C2",
+          "price": "$199.00"
+        }
+      }
+    },
+    "results": {
+      "title": "Proven Score Improvements",
+      "subtitle": "Real outcomes from our high-performing students.",
+      "cards": {
+        "arjun": {
+          "name": "Arjun Mehta",
+          "exam": "IELTS Academic",
+          "before": "5.5",
+          "after": "7.5"
+        },
+        "daniel": {
+          "name": "Daniel Kim",
+          "exam": "SAT Prep",
+          "before": "1280",
+          "after": "1540"
+        },
+        "sofia": {
+          "name": "Sofia Rodriguez",
+          "exam": "GMAT Intensive",
+          "before": "610",
+          "after": "720"
+        }
+      }
+    },
+    "method": {
+      "title": "The NaviGate Method",
+      "subtitle": "Personalized strategies designed for fast improvement.",
+      "features": {
+        "diagnostic": {
+          "title": "Diagnostic Entry",
+          "description": "Detailed analysis of your current level and core weaknesses."
+        },
+        "curriculum": {
+          "title": "Custom Curriculum",
+          "description": "Lessons adjusted to focus on your specific test and-score goal."
+        },
+        "simulation": {
+          "title": "Mock Simulation",
+          "description": "Weekly exam conditions to build confidence and timing."
+        },
+        "feedback": {
+          "title": "1-on-1 Feedback",
+          "description": "Direct coaching for writing and speaking by expert tutors."
+        }
+      }
+    },
+    "faculty": {
+      "title": "Our Elite Faculty",
+      "subtitle": "Learn from examiners and native-level experts.",
+      "items": {
+        "helena": {
+          "name": "Dr. Helena Vance",
+          "role": "Senior IELTS Specialist",
+          "meta": "12+ Years Experience • Former Examiner"
+        },
+        "marcus": {
+          "name": "Marcus Sterling",
+          "role": "PTE Core Lead Tutor",
+          "meta": "8+ Years Experience • Applied Linguistics MA"
+        },
+        "emily": {
+          "name": "Emily Ross",
+          "role": "Speaking & Writing Coach",
+          "meta": "10+ Years Experience • CELTA Certified"
+        }
+      }
+    },
+    "testimonials": {
+      "title": "What Our Students Say",
+      "subtitle": "Real voices. Real score jumps.",
+      "items": {
+        "james": {
+          "quote": "The feedback system for writing tasks was a game-changer. I went from a 6.0 to a 7.5 in just 4 weeks.",
+          "name": "James Wilson",
+          "meta": "University of Melbourne Student"
+        },
+        "ananya": {
+          "quote": "NaviGate simplified the PTE scoring. The mock tests were exactly like the real exam. Highly recommended.",
+          "name": "Ananya Roy",
+          "meta": "Migrated to Canada"
+        },
+        "ahmed": {
+          "quote": "The instructors are incredibly patient. They don't just teach English, they teach the exam logic.",
+          "name": "Ahmed Al-Sayed",
+          "meta": "IELTS Academic Candidate"
+        }
+      }
+    },
+    "lead": {
+      "title": "Ready to boost your score?",
+      "subtitle": "Book a free 20-minute consultation with our senior mentor and build your personalized roadmap.",
+      "benefits": {
+        "diagnostic": "Personalized Diagnostic Report",
+        "guidance": "Target University Guidance",
+        "plan": "Customized Study Plan"
+      }
+    },
+    "leadForm": {
+      "fields": {
+        "name": "Name",
+        "phone": "Phone",
+        "examInterest": "Exam Interest",
+        "preferredTime": "Preferred Time"
+      },
+      "placeholders": {
+        "name": "Full Name",
+        "phone": "+1 (000) 000-0000"
+      },
+      "examOptions": {
+        "ielts": "IELTS Academic",
+        "sat": "SAT Prep",
+        "gmat": "GMAT Track",
+        "general": "General English"
+      },
+      "submit": "Send Request",
+      "success": "Your request has been sent successfully.",
+      "error": "Request failed. Please try again."
+    }
+  },
+  "coursesPage": {
+    "header": {
+      "title": "Academic & English Programs",
+      "subtitle": "Explore our comprehensive range of English language certifications and international exam preparation courses designed for global success."
+    },
+    "filters": {
+      "all": "All Programs",
+      "ielts": "IELTS",
+      "sat": "SAT",
+      "gmat": "GMAT",
+      "general": "General English"
+    },
+    "labels": {
+      "open": "Enrollment Open",
+      "premium": "Premium Program"
+    },
+    "buttons": {
+      "enroll": "Enroll Now"
+    },
+    "english": {
+      "title": "English Programs"
+    },
+    "exam": {
+      "title": "International Exam Prep"
+    },
+    "courses": {
+      "ieltsAcademic": {
+        "badge": "IELTS Academic",
+        "title": "Complete Mastery: Academic",
+        "duration": "12 Weeks Intensive",
+        "level": "Level: Intermediate",
+        "schedule": "Mon, Wed, Fri (18:00 - 20:00)"
+      },
+      "generalFluency": {
+        "badge": "General English",
+        "title": "Foundations of Fluency",
+        "duration": "16 Weeks Duration",
+        "level": "Level: Beginner to Intermediate",
+        "schedule": "Tue, Thu, Sat (10:00 - 12:00)"
+      },
+      "skillsFocus": {
+        "badge": "Skills Focus",
+        "title": "Native-Level Speaking",
+        "duration": "8 Weeks Focused",
+        "level": "Level: Intermediate +",
+        "schedule": "Saturdays (14:00 - 18:00)"
+      },
+      "satElite": {
+        "badge": "SAT Prep",
+        "title": "SAT Elite: Path to IVY League",
+        "description": "Advanced strategies for Evidence-Based Reading, Writing and Math. Includes full-length digital mock exams and personalized performance analysis.",
+        "duration": "14 Weeks Duration",
+        "level": "Level: Advanced Academic",
+        "schedule": "Tue, Thu (16:00 - 19:00)",
+        "groupSize": "Max 10 Students per batch"
+      },
+      "gmatExecutive": {
+        "badge": "GMAT Focus",
+        "title": "GMAT Executive Preparation",
+        "description": "Comprehensive coverage of Quantitative Reasoning, Data Insights and Verbal Reasoning for top-tier MBA admissions.",
+        "duration": "12 Weeks Duration",
+        "level": "Level: Graduate Academic",
+        "schedule": "Mon, Wed (19:00 - 21:30)",
+        "groupSize": "Certificate of completion"
+      }
+    },
+    "featureRow": {
+      "smallGroups": "Small groups",
+      "mockExams": "Mock exams",
+      "feedback": "Personalized feedback",
+      "speaking": "Speaking practice",
+      "tracking": "Progress tracking"
+    },
+    "success": {
+      "title": "Recent Success Stories",
+      "subtitle": "Join our alumni who achieved their dream scores.",
+      "link": "See Success Stories",
+      "cards": {
+        "arjun": {
+          "name": "Arjun Mehta",
+          "program": "IELTS Academic",
+          "result": "5.5 → 7.5"
+        },
+        "liwei": {
+          "name": "Li Wei",
+          "program": "General English",
+          "result": "B1 → C1"
+        },
+        "sarah": {
+          "name": "Sarah Jenkins",
+          "program": "Corporate English",
+          "result": "Promoted"
+        }
+      }
+    },
+    "cta": {
+      "title": "Not sure which course is right for you?",
+      "subtitle": "Get a professional evaluation of your current English proficiency level and personalized course recommendations from our head tutors.",
+      "button": "Book Free Level Test"
+    },
+    "lead": {
+      "title": "Not sure which exam is for you?",
+      "subtitle": "Schedule a free strategy session with our academic advisors to determine which program aligns best with your career or education goals.",
+      "benefits": {
+        "diagnostic": "Diagnostic Assessment Included",
+        "guidance": "University Pathway Guidance",
+        "plan": "Tailored Study Plan"
+      }
+    }
+  },
+  "courses": {
+    "leadForm": {
+      "fields": {
+        "name": "Full Name",
+        "phone": "Phone Number",
+        "examInterest": "Exam Interest",
+        "currentLevel": "Current Level (If known)"
+      },
+      "placeholders": {
+        "name": "John Doe",
+        "phone": "+1 (555) 000-0000",
+        "currentLevel": "Select level"
+      },
+      "examOptions": {
+        "ielts": "IELTS Academic / General",
+        "sat": "SAT",
+        "gmat": "GMAT",
+        "general": "General English"
+      },
+      "levelOptions": {
+        "beginner": "Beginner",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced"
+      },
+      "submit": "Request Program Guide",
+      "success": "Your request has been sent successfully.",
+      "error": "Request failed. Please try again."
+    }
+  },
+  "resultsPage": {
+    "header": {
+      "badge": "Student Excellence",
+      "titleStart": "Success Stories:",
+      "titleHighlight": "IELTS, SAT & GMAT",
+      "subtitle": "Discover how our students transformed their academic futures through dedicated prep and expert mentorship. Real results from real ambition."
+    },
+    "stats": {
+      "ielts": {
+        "value": "200+",
+        "label": "IELTS 7+ Achievers"
+      },
+      "sat": {
+        "value": "50+",
+        "label": "SAT 1400+ Scorers"
+      },
+      "gmat": {
+        "value": "30+",
+        "label": "GMAT 700+ Successes"
+      }
+    },
+    "cards": {
+      "scoreImprovementLabel": "Score Improvement",
+      "arjun": {
+        "name": "Arjun Mehta",
+        "category": "IELTS Academic",
+        "before": "5.5",
+        "after": "7.0",
+        "quote": "\"The personalized feedback on my writing tasks was the key to jumping two bands in just 8 weeks.\""
+      },
+      "sophia": {
+        "name": "Sophia Chen",
+        "category": "SAT Prep",
+        "before": "1180",
+        "after": "1450",
+        "quote": "\"NaviGate's math shortcuts and reading strategies made the difference for my Ivy League application.\""
+      },
+      "ahmed": {
+        "name": "Ahmed Al-Sayed",
+        "category": "GMAT Focus",
+        "before": "520",
+        "after": "680",
+        "quote": "\"The verbal reasoning section was my biggest hurdle. The instructors simplified complex logic beautifully.\""
+      },
+      "elena": {
+        "name": "Elena Rossi",
+        "category": "IELTS General",
+        "before": "6.0",
+        "after": "8.0",
+        "quote": "\"I needed a high score for migration points. NaviGate's mock tests felt exactly like the real thing.\""
+      },
+      "mark": {
+        "name": "Mark Jenkins",
+        "category": "SAT Prep",
+        "before": "1250",
+        "after": "1520",
+        "quote": "\"Exceptional teachers who actually care. The 1500+ club seemed impossible until I joined NaviGate.\""
+      },
+      "daniel": {
+        "name": "Daniel Kim",
+        "category": "GMAT Intensive",
+        "before": "610",
+        "after": "740",
+        "quote": "\"The Quant section strategies were life-saving. I secured a full scholarship to my top-choice MBA program.\""
+      }
+    },
+    "voices": {
+      "title": "Voices of Success",
+      "items": {
+        "james": {
+          "quote": "\"The diagnostic entry test was eye-opening. They knew exactly where I was lacking and fixed it.\"",
+          "name": "James Wilson",
+          "descriptor": "IELTS Candidate"
+        },
+        "ananya": {
+          "quote": "\"I improved my SAT score by 270 points in a single term. The teaching method is unmatched.\"",
+          "name": "Ananya Roy",
+          "descriptor": "Harvard Applicant"
+        },
+        "ahmed": {
+          "quote": "\"The instructors don't just teach English; they teach the exam logic for GMAT. Highly recommended.\"",
+          "name": "Ahmed Al-Sayed",
+          "descriptor": "MBA Candidate"
+        }
+      }
+    },
+    "lead": {
+      "title": "Ready to boost your score?",
+      "subtitle": "Book a free 20-minute consultation with one of our head tutors to identify your current band level and create a roadmap to your target score.",
+      "benefits": {
+        "diagnostic": "Free Exam Diagnostic Report",
+        "plan": "Personalized Study Plan",
+        "materials": "Free Sample Materials"
+      }
+    }
+  },
+  "results": {
+    "leadForm": {
+      "fields": {
+        "name": "Full Name",
+        "phone": "Phone Number",
+        "examInterest": "Exam Interest",
+        "preferredTime": "Preferred Consultation Time"
+      },
+      "placeholders": {
+        "name": "John Doe",
+        "phone": "+1 (555) 000-0000"
+      },
+      "examOptions": {
+        "ielts": "IELTS (Academic/General)",
+        "sat": "SAT",
+        "gmat": "GMAT",
+        "general": "General English"
+      },
+      "submit": "Send Request",
+      "success": "Your request has been sent successfully.",
+      "error": "Request failed. Please try again."
+    },
+    "hero": {
+      "badge": "Student Excellence",
+      "titlePrefix": "Success Stories:",
+      "titleHighlight": "IELTS, SAT & GMAT",
+      "subtitle": "Discover how our students transformed their academic futures through dedicated prep and expert mentorship. Real results from real ambition."
+    }
+  },
+  "footer": {
+    "brand": "NaviGate Academy",
+    "brandDescription": "Empowering global citizens through elite exam preparation and personalized guidance.",
+    "exams": {
+      "title": "Exams",
+      "ielts": "IELTS Academy",
+      "sat": "SAT Training",
+      "gmat": "GMAT Mastery",
+      "pte": "PTE & Others"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "success": "Success Stories",
+      "careers": "Teaching Careers",
+      "contact": "Contact"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Level 5, Education Plaza, London, UK",
+      "phone": "+44 20 7946 0123",
+      "email": "info@navigate-academy.com"
+    }
+  },
+  "pages": {
+    "courses": {
+      "title": "Courses",
+      "description": "Our complete catalog of exam-focused courses is coming next."
+    },
+    "results": {
+      "title": "Results",
+      "description": "Verified student case studies and score progression will be listed here."
+    },
+    "teachers": {
+      "title": "Teachers",
+      "description": "Meet certified mentors with deep expertise in IELTS, SAT and GMAT coaching."
+    },
+    "about": {
+      "title": "About Us",
+      "description": "NaviGate Academy helps ambitious students achieve global admissions goals."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Reach our admissions team for consultations, schedules and enrollment support."
+    }
+  },
+  "teachersPage": {
+    "header": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Teachers",
+      "title": "Meet Our Teachers",
+      "subtitle": "Learn from world-class educators and former IELTS examiners dedicated to your global goals."
+    },
+    "featured": {
+      "actions": {
+        "book": "Book a Session",
+        "profile": "View Full Profile"
+      },
+      "helena": {
+        "name": "Dr. Helena Vance",
+        "badge1": "IELTS Specialist",
+        "badge2": "Former Examiner",
+        "meta": "12+ Years Experience � PhD Applied Linguistics",
+        "bio": "Dr. Vance has guided over 500 students to Band 8.0+. Her methodology blends cognitive psychology and language testing for calm, high-impact performance."
+      },
+      "marcus": {
+        "name": "Marcus Sterling",
+        "badge1": "SAT Mentor",
+        "badge2": "Data-Driven Coach",
+        "meta": "8+ Years Experience � MA TESOL",
+        "bio": "Marcus combines SAT strategy with measurable analytics. His focused approach in reading and writing has helped students consistently break 1400+."
+      }
+    },
+    "team": {
+      "title": "Our Instructional Team",
+      "subtitle": "Certified professionals with a passion for pedagogy.",
+      "items": {
+        "sarah": {
+          "name": "Sarah Johnson",
+          "role": "Speaking & Writing Coach",
+          "meta": "10+ Years Experience � CELTA Certified"
+        },
+        "daniel": {
+          "name": "Daniel Carter",
+          "role": "IELTS General Specialist",
+          "meta": "7+ Years Experience � British Council Trained"
+        },
+        "elena": {
+          "name": "Elena Petrova",
+          "role": "Grammar & Syntax Lead",
+          "meta": "9+ Years Experience � DELTA Certified"
+        },
+        "sophia": {
+          "name": "Sophia Martinez",
+          "role": "Fluency Workshop Lead",
+          "meta": "8+ Years Experience � Linguistics Specialist"
+        }
+      }
+    },
+    "how": {
+      "title": "How We Teach",
+      "subtitle": "A personalized approach built on years of pedagogical research.",
+      "items": {
+        "feedback": {
+          "title": "Personalized Feedback",
+          "description": "Detailed diagnostics on every task so you know exactly what to fix next."
+        },
+        "group": {
+          "title": "Small Group Focus",
+          "description": "Classes limited to 8 students for stronger interaction and accountability."
+        },
+        "adaptive": {
+          "title": "Adaptive Learning",
+          "description": "Lesson pace and homework are tailored to your progress each week."
+        },
+        "quality": {
+          "title": "Expert Quality",
+          "description": "Every teacher is evaluated on delivery, clarity and student outcomes."
+        }
+      }
+    },
+    "feedback": {
+      "title": "Student Feedback",
+      "subtitle": "What our students say about their mentors.",
+      "items": {
+        "james": {
+          "quote": "Dr. Vance didn�t just teach me English, she taught me how to think like an examiner. My writing score jumped from 6.0 to 7.5.",
+          "name": "James Wilson",
+          "descriptor": "IELTS Academic Student"
+        },
+        "ananya": {
+          "quote": "Marcus has incredible patience and precision. I improved my SAT by 270 points and finally felt exam-ready.",
+          "name": "Ananya Roy",
+          "descriptor": "PTE Priority Student"
+        },
+        "ahmed": {
+          "quote": "Sarah�s speaking sessions transformed my confidence. Her practical drills made spontaneous speaking much easier.",
+          "name": "Ahmed Al-Sayed",
+          "descriptor": "Speaking Intensive Candidate"
+        }
+      }
+    },
+    "cta": {
+      "title": "Learn From the Best English Teachers",
+      "subtitle": "Start your journey with a personalized learning plan designed by our elite faculty.",
+      "primary": "Book Free Level Test",
+      "secondary": "View All Courses"
+    },
+    "approach": {
+      "title": "Our Exam-Specific Approach",
+      "subtitle": "Tactical strategies designed for the world�s toughest entrance exams.",
+      "cards": {
+        "quant": {
+          "title": "Quant Mastery",
+          "description": "Go beyond formulas with logic-first methods for SAT and GMAT quantitative sections.",
+          "points": [
+            "SAT & GMAT Number Systems",
+            "Advanced Word Problem Tactics"
+          ]
+        },
+        "verbal": {
+          "title": "Verbal Reasoning",
+          "description": "Master reading, critical reasoning and vocabulary precision for high-stakes verbal sections.",
+          "points": [
+            "Argument Mapping",
+            "Contextual Elimination"
+          ]
+        },
+        "mock": {
+          "title": "Mock Simulation",
+          "description": "Full-length adaptive practice under timed conditions to improve stamina and decision speed.",
+          "points": [
+            "Performance Analytics",
+            "Time Management Drills"
+          ]
+        }
+      }
+    },
+    "consult": {
+      "titleStart": "Consult with a",
+      "titleHighlight": "Specialist",
+      "subtitle": "Get a professional assessment of your current level and a personalized roadmap to reach your target score.",
+      "benefits": {
+        "diagnostic": {
+          "title": "Diagnostic Score Report",
+          "description": "Identify weak areas immediately."
+        },
+        "roadmap": {
+          "title": "Target Roadmap",
+          "description": "Timeline and milestones for your goal score."
+        }
+      }
+    }
+  },
+  "teachers": {
+    "leadForm": {
+      "fields": {
+        "name": "Full Name",
+        "phone": "Phone Number",
+        "examInterest": "Exam Specialization",
+        "preferredTime": "Preferred Consultation Time"
+      },
+      "placeholders": {
+        "name": "John Doe",
+        "phone": "+1 (555) 000-0000"
+      },
+      "examOptions": {
+        "ielts": "IELTS",
+        "sat": "SAT",
+        "gmat": "GMAT",
+        "general": "General English"
+      },
+      "submit": "Book My Assessment",
+      "success": "Your request has been sent successfully.",
+      "error": "Request failed. Please try again."
+    },
+    "hero": {
+      "badge": "World-Class Faculty"
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "badge": "Empowering Future Leaders",
+      "titleStart": "About",
+      "titleHighlight": "NaviGate",
+      "titleEnd": "Academy",
+      "subtitle": "Your bridge to the world's most prestigious universities through specialized SAT, GMAT, and IELTS preparation."
+    },
+    "mission": {
+      "imageAlt": "NaviGate instructor and mentor",
+      "title": "Our Global Mission",
+      "p1": "Founded on the belief that borders should never limit potential, NaviGate Academy has evolved into a premier destination for students aiming for international academic success.",
+      "p2": "Our curriculum is specifically designed to tackle the complexities of the SAT, GMAT, and IELTS with a balance of strategy, critical thinking, and linguistic precision.",
+      "p3": "By combining world-class pedagogy with personalized mentorship, we have helped thousands of students secure placements in top institutions across North America, Europe, and Asia.",
+      "badge": {
+        "value": "10+",
+        "label": "Years of Academic Excellence"
+      }
+    },
+    "values": {
+      "title": "Our Core Values",
+      "subtitle": "The pillars that define our commitment to your success.",
+      "items": {
+        "excellence": {
+          "title": "Academic Excellence",
+          "description": "Rigorous standards and high-caliber instruction that push students to exceed expectations."
+        },
+        "results": {
+          "title": "Results-Driven",
+          "description": "Our success is measured by yours. We focus on score improvement and university admission outcomes."
+        },
+        "access": {
+          "title": "Global Access",
+          "description": "Removing barriers to international education through strategic test preparation and guidance."
+        },
+        "guidance": {
+          "title": "Expert Guidance",
+          "description": "Access to veteran educators and admissions experts who invest deeply in every student journey."
+        }
+      }
+    },
+    "numbers": {
+      "title": "Our Achievements in Numbers",
+      "stats": {
+        "admission": {
+          "value": "95%",
+          "label": "Admission Rate"
+        },
+        "partners": {
+          "value": "150+",
+          "label": "Partner Universities"
+        },
+        "gmat": {
+          "value": "740",
+          "label": "Avg GMAT Score"
+        },
+        "sat": {
+          "value": "1500+",
+          "label": "Avg SAT Score"
+        }
+      },
+      "cards": {
+        "global": {
+          "title": "Best Global Prep Center",
+          "description": "Awarded by International Education Forum 2025"
+        },
+        "certified": {
+          "title": "Certified Tutors",
+          "description": "100% of faculty hold advanced academic degrees"
+        }
+      }
+    },
+    "environment": {
+      "title": "Our Learning Environment",
+      "subtitle": "Explore our modern campus and focused spaces designed for deep preparation.",
+      "items": {
+        "mentor": {
+          "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Senior mentor in academy studio"
+        },
+        "classroom": {
+          "image": "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Instructor in a modern classroom"
+        },
+        "faculty": {
+          "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Faculty member portrait in academy office"
+        }
+      }
+    },
+    "why": {
+      "titleStart": "Why Choose",
+      "titleHighlight": "NaviGate Academy?",
+      "subtitle": "We combine academic excellence with modern teaching methodology to ensure your next score milestone is within reach.",
+      "promo": {
+        "title": "#1 Choice",
+        "subtitle": "for top-score preparation in 2026"
+      },
+      "features": {
+        "ielts": {
+          "title": "Structured IELTS Prep",
+          "description": "Comprehensive modules for Listening, Reading, Writing, and Speaking."
+        },
+        "groups": {
+          "title": "Small Groups",
+          "description": "Class sizes are limited for maximum teacher interaction and individual attention."
+        },
+        "mocks": {
+          "title": "Weekly Mock Tests",
+          "description": "Simulated exam conditions every Saturday to track progress and improve timing."
+        },
+        "writing": {
+          "title": "Personalized Writing Review",
+          "description": "Detailed line-by-line feedback on essays from examiners to fix grammar and structure."
+        },
+        "materials": {
+          "title": "Exclusive Study Materials",
+          "description": "Access to proprietary workbooks and online resources built by our academic team."
+        }
+      }
+    },
+    "journeyCta": {
+      "titleStart": "Start Your English Journey With",
+      "titleHighlight": "NaviGate",
+      "subtitle": "Your target score is within reach. Join the community of successful students transformed by our expert training.",
+      "primary": "Book Free Level Test",
+      "secondary": "View All Courses"
+    },
+    "journeyForm": {
+      "title": "Begin Your Global Journey",
+      "subtitle": "Schedule a specialized consultation to evaluate your readiness for international university admissions.",
+      "benefits": {
+        "diagnostic": "Official Diagnostic Mock Test",
+        "portfolio": "University Target Portfolio",
+        "strategy": "Custom Exam Strategy Session"
+      }
+    }
+  },
+  "about": {
+    "leadForm": {
+      "fields": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "examInterest": "Target Global Exam",
+        "currentLevel": "Current Education Level"
+      },
+      "placeholders": {
+        "name": "Alexander Hamilton",
+        "email": "alex@example.com"
+      },
+      "examOptions": {
+        "ielts": "IELTS Preparation",
+        "sat": "SAT Preparation",
+        "gmat": "GMAT Preparation",
+        "general": "General English"
+      },
+      "levelOptions": {
+        "highSchool": "High School Student",
+        "undergraduate": "Undergraduate",
+        "postgraduate": "Postgraduate"
+      },
+      "submit": "Send Request",
+      "success": "Your request has been sent successfully.",
+      "error": "Request failed. Please try again."
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "titleStart": "Contact",
+      "titleHighlight": "Exam Support",
+      "subtitle": "Have questions about your upcoming exam? Our support team is here to guide your journey to success."
+    },
+    "sidebar": {
+      "phone": {
+        "title": "Phone Support",
+        "description": "Mon-Fri from 9am to 6pm.",
+        "detail": "+44 20 7946 0123"
+      },
+      "telegram": {
+        "title": "Telegram",
+        "description": "Fastest response for quick queries.",
+        "detail": "@NaviGateSupport"
+      },
+      "address": {
+        "title": "Our Address",
+        "description": "Level 5, Education Plaza, London, UK",
+        "detail": "Visit by appointment"
+      },
+      "hours": {
+        "title": "Working Hours",
+        "description": "Mon - Fri: 09:00 - 20:00",
+        "detail": "Sat: 10:00 - 16:00"
+      }
+    },
+    "form": {
+      "title": "Send Us a Message"
+    },
+    "map": {
+      "title": "Interactive Map Integration",
+      "labelTitle": "NaviGate Academy London",
+      "labelAddress": "Level 5, Education Plaza, London, EC2V 6AA"
+    },
+    "cta": {
+      "title": "Need Immediate Assistance?",
+      "subtitle": "Our advisors are available on WhatsApp for instant replies regarding course enrollments and schedules.",
+      "primary": "Chat on WhatsApp",
+      "secondary": "Download Brochure"
+    }
+  },
+  "contact": {
+    "leadForm": {
+      "fields": {
+        "name": "Full Name",
+        "phone": "Phone Number",
+        "examInterest": "Exam Interest",
+        "preferredTime": "Preferred Time for Callback",
+        "message": "Message (Optional)"
+      },
+      "placeholders": {
+        "name": "Enter your name",
+        "phone": "+1 (555) 000-0000",
+        "examInterest": "Select exam type",
+        "message": "How can we help you today?"
+      },
+      "examOptions": {
+        "ielts": "IELTS",
+        "sat": "SAT",
+        "gmat": "GMAT",
+        "general": "General English"
+      },
+      "submit": "Send Request",
+      "success": "Your request has been sent successfully.",
+      "error": "Request failed. Please try again."
+    }
+  },
+  "leadCapture": {
+    "label": {
+      "fullName": "Full Name",
+      "phoneNumber": "Phone Number",
+      "examInterest": "Exam Interest",
+      "preferredTime": "Preferred Time",
+      "email": "Email Address",
+      "message": "Message",
+      "currentLevel": "Current Level"
+    },
+    "placeholder": {
+      "fullName": "Enter your full name",
+      "phoneNumber": "+1 (555) 000-0000",
+      "email": "name@example.com",
+      "currentLevel": "Select your level",
+      "message": "Tell us about your goals"
+    },
+    "exam": {
+      "IELTS": "IELTS",
+      "SAT": "SAT",
+      "GMAT": "GMAT",
+      "GeneralEnglish": "General English"
+    },
+    "level": {
+      "Beginner": "Beginner",
+      "Intermediate": "Intermediate",
+      "Advanced": "Advanced",
+      "HighSchool": "High School",
+      "Undergraduate": "Undergraduate",
+      "Postgraduate": "Postgraduate"
+    },
+    "button": {
+      "submit": "Send Request"
+    },
+    "toast": {
+      "success": "Your request has been sent successfully.",
+      "error": "Request failed. Please try again."
+    }
+  }
+}
