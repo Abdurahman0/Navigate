@@ -36,3 +36,6 @@ When adding a new translation key:
 2. Mirror the same key path in `ru.json` and `uz.json`.
 3. Use `useTranslations("namespace")` in components/pages.
 
+## Vercel Build Note
+Do not commit OS-specific `@next/swc-*` packages.
+If Vercel fails with `EBADPLATFORM`, regenerate the lockfile by removing `node_modules` and `package-lock.json`, then reinstall dependencies.
