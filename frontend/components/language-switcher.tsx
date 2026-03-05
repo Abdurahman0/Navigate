@@ -46,7 +46,7 @@ export function LanguageSwitcher() {
         <Button
           variant="outline"
           size="sm"
-          className="h-10 min-w-[84px] gap-2"
+          className="h-10 min-w-[84px] gap-2 border-border/80 bg-background text-foreground shadow-sm hover:bg-muted"
           aria-label={t("languageLabel")}
         >
           <ReactCountryFlag
@@ -59,7 +59,7 @@ export function LanguageSwitcher() {
           <FiChevronDown className="h-4 w-4" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-44">
+      <DropdownMenuContent align="end" className="w-44 border-border/80 bg-background shadow-lg">
         {locales.map(itemLocale => {
           const cfg = languageConfig[itemLocale];
           const path = getLocalePath(pathname || "/", itemLocale);

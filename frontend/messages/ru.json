@@ -1,961 +1,952 @@
 {
-  "navbar": {
-    "brand": "NaviGate Academy",
-    "cta": "Бесплатный пробный тест",
-    "links": {
-      "home": "Главная",
-      "courses": "Курсы",
-      "results": "Результаты",
-      "teachers": "Преподаватели",
-      "about": "О нас",
-      "contact": "Контакты"
-    },
-    "languageLabel": "������� ����",
-    "languages": {
-      "en": "English",
-      "ru": "�������",
-      "uz": "O�zbek"
-    }
-  },
-  "home": {
-    "hero": {
-      "badge": "Мировое качество экзаменационной подготовки",
-      "titleStart": "Подготовьтесь к",
-      "titleHighlight": "IELTS, SAT и GMAT",
-      "titleEnd": "в NaviGate Academy",
-      "subtitle": "Освойте самые востребованные международные экзамены с опытными наставниками и персональным планом.",
-      "primaryButton": "Начать сегодня",
-      "secondaryButton": "Все курсы"
-    },
-    "stats": {
-      "students": {
-        "value": "1200+",
-        "label": "Студентов"
-      },
-      "scores": {
-        "value": "200+",
-        "label": "Высоких баллов"
-      },
-      "coaches": {
-        "value": "Сертифицированные",
-        "label": "Коучи"
-      },
-      "plans": {
-        "value": "Гибкие",
-        "label": "Планы подготовки"
-      }
-    },
-    "programs": {
-      "title": "Наши ключевые программы",
-      "subtitle": "Подготовка международного уровня к вашей следующей цели.",
-      "explore": "Смотреть все",
-      "enroll": "Записаться",
-      "cards": {
-        "ielts": {
-          "badge": "IELTS Academic",
-          "title": "IELTS Academic",
-          "duration": "Длительность: 8-12 недель",
-          "target": "Целевой балл: 7.5+",
-          "price": "$349.00"
-        },
-        "sat": {
-          "badge": "SAT Prep",
-          "title": "SAT Prep",
-          "duration": "Длительность: 10 недель",
-          "target": "Целевой балл: 1500+",
-          "price": "$499.00"
-        },
-        "gmat": {
-          "badge": "GMAT Track",
-          "title": "GMAT Track",
-          "duration": "Длительность: 14 недель",
-          "target": "Целевой балл: 700+",
-          "price": "$599.00"
-        },
-        "general": {
-          "badge": "General English",
-          "title": "General English",
-          "duration": "Длительность: гибкая",
-          "target": "Уровень: A1-C2",
-          "price": "$199.00"
-        }
-      }
-    },
-    "results": {
-      "title": "Подтвержденный рост результатов",
-      "subtitle": "Реальные результаты наших студентов.",
-      "cards": {
-        "arjun": {
-          "name": "Арджун Мехта",
-          "exam": "IELTS Academic",
-          "before": "5.5",
-          "after": "7.5"
-        },
-        "daniel": {
-          "name": "Дэниел Ким",
-          "exam": "SAT Prep",
-          "before": "1280",
-          "after": "1540"
-        },
-        "sofia": {
-          "name": "София Родригес",
-          "exam": "GMAT Intensive",
-          "before": "610",
-          "after": "720"
-        }
-      }
-    },
-    "method": {
-      "title": "Метод NaviGate",
-      "subtitle": "Персональные стратегии для быстрого роста результатов.",
-      "features": {
-        "diagnostic": {
-          "title": "Диагностический старт",
-          "description": "Детальный анализ текущего уровня и ключевых слабых зон."
-        },
-        "curriculum": {
-          "title": "Индивидуальная программа",
-          "description": "Уроки адаптируются под ваш экзамен и целевой балл."
-        },
-        "simulation": {
-          "title": "Пробные симуляции",
-          "description": "Еженедельные условия реального экзамена для уверенности и тайминга."
-        },
-        "feedback": {
-          "title": "Индивидуальная обратная связь",
-          "description": "Прямая работа по writing и speaking с экспертными преподавателями."
-        }
-      }
-    },
-    "faculty": {
-      "title": "Наша экспертная команда",
-      "subtitle": "Учитесь у экс-экзаменаторов и специалистов с уровнем носителя.",
-      "items": {
-        "helena": {
-          "name": "Dr. Helena Vance",
-          "role": "Senior IELTS Specialist",
-          "meta": "12+ лет опыта • Бывший экзаменатор"
-        },
-        "marcus": {
-          "name": "Marcus Sterling",
-          "role": "PTE Core Lead Tutor",
-          "meta": "8+ лет опыта • MA Applied Linguistics"
-        },
-        "emily": {
-          "name": "Emily Ross",
-          "role": "Speaking & Writing Coach",
-          "meta": "10+ лет опыта • CELTA Certified"
-        }
-      }
-    },
-    "testimonials": {
-      "title": "Отзывы студентов",
-      "subtitle": "Реальные истории. Реальный рост баллов.",
-      "items": {
-        "james": {
-          "quote": "Система обратной связи по writing полностью изменила мой результат. Я поднялся с 6.0 до 7.5 всего за 4 недели.",
-          "name": "James Wilson",
-          "meta": "Студент University of Melbourne"
-        },
-        "ananya": {
-          "quote": "В NaviGate мне очень понятно объяснили логику PTE. Пробники были максимально похожи на реальный экзамен.",
-          "name": "Ananya Roy",
-          "meta": "Переезд в Канаду"
-        },
-        "ahmed": {
-          "quote": "Преподаватели очень терпеливые. Они учат не только языку, но и экзаменационной стратегии.",
-          "name": "Ahmed Al-Sayed",
-          "meta": "Кандидат IELTS Academic"
-        }
-      }
-    },
-    "lead": {
-      "title": "Готовы повысить свой балл?",
-      "subtitle": "Запишитесь на бесплатную 20-минутную консультацию с ведущим наставником.",
-      "benefits": {
-        "diagnostic": "Персональный диагностический отчет",
-        "guidance": "Рекомендации по целевым вузам",
-        "plan": "Индивидуальный учебный план"
-      }
-    },
-    "leadForm": {
-      "fields": {
-        "name": "Имя",
-        "phone": "Телефон",
-        "examInterest": "Интересующий экзамен",
-        "preferredTime": "Удобное время"
-      },
-      "placeholders": {
-        "name": "Полное имя",
-        "phone": "+7 (000) 000-00-00"
-      },
-      "examOptions": {
-        "ielts": "IELTS Academic",
-        "sat": "SAT Prep",
-        "gmat": "GMAT Track",
-        "general": "General English"
-      },
-      "submit": "Отправить заявку",
-      "success": "Ваша заявка успешно отправлена.",
-      "error": "Ошибка отправки. Попробуйте снова."
-    }
-  },
-  "coursesPage": {
-    "header": {
-      "title": "Академические и языковые программы",
-      "subtitle": "Изучите нашу линейку языковых и экзаменационных программ, разработанных для международного успеха."
-    },
-    "filters": {
-      "all": "Все программы",
-      "ielts": "IELTS",
-      "sat": "SAT",
-      "gmat": "GMAT",
-      "general": "General English"
-    },
-    "labels": {
-      "open": "Набор открыт",
-      "premium": "Премиум программа"
-    },
-    "buttons": {
-      "enroll": "Записаться"
-    },
-    "english": {
-      "title": "Программы английского"
-    },
-    "exam": {
-      "title": "Подготовка к международным экзаменам"
-    },
-    "courses": {
-      "ieltsAcademic": {
-        "badge": "IELTS Academic",
-        "title": "Complete Mastery: Academic",
-        "duration": "12 недель интенсив",
-        "level": "Уровень: Intermediate",
-        "schedule": "Пн, Ср, Пт (18:00 - 20:00)"
-      },
-      "generalFluency": {
-        "badge": "General English",
-        "title": "Foundations of Fluency",
-        "duration": "16 недель",
-        "level": "Уровень: Beginner to Intermediate",
-        "schedule": "Вт, Чт, Сб (10:00 - 12:00)"
-      },
-      "skillsFocus": {
-        "badge": "Skills Focus",
-        "title": "Native-Level Speaking",
-        "duration": "8 недель",
-        "level": "Уровень: Intermediate +",
-        "schedule": "Суббота (14:00 - 18:00)"
-      },
-      "satElite": {
-        "badge": "SAT Prep",
-        "title": "SAT Elite: Path to IVY League",
-        "description": "Продвинутая подготовка по Reading, Writing и Math. Включает полноформатные цифровые пробники и персональный разбор результатов.",
-        "duration": "14 недель",
-        "level": "Уровень: Advanced Academic",
-        "schedule": "Вт, Чт (16:00 - 19:00)",
-        "groupSize": "Максимум 10 студентов в группе"
-      },
-      "gmatExecutive": {
-        "badge": "GMAT Focus",
-        "title": "GMAT Executive Preparation",
-        "description": "Полный охват Quantitative Reasoning, Data Insights и Verbal Reasoning для поступления на топовые MBA программы.",
-        "duration": "12 недель",
-        "level": "Уровень: Graduate Academic",
-        "schedule": "Пн, Ср (19:00 - 21:30)",
-        "groupSize": "Сертификат по завершении"
-      }
-    },
-    "featureRow": {
-      "smallGroups": "Малые группы",
-      "mockExams": "Пробные экзамены",
-      "feedback": "Персональная обратная связь",
-      "speaking": "Разговорная практика",
-      "tracking": "Отслеживание прогресса"
-    },
-    "success": {
-      "title": "Недавние истории успеха",
-      "subtitle": "Присоединяйтесь к нашим выпускникам, достигшим целевых результатов.",
-      "link": "Смотреть истории успеха",
-      "cards": {
-        "arjun": {
-          "name": "Арджун Мехта",
-          "program": "IELTS Academic",
-          "result": "5.5 → 7.5"
-        },
-        "liwei": {
-          "name": "Ли Вэй",
-          "program": "General English",
-          "result": "B1 → C1"
-        },
-        "sarah": {
-          "name": "Сара Дженкинс",
-          "program": "Corporate English",
-          "result": "Повышение"
-        }
-      }
-    },
-    "cta": {
-      "title": "Не уверены, какой курс вам подходит?",
-      "subtitle": "Получите профессиональную оценку текущего уровня английского и персональные рекомендации от наших ведущих преподавателей.",
-      "button": "Бесплатный пробный тест"
-    },
-    "lead": {
-      "title": "Не уверены, какой экзамен вам подходит?",
-      "subtitle": "Запишитесь на бесплатную стратегическую консультацию, чтобы выбрать оптимальную программу под ваши цели.",
-      "benefits": {
-        "diagnostic": "Диагностическая оценка включена",
-        "guidance": "Маршрут в целевые университеты",
-        "plan": "Индивидуальный учебный план"
-      }
-    }
-  },
-  "courses": {
-    "leadForm": {
-      "fields": {
-        "name": "Полное имя",
-        "phone": "Номер телефона",
-        "examInterest": "Интересующий экзамен",
-        "currentLevel": "Текущий уровень (если известен)"
-      },
-      "placeholders": {
-        "name": "Иван Иванов",
-        "phone": "+7 (900) 000-00-00",
-        "currentLevel": "Выберите уровень"
-      },
-      "examOptions": {
-        "ielts": "IELTS Academic / General",
-        "sat": "SAT",
-        "gmat": "GMAT",
-        "general": "General English"
-      },
-      "levelOptions": {
-        "beginner": "Beginner",
-        "intermediate": "Intermediate",
-        "advanced": "Advanced"
-      },
-      "submit": "Запросить программу",
-      "success": "Ваша заявка успешно отправлена.",
-      "error": "Ошибка отправки. Попробуйте снова."
-    }
-  },
-  "resultsPage": {
-    "header": {
-      "badge": "Успех студентов",
-      "titleStart": "Истории успеха:",
-      "titleHighlight": "IELTS, SAT и GMAT",
-      "subtitle": "Узнайте, как наши студенты изменили своё академическое будущее благодаря системной подготовке и менторской поддержке."
-    },
-    "stats": {
-      "ielts": {
-        "value": "200+",
-        "label": "IELTS 7+ результатов"
-      },
-      "sat": {
-        "value": "50+",
-        "label": "SAT 1400+ результатов"
-      },
-      "gmat": {
-        "value": "30+",
-        "label": "GMAT 700+ результатов"
-      }
-    },
-    "cards": {
-      "scoreImprovementLabel": "Рост результата",
-      "arjun": {
-        "name": "Арджун Мехта",
-        "category": "IELTS Academic",
-        "before": "5.5",
-        "after": "7.0",
-        "quote": "\"Персональная обратная связь по writing помогла мне подняться сразу на два бэнда всего за 8 недель.\""
-      },
-      "sophia": {
-        "name": "София Чен",
-        "category": "SAT Prep",
-        "before": "1180",
-        "after": "1450",
-        "quote": "\"Математические стратегии и техники чтения от NaviGate стали решающими для моей Ivy League заявки.\""
-      },
-      "ahmed": {
-        "name": "Ахмед Аль-Сайед",
-        "category": "GMAT Focus",
-        "before": "520",
-        "after": "680",
-        "quote": "\"Verbal reasoning был самым сложным, но преподаватели объяснили даже сложную логику очень понятно.\""
-      },
-      "elena": {
-        "name": "Елена Росси",
-        "category": "IELTS General",
-        "before": "6.0",
-        "after": "8.0",
-        "quote": "\"Мне нужен был высокий балл для миграции. Пробники в NaviGate были максимально похожи на реальный экзамен.\""
-      },
-      "mark": {
-        "name": "Марк Дженкинс",
-        "category": "SAT Prep",
-        "before": "1250",
-        "after": "1520",
-        "quote": "\"Преподаватели действительно вовлечены. Клуб 1500+ казался недостижимым, пока я не пришёл в NaviGate.\""
-      },
-      "daniel": {
-        "name": "Дэниел Ким",
-        "category": "GMAT Intensive",
-        "before": "610",
-        "after": "740",
-        "quote": "\"Стратегии по Quant буквально спасли мой результат. Я получил полную стипендию на приоритетную MBA программу.\""
-      }
-    },
-    "voices": {
-      "title": "Голоса успеха",
-      "items": {
-        "james": {
-          "quote": "\"Диагностический тест открыл глаза: команда сразу нашла слабые места и быстро их закрыла.\"",
-          "name": "James Wilson",
-          "descriptor": "Кандидат IELTS"
-        },
-        "ananya": {
-          "quote": "\"Я подняла SAT на 270 баллов за один семестр. Методика преподавания действительно сильная.\"",
-          "name": "Ananya Roy",
-          "descriptor": "Абитуриент Harvard"
-        },
-        "ahmed": {
-          "quote": "\"Здесь учат не просто английскому, а логике самого экзамена GMAT. Очень рекомендую.\"",
-          "name": "Ahmed Al-Sayed",
-          "descriptor": "Кандидат MBA"
-        }
-      }
-    },
-    "lead": {
-      "title": "Готовы повысить свой результат?",
-      "subtitle": "Запишитесь на бесплатную 20-минутную консультацию с ведущим тьютором, чтобы определить текущий уровень и построить маршрут к целевому баллу.",
-      "benefits": {
-        "diagnostic": "Бесплатный диагностический отчёт",
-        "plan": "Персональный учебный план",
-        "materials": "Бесплатные пробные материалы"
-      }
-    }
-  },
-  "results": {
-    "leadForm": {
-      "fields": {
-        "name": "Полное имя",
-        "phone": "Номер телефона",
-        "examInterest": "Интересующий экзамен",
-        "preferredTime": "Предпочтительное время консультации"
-      },
-      "placeholders": {
-        "name": "Иван Иванов",
-        "phone": "+7 (900) 000-00-00"
-      },
-      "examOptions": {
-        "ielts": "IELTS (Academic/General)",
-        "sat": "SAT",
-        "gmat": "GMAT",
-        "general": "General English"
-      },
-      "submit": "Отправить заявку",
-      "success": "Ваша заявка успешно отправлена.",
-      "error": "Ошибка отправки. Попробуйте снова."
-    },
-    "hero": {
-      "badge": "����� ���������",
-      "titlePrefix": "������� ������:",
-      "titleHighlight": "IELTS, SAT � GMAT",
-      "subtitle": "�������, ��� ���� �������� �������� ���� ������������� ������� ��������� ��������� ���������� � ����������� ����������. �������� ���������� ��� ����������� �����."
-    }
-  },
-  "footer": {
-    "brand": "NaviGate Academy",
-    "brandDescription": "Помогаем студентам достигать международных целей через сильную подготовку и персональный подход.",
-    "exams": {
-      "title": "Экзамены",
-      "ielts": "IELTS Academy",
-      "sat": "SAT Training",
-      "gmat": "GMAT Mastery",
-      "pte": "PTE и другие"
-    },
-    "company": {
-      "title": "Компания",
-      "about": "О нас",
-      "success": "Истории успеха",
-      "careers": "Карьера преподавателя",
-      "contact": "Контакты"
-    },
-    "contact": {
-      "title": "Контакты",
-      "address": "Level 5, Education Plaza, London, UK",
-      "phone": "+44 20 7946 0123",
-      "email": "info@navigate-academy.com"
-    }
-  },
-  "pages": {
-    "courses": {
-      "title": "Курсы",
-      "description": "Полный каталог программ подготовки будет добавлен на следующем этапе."
-    },
-    "results": {
-      "title": "Результаты",
-      "description": "Здесь будут опубликованы кейсы студентов и подтвержденная динамика баллов."
-    },
-    "teachers": {
-      "title": "Преподаватели",
-      "description": "Познакомьтесь с сертифицированными наставниками по IELTS, SAT и GMAT."
-    },
-    "about": {
-      "title": "О нас",
-      "description": "NaviGate Academy помогает абитуриентам поступать в ведущие вузы мира."
-    },
-    "contact": {
-      "title": "Контакты",
-      "description": "Свяжитесь с нашей командой для консультации, расписания и записи."
-    }
-  },
-  "teachersPage": {
-    "header": {
-      "breadcrumbHome": "�������",
-      "breadcrumbCurrent": "�������������",
-      "title": "����������� � ������ ���������������",
-      "subtitle": "������� � �������������� �������� ������ � ������ ������������� IELTS, ���������� �� ��� ������������� ���������."
-    },
-    "featured": {
-      "actions": {
-        "book": "���������� �� ������",
-        "profile": "�������� �������"
-      },
-      "helena": {
-        "name": "Dr. Helena Vance",
-        "badge1": "���������� IELTS",
-        "badge2": "������ �����������",
-        "meta": "12+ ��� ����� � PhD Applied Linguistics",
-        "bio": "������ ���� ������� ����� ��� 500 ��������� ����� �� Band 8.0+. �� �������� ���������� ����������� ���������� � ��������������� ������."
-      },
-      "marcus": {
-        "name": "Marcus Sterling",
-        "badge1": "SAT ������",
-        "badge2": "Data-Driven Coach",
-        "meta": "8+ ��� ����� � MA TESOL",
-        "bio": "������ �������� SAT-��������� � ������������� ��������. ��� ����� ��������� �������� ��������� ���������� ����� 1400+."
-      }
-    },
-    "team": {
-      "title": "���� ������������ �������",
-      "subtitle": "����������������� �����������, ���������� ����������� �����������.",
-      "items": {
-        "sarah": {
-          "name": "Sarah Johnson",
-          "role": "���� �� Speaking � Writing",
-          "meta": "10+ ��� ����� � CELTA Certified"
-        },
-        "daniel": {
-          "name": "Daniel Carter",
-          "role": "���������� IELTS General",
-          "meta": "7+ ��� ����� � British Council Trained"
-        },
-        "elena": {
-          "name": "Elena Petrova",
-          "role": "������������ Grammar & Syntax",
-          "meta": "9+ ��� ����� � DELTA Certified"
-        },
-        "sophia": {
-          "name": "Sophia Martinez",
-          "role": "������� Fluency Workshop",
-          "meta": "8+ ��� ����� � Linguistics Specialist"
-        }
-      }
-    },
-    "how": {
-      "title": "��� �� �������",
-      "subtitle": "������������������� ������, ���������� �� ����������� ������������ �������������.",
-      "items": {
-        "feedback": {
-          "title": "������������ ������",
-          "description": "��������� ������ ������� �������, ����� �� ����� �������� ��������� ���."
-        },
-        "group": {
-          "title": "����� ������",
-          "description": "�� 8 ��������� � ������ ��� ������� ������������� � �������� ���������."
-        },
-        "adaptive": {
-          "title": "���������� ��������",
-          "description": "���� ������� � �������� ������� �������������� ��� ���� ��������."
-        },
-        "quality": {
-          "title": "���������� ��������",
-          "description": "������ ������������� ����������� �� ������, ������� � ����������� ���������."
-        }
-      }
-    },
-    "feedback": {
-      "title": "������ ���������",
-      "subtitle": "��� �������� ������� � ����� ��������.",
-      "items": {
-        "james": {
-          "quote": "������ ���� ������� ���� �� ������ �����������, � �������� ������������. ��� writing ����� � 6.0 �� 7.5.",
-          "name": "James Wilson",
-          "descriptor": "������� IELTS Academic"
-        },
-        "ananya": {
-          "quote": "� ������� ����������� �������� � ��������. � ������� SAT �� 270 ������ � ������� ������������� �����������.",
-          "name": "Ananya Roy",
-          "descriptor": "PTE Priority Student"
-        },
-        "ahmed": {
-          "quote": "������ �� speaking � ����� ��������� �������� ��� �����������. �� ������������ ������� �������� ����� ������.",
-          "name": "Ahmed Al-Sayed",
-          "descriptor": "�������� Speaking Intensive"
-        }
-      }
-    },
-    "cta": {
-      "title": "������� � ������ �������������� �����������",
-      "subtitle": "������� ���� � ������������� �����, �������������� ����� ���������� ������������� ��������.",
-      "primary": "���������� ������� ����",
-      "secondary": "��� �����"
-    },
-    "approach": {
-      "title": "��� ��������������� ������",
-      "subtitle": "����������� ��������� ��� ����� ������� ������������� ���������.",
-      "cards": {
-        "quant": {
-          "title": "Quant Mastery",
-          "description": "������� �� ����� ������ � ��������� ���������� �������� ��� SAT � GMAT Quant.",
-          "points": [
-            "SAT � GMAT Number Systems",
-            "����������� ������� �����"
-          ]
-        },
-        "verbal": {
-          "title": "Verbal Reasoning",
-          "description": "��������� ������, ����������� �������� � �������� ������� ��� ������� ������.",
-          "points": [
-            "����� ���������",
-            "����������� ����������"
-          ]
-        },
-        "mock": {
-          "title": "Mock Simulation",
-          "description": "�������������� ���������� �������� � �������� ��������� ��������.",
-          "points": [
-            "��������� ���������",
-            "���������� ����-�����������"
-          ]
-        }
-      }
-    },
-    "consult": {
-      "titleStart": "������������ ��",
-      "titleHighlight": "������������",
-      "subtitle": "�������� ���������������� ������ �������� ������ � ������������ �������� ����� � �������� �����.",
-      "benefits": {
-        "diagnostic": {
-          "title": "��������������� �����",
-          "description": "����� ��������� �������� ������ ����."
-        },
-        "roadmap": {
-          "title": "������� �������� �����",
-          "description": "��������� ���� � ����� �� ������� ����������."
-        }
-      }
-    }
-  },
-  "teachers": {
-    "leadForm": {
-      "fields": {
-        "name": "������ ���",
-        "phone": "����� ��������",
-        "examInterest": "������������� ��������",
-        "preferredTime": "������� ����� ������������"
-      },
-      "placeholders": {
-        "name": "���� ������",
-        "phone": "+7 (900) 000-00-00"
-      },
-      "examOptions": {
-        "ielts": "IELTS",
-        "sat": "SAT",
-        "gmat": "GMAT",
-        "general": "General English"
-      },
-      "submit": "���������� �� �����������",
-      "success": "���� ������ ������� ����������.",
-      "error": "������ ��������. ���������� �����."
-    },
-    "hero": {
-      "badge": "������������� �������� ������"
-    }
-  },
-  "aboutPage": {
-    "hero": {
-      "badge": "��������� ������� ��������",
-      "titleStart": "�",
-      "titleHighlight": "NaviGate",
-      "titleEnd": "Academy",
-      "subtitle": "��� ���� � ������� ������������� ���� ����� ������������������ ���������� � SAT, GMAT � IELTS."
-    },
-    "mission": {
-      "imageAlt": "������������� � ������ NaviGate",
-      "title": "���� ���������� ������",
-      "p1": "NaviGate Academy ������� �� ���������, ��� ������� �� ������ ������������ ���������. ������� ��� ������� ��������������� ����� ��� ��������� � �������������� ������.",
-      "p2": "���� ��������� ����������� ��� ��������� �������� SAT, GMAT � IELTS: �������������� ��������, ������������� ������ � �������� �����.",
-      "p3": "������� ������������ ���������� � ������������ �������������, �� ������� ������� ��������� ��������� � ������� ���� �������� �������, ������ � ����.",
-      "badge": {
-        "value": "10+",
-        "label": "��� �������������� �������������"
-      }
-    },
-    "values": {
-      "title": "���� �������� ��������",
-      "subtitle": "��������, ������� ���������� ��� �������� ��������.",
-      "items": {
-        "excellence": {
-          "title": "������������� �������������",
-          "description": "������� ��������� � ��������� ������, ������������ ������� ������� ������� ��������."
-        },
-        "results": {
-          "title": "���������� �� ���������",
-          "description": "�� �������� ����� ������ ����� ������ � ��������� �������������."
-        },
-        "access": {
-          "title": "���������� �����������",
-          "description": "��������� ������ � �������������� ����������� ����� �������������� ����������."
-        },
-        "guidance": {
-          "title": "���������� �������������",
-          "description": "������� ������������� � ������������ �� ����������� ������������ ��� �� ������ �����."
-        }
-      }
-    },
-    "numbers": {
-      "title": "���� ���������� � ������",
-      "stats": {
-        "admission": {
-          "value": "95%",
-          "label": "�������� �����������"
-        },
-        "partners": {
-          "value": "150+",
-          "label": "����������� �������������"
-        },
-        "gmat": {
-          "value": "740",
-          "label": "������� ���� GMAT"
-        },
-        "sat": {
-          "value": "1500+",
-          "label": "������� ���� SAT"
-        }
-      },
-      "cards": {
-        "global": {
-          "title": "Best Global Prep Center",
-          "description": "������� International Education Forum 2025"
-        },
-        "certified": {
-          "title": "����������������� �������������",
-          "description": "100% �������������� � ���������� ������ ������������"
-        }
-      }
-    },
-    "environment": {
-      "title": "���� ������� �����",
-      "subtitle": "���������� �� ����������� ������������, ��������� ��� ������������ � ����������.",
-      "items": {
-        "mentor": {
-          "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=80",
-          "alt": "������� ������ � ������ ��������"
-        },
-        "classroom": {
-          "image": "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80",
-          "alt": "������������� � ����������� ������"
-        },
-        "faculty": {
-          "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80",
-          "alt": "������� ������������� � ����� ��������"
-        }
-      }
-    },
-    "why": {
-      "titleStart": "������ ��������",
-      "titleHighlight": "NaviGate Academy?",
-      "subtitle": "�� ���������� ������������� ��������� � ����������� ��������, ����� ��� ������� ���� ���� ���������� �����.",
-      "promo": {
-        "title": "#1 �����",
-        "subtitle": "��� ���������� � ������� ������ � 2026"
-      },
-      "features": {
-        "ielts": {
-          "title": "����������������� ���������� IELTS",
-          "description": "������ ������ �� Listening, Reading, Writing � Speaking."
-        },
-        "groups": {
-          "title": "��������� ������",
-          "description": "������������ ������ ������ ��� ������������� �������� � �������� �����."
-        },
-        "mocks": {
-          "title": "������������ mock-�����",
-          "description": "������ ��������� �������� ������ ������ ��� �������� ��������� � ��������."
-        },
-        "writing": {
-          "title": "������������ ������ writing",
-          "description": "��������� ������ ���� �� ��������� ��� ��������� ��������� � ��������."
-        },
-        "materials": {
-          "title": "������������ ���������",
-          "description": "��������� ������� ��������� � �������� ��������� � ���������."
-        }
-      }
-    },
-    "journeyCta": {
-      "titleStart": "������� ���� ���� � ���������� �",
-      "titleHighlight": "NaviGate",
-      "subtitle": "��� ������� ���� �����, ��� �������. ��������������� � ���������, ������� ��� �������� ����������.",
-      "primary": "���������� ������� ����",
-      "secondary": "��� �����"
-    },
-    "journeyForm": {
-      "title": "������� ���� ���������� ����",
-      "subtitle": "���������� �� ������������������ ������������, ����� ������� ���������� � �������������� �����������.",
-      "benefits": {
-        "diagnostic": "����������� ��������������� mock-����",
-        "portfolio": "�������� ������� �������������",
-        "strategy": "�������������� �������������� ������"
-      }
-    }
-  },
-  "about": {
-    "leadForm": {
-      "fields": {
-        "name": "������ ���",
-        "email": "Email �����",
-        "examInterest": "������� ������������� �������",
-        "currentLevel": "������� ������� �����������"
-      },
-      "placeholders": {
-        "name": "��������� ���������",
-        "email": "alex@example.com"
-      },
-      "examOptions": {
-        "ielts": "���������� IELTS",
-        "sat": "���������� SAT",
-        "gmat": "���������� GMAT",
-        "general": "����� ����������"
-      },
-      "levelOptions": {
-        "highSchool": "������� �����",
-        "undergraduate": "�����������",
-        "postgraduate": "������������/����"
-      },
-      "submit": "��������� ������",
-      "success": "���� ������ ������� ����������.",
-      "error": "������ ��������. ���������� �����."
-    }
-  },
-  "contactPage": {
-    "hero": {
-      "titleStart": "��������� �",
-      "titleHighlight": "��������������� ����������",
-      "subtitle": "���� ������� �� ������������ ��������? ���� ������� ��������� ������� ��� �� ������ ����."
-    },
-    "sidebar": {
-      "phone": {
-        "title": "������� ���������",
-        "description": "��-�� � 09:00 �� 18:00.",
-        "detail": "+44 20 7946 0123"
-      },
-      "telegram": {
-        "title": "Telegram",
-        "description": "����� ������� ����� �� �������� ��������.",
-        "detail": "@NaviGateSupport"
-      },
-      "address": {
-        "title": "��� �����",
-        "description": "Level 5, Education Plaza, London, UK",
-        "detail": "��������� �� ������"
-      },
-      "hours": {
-        "title": "���� ������",
-        "description": "�� - ��: 09:00 - 20:00",
-        "detail": "��: 10:00 - 16:00"
-      }
-    },
-    "form": {
-      "title": "��������� ��� ���������"
-    },
-    "map": {
-      "title": "���������� ������������� �����",
-      "labelTitle": "NaviGate Academy London",
-      "labelAddress": "Level 5, Education Plaza, London, EC2V 6AA"
-    },
-    "cta": {
-      "title": "����� ������� ������?",
-      "subtitle": "���� ������������ �������� � WhatsApp � ������ �������� �� �������� ����������� � ����������.",
-      "primary": "�������� � WhatsApp",
-      "secondary": "������� �������"
-    }
-  },
-  "contact": {
-    "leadForm": {
-      "fields": {
-        "name": "������ ���",
-        "phone": "����� ��������",
-        "examInterest": "������������ �������",
-        "preferredTime": "������� ����� ��� ������",
-        "message": "��������� (�������������)"
-      },
-      "placeholders": {
-        "name": "������� ���� ���",
-        "phone": "+7 (900) 000-00-00",
-        "examInterest": "�������� �������",
-        "message": "��� �� ����� ��� ������?"
-      },
-      "examOptions": {
-        "ielts": "IELTS",
-        "sat": "SAT",
-        "gmat": "GMAT",
-        "general": "����� ����������"
-      },
-      "submit": "��������� ������",
-      "success": "���� ������ ������� ����������.",
-      "error": "������ ��������. ���������� �����."
-    }
-  },
-  "leadCapture": {
-    "label": {
-      "fullName": "������ ���",
-      "phoneNumber": "����� ��������",
-      "examInterest": "������������ �������",
-      "preferredTime": "������� �����",
-      "email": "Email �����",
-      "message": "���������",
-      "currentLevel": "������� �������"
-    },
-    "placeholder": {
-      "fullName": "������� ������ ���",
-      "phoneNumber": "+7 (900) 000-00-00",
-      "email": "name@example.com",
-      "currentLevel": "�������� �������",
-      "message": "���������� � ����� ����"
-    },
-    "exam": {
-      "IELTS": "IELTS",
-      "SAT": "SAT",
-      "GMAT": "GMAT",
-      "GeneralEnglish": "����� ����������"
-    },
-    "level": {
-      "Beginner": "Beginner",
-      "Intermediate": "Intermediate",
-      "Advanced": "Advanced",
-      "HighSchool": "������� �����",
-      "Undergraduate": "�����������",
-      "Postgraduate": "������������/����"
-    },
-    "button": {
-      "submit": "��������� ������"
-    },
-    "toast": {
-      "success": "���� ������ ������� ����������.",
-      "error": "������ ��������. ���������� �����."
-    }
-  }
+	"navbar": {
+		"brand": "NaviGate Academy",
+		"cta": "Записаться на бесплатный уровень",
+		"links": {
+			"home": "Главная",
+			"courses": "Курсы",
+			"results": "Результаты",
+			"teachers": "Преподаватели",
+			"about": "О нас",
+			"contact": "Контакты"
+		},
+		"languageLabel": "Сменить язык",
+		"languages": {
+			"en": "English",
+			"ru": "Русский",
+			"uz": "O‘zbek"
+		}
+	},
+	"home": {
+		"hero": {
+			"badge": "Международное экзаменационное превосходство",
+			"titleStart": "Готовьтесь к",
+			"titleHighlight": "IELTS, SAT и GMAT",
+			"titleEnd": "в NaviGate Academy",
+			"subtitle": "Освойте самые признанные международные экзамены с экспертным наставничеством, понятным планом подготовки и персональным подходом.",
+			"primaryButton": "Начать сегодня",
+			"secondaryButton": "Смотреть все курсы"
+		},
+		"stats": {
+			"students": {
+				"value": "1200+",
+				"label": "Студентов"
+			},
+			"scores": {
+				"value": "200+",
+				"label": "Топ-результатов"
+			},
+			"coaches": {
+				"value": "Сертифицированные",
+				"label": "Наставники"
+			},
+			"plans": {
+				"value": "Гибкие",
+				"label": "Планы подготовки"
+			}
+		},
+		"programs": {
+			"title": "Наши ключевые программы",
+			"subtitle": "Подготовка уровня индустрии к вашему следующему важному результату.",
+			"explore": "Смотреть все",
+			"enroll": "Записаться",
+			"cards": {
+				"ielts": {
+					"badge": "IELTS Academic",
+					"title": "IELTS Academic",
+					"duration": "Длительность: 8–12 недель",
+					"target": "Цель: 7.5+",
+					"price": "$349.00"
+				},
+				"sat": {
+					"badge": "SAT Prep",
+					"title": "SAT Prep",
+					"duration": "Длительность: 10 недель",
+					"target": "Цель: 1500+",
+					"price": "$499.00"
+				},
+				"gmat": {
+					"badge": "GMAT Track",
+					"title": "GMAT Track",
+					"duration": "Длительность: 14 недель",
+					"target": "Цель: 700+",
+					"price": "$599.00"
+				},
+				"general": {
+					"badge": "General English",
+					"title": "Общий английский",
+					"duration": "Длительность: гибко",
+					"target": "Уровень: A1–C2",
+					"price": "$199.00"
+				}
+			}
+		},
+		"results": {
+			"title": "Доказанный рост баллов",
+			"subtitle": "Реальные результаты наших сильных студентов.",
+			"cards": {
+				"arjun": {
+					"name": "Arjun Mehta",
+					"exam": "IELTS Academic",
+					"before": "5.5",
+					"after": "7.5"
+				},
+				"daniel": {
+					"name": "Daniel Kim",
+					"exam": "SAT Prep",
+					"before": "1280",
+					"after": "1540"
+				},
+				"sofia": {
+					"name": "Sofia Rodriguez",
+					"exam": "GMAT Intensive",
+					"before": "610",
+					"after": "720"
+				}
+			}
+		},
+		"method": {
+			"title": "Метод NaviGate",
+			"subtitle": "Персональные стратегии для быстрого прогресса.",
+			"features": {
+				"diagnostic": {
+					"title": "Диагностика на входе",
+					"description": "Подробный анализ уровня и ключевых слабых мест."
+				},
+				"curriculum": {
+					"title": "Индивидуальная программа",
+					"description": "Уроки под ваши цели, экзамен и нужный балл."
+				},
+				"simulation": {
+					"title": "Моделирование экзамена",
+					"description": "Еженедельные пробники для уверенности и тайминга."
+				},
+				"feedback": {
+					"title": "Обратная связь 1-на-1",
+					"description": "Персональный разбор Writing и Speaking с экспертами."
+				}
+			}
+		},
+		"faculty": {
+			"title": "Наша сильная команда",
+			"subtitle": "Учитесь у экспертов и преподавателей с уровнем носителя.",
+			"items": {
+				"helena": {
+					"name": "Dr. Helena Vance",
+					"role": "Старший специалист по IELTS",
+					"meta": "12+ лет опыта • бывший экзаменатор"
+				},
+				"marcus": {
+					"name": "Marcus Sterling",
+					"role": "Ведущий преподаватель PTE Core",
+					"meta": "8+ лет опыта • магистр прикладной лингвистики"
+				},
+				"emily": {
+					"name": "Emily Ross",
+					"role": "Тренер по Speaking и Writing",
+					"meta": "10+ лет опыта • сертификат CELTA"
+				}
+			}
+		},
+		"testimonials": {
+			"title": "Отзывы студентов",
+			"subtitle": "Реальные истории. Реальный рост баллов.",
+			"items": {
+				"james": {
+					"quote": "Система обратной связи по Writing изменила всё. Я поднялся с 6.0 до 7.5 всего за 4 недели.",
+					"name": "James Wilson",
+					"meta": "Студент University of Melbourne"
+				},
+				"ananya": {
+					"quote": "NaviGate сделала PTE понятным. Пробники были максимально похожи на реальный экзамен. Очень рекомендую.",
+					"name": "Ananya Roy",
+					"meta": "Переезд в Канаду"
+				},
+				"ahmed": {
+					"quote": "Преподаватели очень терпеливые. Они учат не только английскому, но и логике экзамена.",
+					"name": "Ahmed Al-Sayed",
+					"meta": "Кандидат IELTS Academic"
+				}
+			}
+		},
+		"lead": {
+			"title": "Готовы повысить свой балл?",
+			"subtitle": "Запишитесь на бесплатную 20-минутную консультацию с senior-ментором и получите персональную дорожную карту.",
+			"benefits": {
+				"diagnostic": "Персональный диагностический отчёт",
+				"guidance": "Подбор вуза и направления",
+				"plan": "Индивидуальный план обучения"
+			}
+		},
+		"leadForm": {
+			"fields": {
+				"name": "Имя",
+				"phone": "Телефон",
+				"examInterest": "Интересующий экзамен",
+				"preferredTime": "Удобное время"
+			},
+			"placeholders": {
+				"name": "ФИО",
+				"phone": "+1 (000) 000-0000"
+			},
+			"examOptions": {
+				"ielts": "IELTS Academic",
+				"sat": "SAT Prep",
+				"gmat": "GMAT Track",
+				"general": "Общий английский"
+			},
+			"submit": "Отправить заявку",
+			"success": "Заявка успешно отправлена.",
+			"error": "Не удалось отправить заявку. Попробуйте ещё раз."
+		}
+	},
+	"coursesPage": {
+		"header": {
+			"title": "Академические и языковые программы",
+			"subtitle": "Изучите наши программы по английскому и подготовке к международным экзаменам — для глобальных целей и поступления."
+		},
+		"filters": {
+			"all": "Все программы",
+			"ielts": "IELTS",
+			"sat": "SAT",
+			"gmat": "GMAT",
+			"general": "Общий английский"
+		},
+		"labels": {
+			"open": "Набор открыт",
+			"premium": "Премиум-программа"
+		},
+		"buttons": {
+			"enroll": "Записаться"
+		},
+		"english": {
+			"title": "Языковые программы"
+		},
+		"exam": {
+			"title": "Подготовка к международным экзаменам"
+		},
+		"courses": {
+			"ieltsAcademic": {
+				"badge": "IELTS Academic",
+				"title": "Полное мастерство: Academic",
+				"duration": "Интенсив 12 недель",
+				"level": "Уровень: Intermediate",
+				"schedule": "Пн, Ср, Пт (18:00–20:00)"
+			},
+			"generalFluency": {
+				"badge": "General English",
+				"title": "Основа свободной речи",
+				"duration": "Длительность 16 недель",
+				"level": "Уровень: Beginner–Intermediate",
+				"schedule": "Вт, Чт, Сб (10:00–12:00)"
+			},
+			"skillsFocus": {
+				"badge": "Skills Focus",
+				"title": "Разговорный уровень как у носителя",
+				"duration": "Фокус 8 недель",
+				"level": "Уровень: Intermediate+",
+				"schedule": "Суббота (14:00–18:00)"
+			},
+			"satElite": {
+				"badge": "SAT Prep",
+				"title": "SAT Elite: путь в Ivy League",
+				"description": "Продвинутые стратегии для Evidence-Based Reading, Writing и Math. Включает полноформатные цифровые пробники и персональный разбор.",
+				"duration": "Длительность 14 недель",
+				"level": "Уровень: Advanced Academic",
+				"schedule": "Вт, Чт (16:00–19:00)",
+				"groupSize": "До 10 студентов в группе"
+			},
+			"gmatExecutive": {
+				"badge": "GMAT Focus",
+				"title": "GMAT Executive Preparation",
+				"description": "Полное покрытие Quantitative Reasoning, Data Insights и Verbal Reasoning для поступления на топ-MBA программы.",
+				"duration": "Длительность 12 недель",
+				"level": "Уровень: Graduate Academic",
+				"schedule": "Пн, Ср (19:00–21:30)",
+				"groupSize": "Сертификат о завершении"
+			}
+		},
+		"featureRow": {
+			"smallGroups": "Малые группы",
+			"mockExams": "Пробные экзамены",
+			"feedback": "Персональная обратная связь",
+			"speaking": "Практика speaking",
+			"tracking": "Отслеживание прогресса"
+		},
+		"success": {
+			"title": "Недавние успехи",
+			"subtitle": "Присоединяйтесь к нашим выпускникам, которые достигли целевых баллов.",
+			"link": "Смотреть результаты",
+			"cards": {
+				"arjun": {
+					"name": "Arjun Mehta",
+					"program": "IELTS Academic",
+					"result": "5.5 → 7.5"
+				},
+				"liwei": {
+					"name": "Li Wei",
+					"program": "Общий английский",
+					"result": "B1 → C1"
+				},
+				"sarah": {
+					"name": "Sarah Jenkins",
+					"program": "Корпоративный английский",
+					"result": "Повышение"
+				}
+			}
+		},
+		"cta": {
+			"title": "Не уверены, какой курс подходит вам?",
+			"subtitle": "Получите профессиональную оценку текущего уровня и персональные рекомендации от наших ведущих преподавателей.",
+			"button": "Записаться на бесплатный уровень"
+		},
+		"lead": {
+			"title": "Не уверены, какой экзамен вам нужен?",
+			"subtitle": "Запланируйте бесплатную стратегическую сессию с академическим консультантом и выберите программу под ваши цели.",
+			"benefits": {
+				"diagnostic": "Диагностика включена",
+				"guidance": "Консультация по поступлению",
+				"plan": "Индивидуальный план"
+			}
+		}
+	},
+	"courses": {
+		"leadForm": {
+			"fields": {
+				"name": "ФИО",
+				"phone": "Номер телефона",
+				"examInterest": "Интересующий экзамен",
+				"currentLevel": "Текущий уровень (если известен)"
+			},
+			"placeholders": {
+				"name": "Иван Иванов",
+				"phone": "+1 (555) 000-0000",
+				"currentLevel": "Выберите уровень"
+			},
+			"examOptions": {
+				"ielts": "IELTS (Academic / General)",
+				"sat": "SAT",
+				"gmat": "GMAT",
+				"general": "Общий английский"
+			},
+			"levelOptions": {
+				"beginner": "Beginner",
+				"intermediate": "Intermediate",
+				"advanced": "Advanced"
+			},
+			"submit": "Запросить программу",
+			"success": "Заявка успешно отправлена.",
+			"error": "Не удалось отправить заявку. Попробуйте ещё раз."
+		}
+	},
+	"resultsPage": {
+		"header": {
+			"badge": "Успехи студентов",
+			"titleStart": "Истории успеха:",
+			"titleHighlight": "IELTS, SAT и GMAT",
+			"subtitle": "Посмотрите, как наши студенты изменили своё академическое будущее благодаря подготовке и экспертному наставничеству. Реальные результаты реальных целей."
+		},
+		"stats": {
+			"ielts": {
+				"value": "200+",
+				"label": "IELTS 7+"
+			},
+			"sat": {
+				"value": "50+",
+				"label": "SAT 1400+"
+			},
+			"gmat": {
+				"value": "30+",
+				"label": "GMAT 700+"
+			}
+		},
+		"cards": {
+			"scoreImprovementLabel": "Рост балла",
+			"arjun": {
+				"name": "Arjun Mehta",
+				"category": "IELTS Academic",
+				"before": "5.5",
+				"after": "7.0",
+				"quote": "«Персональная обратная связь по Writing стала ключом: я поднялся на два бэнда всего за 8 недель.»"
+			},
+			"sophia": {
+				"name": "Sophia Chen",
+				"category": "SAT Prep",
+				"before": "1180",
+				"after": "1450",
+				"quote": "«Лайфхаки по математике и стратегии чтения помогли моему поступлению в Ivy League.»"
+			},
+			"ahmed": {
+				"name": "Ahmed Al-Sayed",
+				"category": "GMAT Focus",
+				"before": "520",
+				"after": "680",
+				"quote": "«Verbal был моей главной проблемой. Преподаватели объяснили логику очень понятно.»"
+			},
+			"elena": {
+				"name": "Elena Rossi",
+				"category": "IELTS General",
+				"before": "6.0",
+				"after": "8.0",
+				"quote": "«Мне нужен был высокий балл для миграции. Пробники NaviGate были как настоящий экзамен.»"
+			},
+			"mark": {
+				"name": "Mark Jenkins",
+				"category": "SAT Prep",
+				"before": "1250",
+				"after": "1520",
+				"quote": "«Сильные преподаватели, которым действительно важно. 1500+ казалось невозможным, пока я не пришёл в NaviGate.»"
+			},
+			"daniel": {
+				"name": "Daniel Kim",
+				"category": "GMAT Intensive",
+				"before": "610",
+				"after": "740",
+				"quote": "«Стратегии по Quant спасли. Я получил полную стипендию на MBA в приоритетном университете.»"
+			}
+		},
+		"voices": {
+			"title": "Голоса успеха",
+			"items": {
+				"james": {
+					"quote": "«Диагностический тест открыл глаза. Они точно поняли мои слабые места и помогли их закрыть.»",
+					"name": "James Wilson",
+					"descriptor": "Кандидат IELTS"
+				},
+				"ananya": {
+					"quote": "«Я поднял SAT на 270 баллов за один семестр. Методика обучения — топ.»",
+					"name": "Ananya Roy",
+					"descriptor": "Абитуриент Harvard"
+				},
+				"ahmed": {
+					"quote": "«Они учат не просто английскому, а логике экзамена для GMAT. Очень рекомендую.»",
+					"name": "Ahmed Al-Sayed",
+					"descriptor": "Кандидат MBA"
+				}
+			}
+		},
+		"lead": {
+			"title": "Готовы повысить свой балл?",
+			"subtitle": "Запишитесь на бесплатную 20-минутную консультацию с ведущим преподавателем: определим текущий уровень и составим план к вашей цели.",
+			"benefits": {
+				"diagnostic": "Бесплатный диагностический отчёт",
+				"plan": "Персональный план обучения",
+				"materials": "Бесплатные материалы"
+			}
+		}
+	},
+	"results": {
+		"leadForm": {
+			"fields": {
+				"name": "ФИО",
+				"phone": "Номер телефона",
+				"examInterest": "Интересующий экзамен",
+				"preferredTime": "Удобное время консультации"
+			},
+			"placeholders": {
+				"name": "Иван Иванов",
+				"phone": "+1 (555) 000-0000"
+			},
+			"examOptions": {
+				"ielts": "IELTS (Academic/General)",
+				"sat": "SAT",
+				"gmat": "GMAT",
+				"general": "Общий английский"
+			},
+			"submit": "Отправить заявку",
+			"success": "Заявка успешно отправлена.",
+			"error": "Не удалось отправить заявку. Попробуйте ещё раз."
+		},
+		"hero": {
+			"badge": "Успехи студентов",
+			"titlePrefix": "Истории успеха:",
+			"titleHighlight": "IELTS, SAT и GMAT",
+			"subtitle": "Посмотрите, как наши студенты изменили своё академическое будущее благодаря подготовке и экспертному наставничеству. Реальные результаты реальных целей."
+		}
+	},
+	"footer": {
+		"brand": "NaviGate Academy",
+		"brandDescription": "Помогаем достигать глобальных целей через сильную подготовку к экзаменам и персональное сопровождение.",
+		"exams": {
+			"title": "Экзамены",
+			"ielts": "IELTS Academy",
+			"sat": "Подготовка SAT",
+			"gmat": "GMAT Mastery",
+			"pte": "PTE и другое"
+		},
+		"company": {
+			"title": "Компания",
+			"about": "О нас",
+			"success": "Истории успеха",
+			"careers": "Вакансии преподавателей",
+			"contact": "Контакты"
+		},
+		"contact": {
+			"title": "Контакты",
+			"address": "Level 5, Education Plaza, London, UK",
+			"phone": "+44 20 7946 0123",
+			"email": "info@navigate-academy.com"
+		}
+	},
+	"pages": {
+		"courses": {
+			"title": "Курсы",
+			"description": "Полный каталог курсов по экзаменам скоро будет здесь."
+		},
+		"results": {
+			"title": "Результаты",
+			"description": "Подтверждённые кейсы студентов и рост баллов будут опубликованы здесь."
+		},
+		"teachers": {
+			"title": "Преподаватели",
+			"description": "Познакомьтесь с сертифицированными наставниками по IELTS, SAT и GMAT."
+		},
+		"about": {
+			"title": "О нас",
+			"description": "NaviGate Academy помогает амбициозным студентам поступать в ведущие университеты мира."
+		},
+		"contact": {
+			"title": "Контакты",
+			"description": "Свяжитесь с нами для консультаций, расписания и записи на обучение."
+		}
+	},
+	"teachersPage": {
+		"header": {
+			"breadcrumbHome": "Главная",
+			"breadcrumbCurrent": "Преподаватели",
+			"title": "Познакомьтесь с преподавателями",
+			"subtitle": "Учитесь у сильных педагогов и бывших экзаменаторов IELTS, нацеленных на ваш результат."
+		},
+		"featured": {
+			"actions": {
+				"book": "Записаться на занятие",
+				"profile": "Смотреть профиль"
+			},
+			"helena": {
+				"name": "Dr. Helena Vance",
+				"badge1": "Специалист IELTS",
+				"badge2": "Бывший экзаменатор",
+				"meta": "12+ лет опыта • PhD по прикладной лингвистике",
+				"bio": "Dr. Vance помогла более 500 студентам достичь Band 8.0+. Методика сочетает психологию и принципы тестирования для спокойной и результативной сдачи."
+			},
+			"marcus": {
+				"name": "Marcus Sterling",
+				"badge1": "Наставник SAT",
+				"badge2": "Коуч по данным",
+				"meta": "8+ лет опыта • MA TESOL",
+				"bio": "Marcus совмещает стратегию SAT с измеримыми метриками. Его подход по Reading и Writing помогает студентам стабильно выходить на 1400+."
+			}
+		},
+		"team": {
+			"title": "Наша команда преподавателей",
+			"subtitle": "Сертифицированные профессионалы, которые любят преподавать.",
+			"items": {
+				"sarah": {
+					"name": "Sarah Johnson",
+					"role": "Тренер по Speaking и Writing",
+					"meta": "10+ лет опыта • CELTA Certified"
+				},
+				"daniel": {
+					"name": "Daniel Carter",
+					"role": "Специалист IELTS General",
+					"meta": "7+ лет опыта • British Council Trained"
+				},
+				"elena": {
+					"name": "Elena Petrova",
+					"role": "Руководитель по грамматике",
+					"meta": "9+ лет опыта • DELTA Certified"
+				},
+				"sophia": {
+					"name": "Sophia Martinez",
+					"role": "Ведущая по развитию беглости",
+					"meta": "8+ лет опыта • Linguistics Specialist"
+				}
+			}
+		},
+		"how": {
+			"title": "Как мы обучаем",
+			"subtitle": "Персональный подход, основанный на педагогических исследованиях.",
+			"items": {
+				"feedback": {
+					"title": "Персональная обратная связь",
+					"description": "Детальный разбор каждого задания — вы точно понимаете, что улучшать дальше."
+				},
+				"group": {
+					"title": "Фокус на малых группах",
+					"description": "До 8 студентов в группе — больше практики, взаимодействия и дисциплины."
+				},
+				"adaptive": {
+					"title": "Адаптивное обучение",
+					"description": "Темп уроков и домашние задания подстраиваются под ваш прогресс каждую неделю."
+				},
+				"quality": {
+					"title": "Экспертное качество",
+					"description": "Каждого преподавателя оцениваем по подаче, ясности и результатам студентов."
+				}
+			}
+		},
+		"feedback": {
+			"title": "Отзывы о преподавателях",
+			"subtitle": "Что студенты говорят о своих наставниках.",
+			"items": {
+				"james": {
+					"quote": "Dr. Vance научила меня думать как экзаменатор. Мой Writing вырос с 6.0 до 7.5.",
+					"name": "James Wilson",
+					"descriptor": "Студент IELTS Academic"
+				},
+				"ananya": {
+					"quote": "У Marcus потрясающее терпение и точность. Я поднял SAT на 270 баллов и стал увереннее.",
+					"name": "Ananya Roy",
+					"descriptor": "Студент SAT"
+				},
+				"ahmed": {
+					"quote": "Занятия со Sarah сильно подняли уверенность. Практические упражнения сделали speaking проще.",
+					"name": "Ahmed Al-Sayed",
+					"descriptor": "Кандидат Speaking Intensive"
+				}
+			}
+		},
+		"cta": {
+			"title": "Учитесь у лучших преподавателей",
+			"subtitle": "Начните с персонального плана обучения от нашей сильной команды.",
+			"primary": "Записаться на бесплатный уровень",
+			"secondary": "Смотреть курсы"
+		},
+		"approach": {
+			"title": "Экзаменационный подход",
+			"subtitle": "Тактические стратегии для самых сложных вступительных экзаменов.",
+			"cards": {
+				"quant": {
+					"title": "Quant-мастерство",
+					"description": "Логика прежде формул: методы для количественных разделов SAT и GMAT.",
+					"points": ["Системы чисел SAT и GMAT", "Тактики для сложных задач"]
+				},
+				"verbal": {
+					"title": "Verbal-мышление",
+					"description": "Reading, critical reasoning и точность словаря для высоких баллов в verbal.",
+					"points": ["Карта аргумента", "Исключение по контексту"]
+				},
+				"mock": {
+					"title": "Пробная симуляция",
+					"description": "Полноформатная практика в тайминге для выносливости и скорости решений.",
+					"points": ["Аналитика результатов", "Тренировка тайм-менеджмента"]
+				}
+			}
+		},
+		"consult": {
+			"titleStart": "Консультация со",
+			"titleHighlight": "специалистом",
+			"subtitle": "Получите профессиональную оценку и персональную дорожную карту к целевому баллу.",
+			"benefits": {
+				"diagnostic": {
+					"title": "Диагностический отчёт",
+					"description": "Сразу увидите слабые места."
+				},
+				"roadmap": {
+					"title": "План к цели",
+					"description": "Сроки и этапы для вашего целевого результата."
+				}
+			}
+		}
+	},
+	"teachers": {
+		"leadForm": {
+			"fields": {
+				"name": "ФИО",
+				"phone": "Номер телефона",
+				"examInterest": "Направление",
+				"preferredTime": "Удобное время консультации"
+			},
+			"placeholders": {
+				"name": "Иван Иванов",
+				"phone": "+1 (555) 000-0000"
+			},
+			"examOptions": {
+				"ielts": "IELTS",
+				"sat": "SAT",
+				"gmat": "GMAT",
+				"general": "Общий английский"
+			},
+			"submit": "Записаться на оценку",
+			"success": "Заявка успешно отправлена.",
+			"error": "Не удалось отправить заявку. Попробуйте ещё раз."
+		},
+		"hero": {
+			"badge": "Преподаватели мирового уровня"
+		}
+	},
+	"aboutPage": {
+		"hero": {
+			"badge": "Растим лидеров будущего",
+			"titleStart": "О",
+			"titleHighlight": "NaviGate",
+			"titleEnd": "Academy",
+			"subtitle": "Ваш мост к лучшим университетам мира через подготовку к SAT, GMAT и IELTS."
+		},
+		"mission": {
+			"imageAlt": "Преподаватель и наставник NaviGate",
+			"title": "Наша глобальная миссия",
+			"p1": "Мы верим, что границы не должны ограничивать потенциал. NaviGate Academy стала местом, где амбициозные студенты готовятся к международному академическому успеху.",
+			"p2": "Наши программы созданы, чтобы уверенно пройти SAT, GMAT и IELTS — с балансом стратегии, критического мышления и языковой точности.",
+			"p3": "Комбинируя сильную методику и персональное наставничество, мы помогли тысячам студентов поступить в ведущие вузы Северной Америки, Европы и Азии.",
+			"badge": {
+				"value": "10+",
+				"label": "лет академического превосходства"
+			}
+		},
+		"values": {
+			"title": "Наши ценности",
+			"subtitle": "Принципы, которые определяют нашу работу на результат.",
+			"items": {
+				"excellence": {
+					"title": "Академическое качество",
+					"description": "Высокие стандарты и сильное преподавание, которые помогают превзойти ожидания."
+				},
+				"results": {
+					"title": "Ориентация на результат",
+					"description": "Наш успех измеряется вашим прогрессом: рост баллов и поступления."
+				},
+				"access": {
+					"title": "Доступ к миру",
+					"description": "Снимаем барьеры к международному образованию через грамотную подготовку и сопровождение."
+				},
+				"guidance": {
+					"title": "Экспертное сопровождение",
+					"description": "Опытные преподаватели и консультанты глубоко вовлечены в путь каждого студента."
+				}
+			}
+		},
+		"numbers": {
+			"title": "Наши достижения в цифрах",
+			"stats": {
+				"admission": {
+					"value": "95%",
+					"label": "Поступление"
+				},
+				"partners": {
+					"value": "150+",
+					"label": "Партнёрских вузов"
+				},
+				"gmat": {
+					"value": "740",
+					"label": "Средний GMAT"
+				},
+				"sat": {
+					"value": "1500+",
+					"label": "Средний SAT"
+				}
+			},
+			"cards": {
+				"global": {
+					"title": "Лучший центр подготовки",
+					"description": "Награда International Education Forum 2025"
+				},
+				"certified": {
+					"title": "Сертифицированные преподаватели",
+					"description": "100% команды с продвинутыми академическими степенями"
+				}
+			}
+		},
+		"environment": {
+			"title": "Среда обучения",
+			"subtitle": "Современные аудитории и пространства, созданные для сфокусированной подготовки.",
+			"items": {
+				"mentor": {
+					"image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=80",
+					"alt": "Старший ментор в студии"
+				},
+				"classroom": {
+					"image": "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80",
+					"alt": "Преподаватель в современной аудитории"
+				},
+				"faculty": {
+					"image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80",
+					"alt": "Портрет преподавателя в офисе"
+				}
+			}
+		},
+		"why": {
+			"titleStart": "Почему выбирают",
+			"titleHighlight": "NaviGate Academy?",
+			"subtitle": "Мы объединяем академическое качество и современную методику, чтобы ваша цель стала достижимой.",
+			"promo": {
+				"title": "#1 выбор",
+				"subtitle": "для подготовки к высоким баллам в 2026"
+			},
+			"features": {
+				"ielts": {
+					"title": "Структурированный IELTS",
+					"description": "Полные модули по Listening, Reading, Writing и Speaking."
+				},
+				"groups": {
+					"title": "Малые группы",
+					"description": "Ограниченный размер группы — максимум внимания и практики."
+				},
+				"mocks": {
+					"title": "Еженедельные пробники",
+					"description": "Симуляция экзамена каждую субботу для контроля прогресса и тайминга."
+				},
+				"writing": {
+					"title": "Разбор Writing",
+					"description": "Построчная обратная связь по эссе: грамматика, структура и логика."
+				},
+				"materials": {
+					"title": "Эксклюзивные материалы",
+					"description": "Доступ к авторским рабочим тетрадям и онлайн-ресурсам от нашей команды."
+				}
+			}
+		},
+		"journeyCta": {
+			"titleStart": "Начните путь к результату с",
+			"titleHighlight": "NaviGate",
+			"subtitle": "Ваш целевой балл ближе, чем кажется. Присоединяйтесь к сообществу успешных студентов.",
+			"primary": "Записаться на бесплатный уровень",
+			"secondary": "Смотреть курсы"
+		},
+		"journeyForm": {
+			"title": "Начните глобальный путь",
+			"subtitle": "Запланируйте консультацию, чтобы оценить готовность к поступлению за рубеж.",
+			"benefits": {
+				"diagnostic": "Официальный диагностический пробник",
+				"portfolio": "Подбор целевых университетов",
+				"strategy": "Индивидуальная стратегия подготовки"
+			}
+		}
+	},
+	"about": {
+		"leadForm": {
+			"fields": {
+				"name": "ФИО",
+				"email": "Email",
+				"examInterest": "Целевой экзамен",
+				"currentLevel": "Уровень образования"
+			},
+			"placeholders": {
+				"name": "Александр Гамильтон",
+				"email": "alex@example.com"
+			},
+			"examOptions": {
+				"ielts": "Подготовка IELTS",
+				"sat": "Подготовка SAT",
+				"gmat": "Подготовка GMAT",
+				"general": "Общий английский"
+			},
+			"levelOptions": {
+				"highSchool": "Школьник",
+				"undergraduate": "Бакалавриат",
+				"postgraduate": "Магистратура/аспирантура"
+			},
+			"submit": "Отправить заявку",
+			"success": "Заявка успешно отправлена.",
+			"error": "Не удалось отправить заявку. Попробуйте ещё раз."
+		}
+	},
+	"contactPage": {
+		"hero": {
+			"titleStart": "Контакты:",
+			"titleHighlight": "поддержка по экзаменам",
+			"subtitle": "Есть вопросы по экзамену? Наша команда поддержки поможет вам уверенно двигаться к результату."
+		},
+		"sidebar": {
+			"phone": {
+				"title": "Телефон",
+				"description": "Пн–Пт с 9:00 до 18:00.",
+				"detail": "+44 20 7946 0123"
+			},
+			"telegram": {
+				"title": "Telegram",
+				"description": "Самый быстрый способ получить ответ.",
+				"detail": "@NaviGateSupport"
+			},
+			"address": {
+				"title": "Адрес",
+				"description": "Level 5, Education Plaza, London, UK",
+				"detail": "По предварительной записи"
+			},
+			"hours": {
+				"title": "Часы работы",
+				"description": "Пн–Пт: 09:00–20:00",
+				"detail": "Сб: 10:00–16:00"
+			}
+		},
+		"form": {
+			"title": "Написать сообщение"
+		},
+		"map": {
+			"title": "Интерактивная карта (будет позже)",
+			"labelTitle": "NaviGate Academy London",
+			"labelAddress": "Level 5, Education Plaza, London, EC2V 6AA"
+		},
+		"cta": {
+			"title": "Нужна срочная помощь?",
+			"subtitle": "Наши консультанты доступны в WhatsApp для быстрых ответов по курсам и расписанию.",
+			"primary": "Написать в WhatsApp",
+			"secondary": "Скачать брошюру"
+		}
+	},
+	"contact": {
+		"leadForm": {
+			"fields": {
+				"name": "ФИО",
+				"phone": "Номер телефона",
+				"examInterest": "Интересующий экзамен",
+				"preferredTime": "Удобное время звонка",
+				"message": "Сообщение (необязательно)"
+			},
+			"placeholders": {
+				"name": "Введите ваше имя",
+				"phone": "+1 (555) 000-0000",
+				"examInterest": "Выберите экзамен",
+				"message": "Как мы можем помочь?"
+			},
+			"examOptions": {
+				"ielts": "IELTS",
+				"sat": "SAT",
+				"gmat": "GMAT",
+				"general": "Общий английский"
+			},
+			"submit": "Отправить заявку",
+			"success": "Заявка успешно отправлена.",
+			"error": "Не удалось отправить заявку. Попробуйте ещё раз."
+		}
+	},
+	"leadCapture": {
+		"label": {
+			"fullName": "ФИО",
+			"phoneNumber": "Номер телефона",
+			"examInterest": "Интересующий экзамен",
+			"preferredTime": "Удобное время",
+			"email": "Email",
+			"message": "Сообщение",
+			"currentLevel": "Текущий уровень"
+		},
+		"placeholder": {
+			"fullName": "Введите ФИО",
+			"phoneNumber": "+1 (555) 000-0000",
+			"email": "name@example.com",
+			"currentLevel": "Выберите уровень",
+			"message": "Расскажите о своих целях"
+		},
+		"exam": {
+			"IELTS": "IELTS",
+			"SAT": "SAT",
+			"GMAT": "GMAT",
+			"GeneralEnglish": "Общий английский"
+		},
+		"level": {
+			"Beginner": "Beginner",
+			"Intermediate": "Intermediate",
+			"Advanced": "Advanced",
+			"HighSchool": "Школа",
+			"Undergraduate": "Бакалавриат",
+			"Postgraduate": "Магистратура/аспирантура"
+		},
+		"button": {
+			"submit": "Отправить заявку"
+		},
+		"toast": {
+			"success": "Заявка успешно отправлена.",
+			"error": "Не удалось отправить заявку. Попробуйте ещё раз."
+		}
+	}
 }

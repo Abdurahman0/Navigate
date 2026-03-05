@@ -1,961 +1,955 @@
 {
-  "navbar": {
-    "brand": "NaviGate Academy",
-    "cta": "Bepul daraja testi",
-    "links": {
-      "home": "Bosh sahifa",
-      "courses": "Kurslar",
-      "results": "Natijalar",
-      "teachers": "Ustozlar",
-      "about": "Biz haqimizda",
-      "contact": "Aloqa"
-    },
-    "languageLabel": "Tilni o�zgartirish",
-    "languages": {
-      "en": "English",
-      "ru": "�������",
-      "uz": "O�zbek"
-    }
-  },
-  "home": {
-    "hero": {
-      "badge": "Global imtihon mukammalligi",
-      "titleStart": "Tayyorlaning:",
-      "titleHighlight": "IELTS, SAT va GMAT",
-      "titleEnd": "NaviGate Academy bilan",
-      "subtitle": "Dunyodagi eng tan olingan xalqaro imtihonlarga tajribali mentorlar va aniq reja asosida puxta tayyorlaning.",
-      "primaryButton": "Bugun boshlang",
-      "secondaryButton": "Barcha kurslar"
-    },
-    "stats": {
-      "students": {
-        "value": "1200+",
-        "label": "Talaba"
-      },
-      "scores": {
-        "value": "200+",
-        "label": "Yuqori ball"
-      },
-      "coaches": {
-        "value": "Sertifikatlangan",
-        "label": "Murabbiylar"
-      },
-      "plans": {
-        "value": "Moslashuvchan",
-        "label": "Tayyorgarlik rejalari"
-      }
-    },
-    "programs": {
-      "title": "Asosiy dasturlarimiz",
-      "subtitle": "Keyingi katta maqsadingiz uchun zamonaviy tayyorgarlik dasturlari.",
-      "explore": "Barchasini ko'rish",
-      "enroll": "Ro'yxatdan o'tish",
-      "cards": {
-        "ielts": {
-          "badge": "IELTS Academic",
-          "title": "IELTS Academic",
-          "duration": "Davomiylik: 8-12 hafta",
-          "target": "Maqsad ball: 7.5+",
-          "price": "$349.00"
-        },
-        "sat": {
-          "badge": "SAT Prep",
-          "title": "SAT Prep",
-          "duration": "Davomiylik: 10 hafta",
-          "target": "Maqsad ball: 1500+",
-          "price": "$499.00"
-        },
-        "gmat": {
-          "badge": "GMAT Track",
-          "title": "GMAT Track",
-          "duration": "Davomiylik: 14 hafta",
-          "target": "Maqsad ball: 700+",
-          "price": "$599.00"
-        },
-        "general": {
-          "badge": "General English",
-          "title": "General English",
-          "duration": "Davomiylik: moslashuvchan",
-          "target": "Daraja: A1-C2",
-          "price": "$199.00"
-        }
-      }
-    },
-    "results": {
-      "title": "Isbotlangan ball o'sishi",
-      "subtitle": "O'quvchilarimiz erishgan real natijalar.",
-      "cards": {
-        "arjun": {
-          "name": "Arjun Mehta",
-          "exam": "IELTS Academic",
-          "before": "5.5",
-          "after": "7.5"
-        },
-        "daniel": {
-          "name": "Daniel Kim",
-          "exam": "SAT Prep",
-          "before": "1280",
-          "after": "1540"
-        },
-        "sofia": {
-          "name": "Sofia Rodriguez",
-          "exam": "GMAT Intensive",
-          "before": "610",
-          "after": "720"
-        }
-      }
-    },
-    "method": {
-      "title": "NaviGate Metodi",
-      "subtitle": "Tez o'sish uchun moslashtirilgan shaxsiy strategiyalar.",
-      "features": {
-        "diagnostic": {
-          "title": "Diagnostik kirish",
-          "description": "Hozirgi darajangiz va asosiy zaif tomonlaringizning batafsil tahlili."
-        },
-        "curriculum": {
-          "title": "Shaxsiy o'quv dasturi",
-          "description": "Darslar sizning imtihoningiz va maqsad ballingizga moslashtiriladi."
-        },
-        "simulation": {
-          "title": "Mock simulyatsiya",
-          "description": "Har haftalik imtihon sharoiti orqali ishonch va vaqt boshqaruvi kuchayadi."
-        },
-        "feedback": {
-          "title": "1 ga 1 fikr-mulohaza",
-          "description": "Writing va speaking bo'yicha ekspert tutorlardan bevosita coaching."
-        }
-      }
-    },
-    "faculty": {
-      "title": "Bizning Elite Ustozlar",
-      "subtitle": "Sobiq examinerlar va native-darajadagi mutaxassislardan o'rganing.",
-      "items": {
-        "helena": {
-          "name": "Dr. Helena Vance",
-          "role": "Senior IELTS Specialist",
-          "meta": "12+ yillik tajriba • Former Examiner"
-        },
-        "marcus": {
-          "name": "Marcus Sterling",
-          "role": "PTE Core Lead Tutor",
-          "meta": "8+ yillik tajriba • Applied Linguistics MA"
-        },
-        "emily": {
-          "name": "Emily Ross",
-          "role": "Speaking & Writing Coach",
-          "meta": "10+ yillik tajriba • CELTA Certified"
-        }
-      }
-    },
-    "testimonials": {
-      "title": "Talabalarimiz fikri",
-      "subtitle": "Haqiqiy tajriba. Haqiqiy ball o'sishi.",
-      "items": {
-        "james": {
-          "quote": "Writing bo'yicha feedback tizimi men uchun burilish nuqtasi bo'ldi. 4 haftada 6.0 dan 7.5 ga chiqdim.",
-          "name": "James Wilson",
-          "meta": "University of Melbourne talabasi"
-        },
-        "ananya": {
-          "quote": "NaviGate PTE baholash tizimini juda tushunarli qildi. Mock testlar haqiqiy imtihonga juda o'xshash edi.",
-          "name": "Ananya Roy",
-          "meta": "Kanadaga ko'chgan"
-        },
-        "ahmed": {
-          "quote": "Ustozlar juda sabrli. Ular faqat ingliz tilini emas, imtihon mantiqini ham o'rgatadi.",
-          "name": "Ahmed Al-Sayed",
-          "meta": "IELTS Academic nomzodi"
-        }
-      }
-    },
-    "lead": {
-      "title": "Balni oshirishga tayyormisiz?",
-      "subtitle": "Bosh mentor bilan bepul 20 daqiqalik konsultatsiyaga yoziling va shaxsiy yo'l xaritasini oling.",
-      "benefits": {
-        "diagnostic": "Shaxsiy diagnostika hisobot",
-        "guidance": "Maqsad universitet bo'yicha yo'l-yo'riq",
-        "plan": "Moslashtirilgan o'quv rejasi"
-      }
-    },
-    "leadForm": {
-      "fields": {
-        "name": "Ism",
-        "phone": "Telefon",
-        "examInterest": "Qiziqqan imtihon",
-        "preferredTime": "Qulay vaqt"
-      },
-      "placeholders": {
-        "name": "To'liq ism",
-        "phone": "+998 (00) 000-00-00"
-      },
-      "examOptions": {
-        "ielts": "IELTS Academic",
-        "sat": "SAT Prep",
-        "gmat": "GMAT Track",
-        "general": "General English"
-      },
-      "submit": "So'rov yuborish",
-      "success": "So'rovingiz muvaffaqiyatli yuborildi.",
-      "error": "Yuborishda xatolik. Qayta urinib ko'ring."
-    }
-  },
-  "coursesPage": {
-    "header": {
-      "title": "Akademik va Ingliz tili dasturlari",
-      "subtitle": "Global muvaffaqiyat uchun ishlab chiqilgan ingliz tili va xalqaro imtihon tayyorgarlik dasturlarini ko'rib chiqing."
-    },
-    "filters": {
-      "all": "Barcha dasturlar",
-      "ielts": "IELTS",
-      "sat": "SAT",
-      "gmat": "GMAT",
-      "general": "General English"
-    },
-    "labels": {
-      "open": "Qabul ochiq",
-      "premium": "Premium dastur"
-    },
-    "buttons": {
-      "enroll": "Ro'yxatdan o'tish"
-    },
-    "english": {
-      "title": "Ingliz tili dasturlari"
-    },
-    "exam": {
-      "title": "Xalqaro imtihon tayyorgarligi"
-    },
-    "courses": {
-      "ieltsAcademic": {
-        "badge": "IELTS Academic",
-        "title": "Complete Mastery: Academic",
-        "duration": "12 hafta intensiv",
-        "level": "Daraja: Intermediate",
-        "schedule": "Du, Ch, Ju (18:00 - 20:00)"
-      },
-      "generalFluency": {
-        "badge": "General English",
-        "title": "Foundations of Fluency",
-        "duration": "16 hafta",
-        "level": "Daraja: Beginner to Intermediate",
-        "schedule": "Se, Pa, Sha (10:00 - 12:00)"
-      },
-      "skillsFocus": {
-        "badge": "Skills Focus",
-        "title": "Native-Level Speaking",
-        "duration": "8 hafta fokus",
-        "level": "Daraja: Intermediate +",
-        "schedule": "Shanba (14:00 - 18:00)"
-      },
-      "satElite": {
-        "badge": "SAT Prep",
-        "title": "SAT Elite: Path to IVY League",
-        "description": "Reading, Writing va Math bo'yicha chuqurlashtirilgan strategiyalar. To'liq formatdagi raqamli mock imtihonlar va shaxsiy natija tahlili kiradi.",
-        "duration": "14 hafta",
-        "level": "Daraja: Advanced Academic",
-        "schedule": "Se, Pa (16:00 - 19:00)",
-        "groupSize": "Guruhda maksimum 10 talaba"
-      },
-      "gmatExecutive": {
-        "badge": "GMAT Focus",
-        "title": "GMAT Executive Preparation",
-        "description": "Top MBA qabul jarayonlari uchun Quantitative Reasoning, Data Insights va Verbal Reasoning bo'yicha to'liq qamrov.",
-        "duration": "12 hafta",
-        "level": "Daraja: Graduate Academic",
-        "schedule": "Du, Ch (19:00 - 21:30)",
-        "groupSize": "Yakuniy sertifikat beriladi"
-      }
-    },
-    "featureRow": {
-      "smallGroups": "Kichik guruhlar",
-      "mockExams": "Mock imtihonlar",
-      "feedback": "Shaxsiy fikr-mulohaza",
-      "speaking": "Speaking amaliyoti",
-      "tracking": "Progress kuzatuvi"
-    },
-    "success": {
-      "title": "So'nggi muvaffaqiyat hikoyalari",
-      "subtitle": "Orzu qilingan natijalarga erishgan bitiruvchilarimiz safiga qo'shiling.",
-      "link": "Natijalarni ko'rish",
-      "cards": {
-        "arjun": {
-          "name": "Arjun Mehta",
-          "program": "IELTS Academic",
-          "result": "5.5 → 7.5"
-        },
-        "liwei": {
-          "name": "Li Wei",
-          "program": "General English",
-          "result": "B1 → C1"
-        },
-        "sarah": {
-          "name": "Sarah Jenkins",
-          "program": "Corporate English",
-          "result": "Lavozim oshdi"
-        }
-      }
-    },
-    "cta": {
-      "title": "Qaysi kurs sizga mosligini bilmayapsizmi?",
-      "subtitle": "Hozirgi ingliz tili darajangiz bo'yicha professional baholash oling va bosh tutorlarimizdan shaxsiy tavsiyalarni qo'lga kiriting.",
-      "button": "Bepul daraja testi"
-    },
-    "lead": {
-      "title": "Qaysi imtihon sizga mosligini bilmayapsizmi?",
-      "subtitle": "Karyera yoki ta'lim maqsadlaringizga mos dastur tanlash uchun bepul strategik sessiyaga yoziling.",
-      "benefits": {
-        "diagnostic": "Diagnostik baholash kiritilgan",
-        "guidance": "Universitet yo'nalishi bo'yicha yo'l-yo'riq",
-        "plan": "Moslashtirilgan o'quv reja"
-      }
-    }
-  },
-  "courses": {
-    "leadForm": {
-      "fields": {
-        "name": "To'liq ism",
-        "phone": "Telefon raqam",
-        "examInterest": "Qiziqqan imtihon",
-        "currentLevel": "Joriy daraja (agar ma'lum bo'lsa)"
-      },
-      "placeholders": {
-        "name": "John Doe",
-        "phone": "+998 (90) 000-00-00",
-        "currentLevel": "Darajani tanlang"
-      },
-      "examOptions": {
-        "ielts": "IELTS Academic / General",
-        "sat": "SAT",
-        "gmat": "GMAT",
-        "general": "General English"
-      },
-      "levelOptions": {
-        "beginner": "Beginner",
-        "intermediate": "Intermediate",
-        "advanced": "Advanced"
-      },
-      "submit": "Dastur qo'llanmasini so'rash",
-      "success": "So'rovingiz muvaffaqiyatli yuborildi.",
-      "error": "Yuborishda xatolik. Qayta urinib ko'ring."
-    }
-  },
-  "resultsPage": {
-    "header": {
-      "badge": "Talaba yutuqlari",
-      "titleStart": "Muvaffaqiyat hikoyalari:",
-      "titleHighlight": "IELTS, SAT va GMAT",
-      "subtitle": "Talabalarimiz qanday qilib kuchli tayyorgarlik va mentorlik orqali akademik maqsadlariga erishganini ko'ring."
-    },
-    "stats": {
-      "ielts": {
-        "value": "200+",
-        "label": "IELTS 7+ natijalar"
-      },
-      "sat": {
-        "value": "50+",
-        "label": "SAT 1400+ natijalar"
-      },
-      "gmat": {
-        "value": "30+",
-        "label": "GMAT 700+ natijalar"
-      }
-    },
-    "cards": {
-      "scoreImprovementLabel": "Natija o'sishi",
-      "arjun": {
-        "name": "Arjun Mehta",
-        "category": "IELTS Academic",
-        "before": "5.5",
-        "after": "7.0",
-        "quote": "\"Writing bo'yicha shaxsiy feedback 8 haftada ikki band sakrashimga yordam berdi.\""
-      },
-      "sophia": {
-        "name": "Sophia Chen",
-        "category": "SAT Prep",
-        "before": "1180",
-        "after": "1450",
-        "quote": "\"NaviGate'ning matematika va reading strategiyalari Ivy League arizamda hal qiluvchi bo'ldi.\""
-      },
-      "ahmed": {
-        "name": "Ahmed Al-Sayed",
-        "category": "GMAT Focus",
-        "before": "520",
-        "after": "680",
-        "quote": "\"Verbal reasoning eng qiyin bo'lim edi, lekin ustozlar murakkab mantiqni juda sodda tushuntirdi.\""
-      },
-      "elena": {
-        "name": "Elena Rossi",
-        "category": "IELTS General",
-        "before": "6.0",
-        "after": "8.0",
-        "quote": "\"Migratsiya uchun yuqori ball kerak edi. NaviGate'dagi mock testlar real imtihondek bo'ldi.\""
-      },
-      "mark": {
-        "name": "Mark Jenkins",
-        "category": "SAT Prep",
-        "before": "1250",
-        "after": "1520",
-        "quote": "\"Ustozlar chin dildan yordam beradi. 1500+ natija imkonsizdek tuyulardi, lekin NaviGate bilan uddaladik.\""
-      },
-      "daniel": {
-        "name": "Daniel Kim",
-        "category": "GMAT Intensive",
-        "before": "610",
-        "after": "740",
-        "quote": "\"Quant bo'yicha strategiyalar hayotimni o'zgartirdi. Top MBA dasturiga to'liq grant oldim.\""
-      }
-    },
-    "voices": {
-      "title": "Muvaffaqiyat ovozlari",
-      "items": {
-        "james": {
-          "quote": "\"Diagnostik kirish testi juda foydali bo'ldi. Zaif joylarimni aniq topib, tezda tuzatdik.\"",
-          "name": "James Wilson",
-          "descriptor": "IELTS nomzodi"
-        },
-        "ananya": {
-          "quote": "\"Bir semestrda SAT balim 270 ga oshdi. O'qitish metodikasi haqiqatan ham juda kuchli.\"",
-          "name": "Ananya Roy",
-          "descriptor": "Harvard abiturienti"
-        },
-        "ahmed": {
-          "quote": "\"Bu yerda faqat ingliz tili emas, GMAT imtihon mantiqini ham o'rgatishadi. Juda tavsiya qilaman.\"",
-          "name": "Ahmed Al-Sayed",
-          "descriptor": "MBA nomzodi"
-        }
-      }
-    },
-    "lead": {
-      "title": "Balni oshirishga tayyormisiz?",
-      "subtitle": "Hozirgi darajangizni aniqlash va maqsadli natijaga yo'l xaritasi tuzish uchun bepul 20 daqiqalik konsultatsiyaga yoziling.",
-      "benefits": {
-        "diagnostic": "Bepul diagnostik hisobot",
-        "plan": "Shaxsiy o'quv reja",
-        "materials": "Bepul namunaviy materiallar"
-      }
-    }
-  },
-  "results": {
-    "leadForm": {
-      "fields": {
-        "name": "To'liq ism",
-        "phone": "Telefon raqam",
-        "examInterest": "Qiziqqan imtihon",
-        "preferredTime": "Qulay konsultatsiya vaqti"
-      },
-      "placeholders": {
-        "name": "John Doe",
-        "phone": "+998 (90) 000-00-00"
-      },
-      "examOptions": {
-        "ielts": "IELTS (Academic/General)",
-        "sat": "SAT",
-        "gmat": "GMAT",
-        "general": "General English"
-      },
-      "submit": "So'rov yuborish",
-      "success": "So'rovingiz muvaffaqiyatli yuborildi.",
-      "error": "Yuborishda xatolik. Qayta urinib ko'ring."
-    },
-    "hero": {
-      "badge": "Talaba yutuqlari",
-      "titlePrefix": "Muvaffaqiyat hikoyalari:",
-      "titleHighlight": "IELTS, SAT va GMAT",
-      "subtitle": "Talabalarimiz qanday qilib puxta tayyorgarlik va mentorlik orqali akademik maqsadlariga erishganini ko�ring. Haqiqiy orzular uchun haqiqiy natijalar."
-    }
-  },
-  "footer": {
-    "brand": "NaviGate Academy",
-    "brandDescription": "Talabalarni xalqaro imtihonlar uchun kuchli tayyorgarlik va shaxsiy yondashuv bilan qo'llab-quvvatlaymiz.",
-    "exams": {
-      "title": "Imtihonlar",
-      "ielts": "IELTS Academy",
-      "sat": "SAT Training",
-      "gmat": "GMAT Mastery",
-      "pte": "PTE va boshqalar"
-    },
-    "company": {
-      "title": "Kompaniya",
-      "about": "Biz haqimizda",
-      "success": "Muvaffaqiyat hikoyalari",
-      "careers": "Ustozlar uchun karyera",
-      "contact": "Aloqa"
-    },
-    "contact": {
-      "title": "Aloqa",
-      "address": "Level 5, Education Plaza, London, UK",
-      "phone": "+44 20 7946 0123",
-      "email": "info@navigate-academy.com"
-    }
-  },
-  "pages": {
-    "courses": {
-      "title": "Kurslar",
-      "description": "To'liq kurslar katalogi keyingi bosqichda qo'shiladi."
-    },
-    "results": {
-      "title": "Natijalar",
-      "description": "Bu yerda o'quvchilarimiz natijalari va ball o'sish dinamikasi beriladi."
-    },
-    "teachers": {
-      "title": "Ustozlar",
-      "description": "IELTS, SAT va GMAT bo'yicha sertifikatlangan murabbiylar bilan tanishing."
-    },
-    "about": {
-      "title": "Biz haqimizda",
-      "description": "NaviGate Academy talabalarni xalqaro qabul maqsadlariga yetaklaydi."
-    },
-    "contact": {
-      "title": "Aloqa",
-      "description": "Konsultatsiya, jadval va ro'yxatdan o'tish uchun biz bilan bog'laning."
-    }
-  },
-  "teachersPage": {
-    "header": {
-      "breadcrumbHome": "Bosh sahifa",
-      "breadcrumbCurrent": "Ustozlar",
-      "title": "Bizning ustozlar bilan tanishing",
-      "subtitle": "Dunyo darajasidagi pedagoglar va sobiq IELTS examinerlaridan global maqsadlaringiz uchun ta�lim oling."
-    },
-    "featured": {
-      "actions": {
-        "book": "Sessiyaga yozilish",
-        "profile": "To�liq profilni ko�rish"
-      },
-      "helena": {
-        "name": "Dr. Helena Vance",
-        "badge1": "IELTS mutaxassisi",
-        "badge2": "Sobiq examiner",
-        "meta": "12+ yillik tajriba � PhD Applied Linguistics",
-        "bio": "Dr. Vance 500 dan ortiq talabaga Band 8.0+ natijaga chiqishda yordam bergan. U psixologik yondashuv va imtihon strategiyasini birlashtiradi."
-      },
-      "marcus": {
-        "name": "Marcus Sterling",
-        "badge1": "SAT mentor",
-        "badge2": "Data-Driven Coach",
-        "meta": "8+ yillik tajriba � MA TESOL",
-        "bio": "Marcus SAT tayyorgarligini aniq tahlil va strategiya bilan olib boradi. Uning metodikasi talabalarni barqaror ravishda 1400+ ga olib chiqadi."
-      }
-    },
-    "team": {
-      "title": "Bizning metodik jamoa",
-      "subtitle": "Pedagogikaga ishtiyoqi baland, sertifikatlangan mutaxassislar.",
-      "items": {
-        "sarah": {
-          "name": "Sarah Johnson",
-          "role": "Speaking & Writing Coach",
-          "meta": "10+ yillik tajriba � CELTA Certified"
-        },
-        "daniel": {
-          "name": "Daniel Carter",
-          "role": "IELTS General mutaxassisi",
-          "meta": "7+ yillik tajriba � British Council Trained"
-        },
-        "elena": {
-          "name": "Elena Petrova",
-          "role": "Grammar & Syntax Lead",
-          "meta": "9+ yillik tajriba � DELTA Certified"
-        },
-        "sophia": {
-          "name": "Sophia Martinez",
-          "role": "Fluency Workshop Lead",
-          "meta": "8+ yillik tajriba � Linguistics Specialist"
-        }
-      }
-    },
-    "how": {
-      "title": "Biz qanday o�qitamiz",
-      "subtitle": "Yillar davomida sinovdan o�tgan, shaxsiylashtirilgan ta�lim yondashuvi.",
-      "items": {
-        "feedback": {
-          "title": "Shaxsiy feedback",
-          "description": "Har bir topshiriq bo�yicha batafsil tahlil va keyingi qadamlar."
-        },
-        "group": {
-          "title": "Kichik guruh formati",
-          "description": "Guruhda 8 tagacha talaba, kuchli nazorat va faol muloqot."
-        },
-        "adaptive": {
-          "title": "Moslashuvchan o�qitish",
-          "description": "Dars tempi va vazifalar haftalik natijangizga qarab moslashtiriladi."
-        },
-        "quality": {
-          "title": "Ekspert sifati",
-          "description": "Har bir ustoz taqdimot sifati va natija ko�rsatkichlari bo�yicha baholanadi."
-        }
-      }
-    },
-    "feedback": {
-      "title": "Talabalar fikri",
-      "subtitle": "Mentorlarimiz haqida real fikrlar.",
-      "items": {
-        "james": {
-          "quote": "Dr. Vance menga faqat til emas, examinercha fikrlashni o�rgatdi. Writing ballim 6.0 dan 7.5 ga chiqdi.",
-          "name": "James Wilson",
-          "descriptor": "IELTS Academic talaba"
-        },
-        "ananya": {
-          "quote": "Marcus juda puxta va sabrli ishlaydi. SAT ballimni 270 ga oshirdim va nihoyat ishonchim ortdi.",
-          "name": "Ananya Roy",
-          "descriptor": "PTE Priority Student"
-        },
-        "ahmed": {
-          "quote": "Sarah bilan speaking mashg�ulotlari o�zimga bo�lgan ishonchni keskin oshirdi. Amaliy drilllar juda foydali bo�ldi.",
-          "name": "Ahmed Al-Sayed",
-          "descriptor": "Speaking Intensive nomzodi"
-        }
-      }
-    },
-    "cta": {
-      "title": "Eng kuchli ingliz tili ustozlaridan o�rganing",
-      "subtitle": "Elite ustozlarimiz ishlab chiqqan shaxsiy o�quv rejasi bilan yo�lingizni bugun boshlang.",
-      "primary": "Bepul daraja testi",
-      "secondary": "Barcha kurslar"
-    },
-    "approach": {
-      "title": "Imtihonga mos maxsus yondashuvimiz",
-      "subtitle": "Dunyoning eng murakkab kirish imtihonlari uchun taktika va strategiyalar.",
-      "cards": {
-        "quant": {
-          "title": "Quant Mastery",
-          "description": "SAT va GMAT quant bo�limlari uchun formuladan tashqari mantiqiy yondashuv.",
-          "points": [
-            "SAT va GMAT Number Systems",
-            "Murakkab masala yechish taktikasi"
-          ]
-        },
-        "verbal": {
-          "title": "Verbal Reasoning",
-          "description": "Yuqori ball uchun reading, critical reasoning va vocab aniqligini rivojlantiramiz.",
-          "points": [
-            "Argument xaritasi",
-            "Kontekst bo�yicha chiqarib tashlash"
-          ]
-        },
-        "mock": {
-          "title": "Mock Simulation",
-          "description": "Real vaqt rejimida to�liq formatdagi amaliyot orqali bardoshlilik va tezkor qaror qabul qilish.",
-          "points": [
-            "Natija analitikasi",
-            "Time management mashqlari"
-          ]
-        }
-      }
-    },
-    "consult": {
-      "titleStart": "Mutaxassis bilan",
-      "titleHighlight": "konsultatsiya",
-      "subtitle": "Joriy darajangizni professional baholash va maqsadli ball uchun shaxsiy yo�l xaritasini oling.",
-      "benefits": {
-        "diagnostic": {
-          "title": "Diagnostik score report",
-          "description": "Zaif nuqtalarni darhol aniqlaymiz."
-        },
-        "roadmap": {
-          "title": "Maqsadli roadmap",
-          "description": "Maqsad natijaga olib boruvchi bosqichma-bosqich reja."
-        }
-      }
-    }
-  },
-  "teachers": {
-    "leadForm": {
-      "fields": {
-        "name": "To�liq ism",
-        "phone": "Telefon raqam",
-        "examInterest": "Imtihon yo�nalishi",
-        "preferredTime": "Qulay konsultatsiya vaqti"
-      },
-      "placeholders": {
-        "name": "John Doe",
-        "phone": "+998 (90) 000-00-00"
-      },
-      "examOptions": {
-        "ielts": "IELTS",
-        "sat": "SAT",
-        "gmat": "GMAT",
-        "general": "General English"
-      },
-      "submit": "Baholashga yozilish",
-      "success": "So�rovingiz muvaffaqiyatli yuborildi.",
-      "error": "Yuborishda xatolik. Qayta urinib ko�ring."
-    },
-    "hero": {
-      "badge": "Jahon darajasidagi ustozlar"
-    }
-  },
-  "aboutPage": {
-    "hero": {
-      "badge": "Kelajak liderlarini tayyorlaymiz",
-      "titleStart": "Haqida",
-      "titleHighlight": "NaviGate",
-      "titleEnd": "Academy",
-      "subtitle": "SAT, GMAT va IELTS bo'yicha ixtisoslashgan tayyorgarlik orqali dunyoning nufuzli universitetlariga yo'lingizni ochamiz."
-    },
-    "mission": {
-      "imageAlt": "NaviGate ustozi va mentori",
-      "title": "Bizning global missiyamiz",
-      "p1": "NaviGate Academy chegaralar salohiyatni to'xtatmasligi kerak degan g'oya asosida tashkil etilgan. Bugun u xalqaro maqsadga intilgan talabalar uchun kuchli markazga aylandi.",
-      "p2": "Dasturlarimiz SAT, GMAT va IELTS murakkabliklarini yengish uchun tuzilgan: strategik fikrlash, akademik ko'nikmalar va til aniqligi.",
-      "p3": "Kuchli metodika va shaxsiy mentorlik orqali minglab talabalarimiz Shimoliy Amerika, Yevropa va Osiyodagi top universitetlarga kirishga erishdi.",
-      "badge": {
-        "value": "10+",
-        "label": "Yillik akademik mukammallik"
-      }
-    },
-    "values": {
-      "title": "Asosiy qadriyatlarimiz",
-      "subtitle": "Muvaffaqiyatingizga bo'lgan yondashuvimizni belgilovchi tamoyillar.",
-      "items": {
-        "excellence": {
-          "title": "Akademik mukammallik",
-          "description": "Yuqori standartlar va puxta yondashuv har bir talabaning salohiyatini ochadi."
-        },
-        "results": {
-          "title": "Natijaga yo'naltirilganlik",
-          "description": "Biz uchun muvaffaqiyat bu sizning balingiz va real qabul natijalaringizdir."
-        },
-        "access": {
-          "title": "Global imkoniyatlar",
-          "description": "Strategik tayyorgarlik orqali xalqaro ta'limga kirish yo'lini ochamiz."
-        },
-        "guidance": {
-          "title": "Ekspert yo'l-yo'riq",
-          "description": "Tajribali ustozlar va qabul bo'yicha mutaxassislar butun jarayonda siz bilan bo'ladi."
-        }
-      }
-    },
-    "numbers": {
-      "title": "Raqamlardagi yutuqlarimiz",
-      "stats": {
-        "admission": {
-          "value": "95%",
-          "label": "Qabul muvaffaqiyati"
-        },
-        "partners": {
-          "value": "150+",
-          "label": "Hamkor universitetlar"
-        },
-        "gmat": {
-          "value": "740",
-          "label": "O'rtacha GMAT bali"
-        },
-        "sat": {
-          "value": "1500+",
-          "label": "O'rtacha SAT bali"
-        }
-      },
-      "cards": {
-        "global": {
-          "title": "Best Global Prep Center",
-          "description": "International Education Forum 2025 mukofoti"
-        },
-        "certified": {
-          "title": "Sertifikatlangan tutorlar",
-          "description": "Ustozlarning 100% yuqori akademik darajaga ega"
-        }
-      }
-    },
-    "environment": {
-      "title": "Bizning o'quv muhiti",
-      "subtitle": "Diqqat va natija uchun yaratilgan zamonaviy ta'lim maydonlarini ko'ring.",
-      "items": {
-        "mentor": {
-          "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Akademiya studiyasidagi katta mentor"
-        },
-        "classroom": {
-          "image": "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Zamonaviy sinfdagi instruktor"
-        },
-        "faculty": {
-          "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Akademiya ofisidagi ustoz portreti"
-        }
-      }
-    },
-    "why": {
-      "titleStart": "Nega",
-      "titleHighlight": "NaviGate Academy?",
-      "subtitle": "Biz akademik sifat va zamonaviy metodikani birlashtirib, maqsadli balingizga tezroq yetib borishingizga yordam beramiz.",
-      "promo": {
-        "title": "#1 tanlov",
-        "subtitle": "2026 yilda yuqori ball tayyorgarligi uchun"
-      },
-      "features": {
-        "ielts": {
-          "title": "Tuzilgan IELTS tayyorgarligi",
-          "description": "Listening, Reading, Writing va Speaking bo'yicha to'liq modullar."
-        },
-        "groups": {
-          "title": "Kichik guruhlar",
-          "description": "Klass hajmi cheklangan, shaxsiy yondashuv va kuchli nazorat."
-        },
-        "mocks": {
-          "title": "Haftalik mock testlar",
-          "description": "Progress va timingni yaxshilash uchun haftalik imtihon simulyatsiyasi."
-        },
-        "writing": {
-          "title": "Shaxsiy writing tahlili",
-          "description": "Essaylar bo'yicha batafsil fikr-mulohaza orqali struktura va aniqlikni oshiramiz."
-        },
-        "materials": {
-          "title": "Eksklyuziv materiallar",
-          "description": "Mualliflik qo'llanmalar va amaliy platformaga kirish."
-        }
-      }
-    },
-    "journeyCta": {
-      "titleStart": "Ingliz tilidagi yo'lingizni",
-      "titleHighlight": "NaviGate bilan boshlang",
-      "subtitle": "Maqsadli balingiz qo'lingizda. Natija ko'rsatgan talabalar jamoasiga qo'shiling.",
-      "primary": "Bepul daraja testi",
-      "secondary": "Barcha kurslar"
-    },
-    "journeyForm": {
-      "title": "Global yo'lingizni boshlang",
-      "subtitle": "Xalqaro qabulga tayyorgarlik holatingizni baholash uchun ixtisoslashgan konsultatsiyaga yoziling.",
-      "benefits": {
-        "diagnostic": "Rasmiy diagnostik mock test",
-        "portfolio": "Maqsad universitetlar portfeli",
-        "strategy": "Shaxsiy imtihon strategiyasi sessiyasi"
-      }
-    }
-  },
-  "about": {
-    "leadForm": {
-      "fields": {
-        "name": "To'liq ism",
-        "email": "Email manzil",
-        "examInterest": "Maqsad global imtihon",
-        "currentLevel": "Joriy ta'lim darajasi"
-      },
-      "placeholders": {
-        "name": "Alexander Hamilton",
-        "email": "alex@example.com"
-      },
-      "examOptions": {
-        "ielts": "IELTS tayyorgarlik",
-        "sat": "SAT tayyorgarlik",
-        "gmat": "GMAT tayyorgarlik",
-        "general": "General English"
-      },
-      "levelOptions": {
-        "highSchool": "Maktab o'quvchisi",
-        "undergraduate": "Bakalavr",
-        "postgraduate": "Magistratura/yuqori"
-      },
-      "submit": "So'rov yuborish",
-      "success": "So'rovingiz muvaffaqiyatli yuborildi.",
-      "error": "Yuborishda xatolik. Qayta urinib ko'ring."
-    }
-  },
-  "contactPage": {
-    "hero": {
-      "titleStart": "Bog�lanish",
-      "titleHighlight": "imtihon yordami",
-      "subtitle": "Yaqinlashayotgan imtihon bo�yicha savollaringiz bormi? Qo�llab-quvvatlash jamoamiz sizga yordam beradi."
-    },
-    "sidebar": {
-      "phone": {
-        "title": "Telefon yordami",
-        "description": "Du-Ju 09:00 dan 18:00 gacha.",
-        "detail": "+44 20 7946 0123"
-      },
-      "telegram": {
-        "title": "Telegram",
-        "description": "Tezkor savollar uchun eng tez javob.",
-        "detail": "@NaviGateSupport"
-      },
-      "address": {
-        "title": "Manzilimiz",
-        "description": "Level 5, Education Plaza, London, UK",
-        "detail": "Oldindan yozilish orqali tashrif"
-      },
-      "hours": {
-        "title": "Ish vaqti",
-        "description": "Du - Ju: 09:00 - 20:00",
-        "detail": "Sh: 10:00 - 16:00"
-      }
-    },
-    "form": {
-      "title": "Bizga xabar yuboring"
-    },
-    "map": {
-      "title": "Interaktiv xarita integratsiyasi",
-      "labelTitle": "NaviGate Academy London",
-      "labelAddress": "Level 5, Education Plaza, London, EC2V 6AA"
-    },
-    "cta": {
-      "title": "Zudlik bilan yordam kerakmi?",
-      "subtitle": "Maslahatchilarimiz WhatsApp orqali tezkor javob beradi va qabul jarayonida yordam ko�rsatadi.",
-      "primary": "WhatsAppda yozish",
-      "secondary": "Broshyurani yuklab olish"
-    }
-  },
-  "contact": {
-    "leadForm": {
-      "fields": {
-        "name": "To�liq ism",
-        "phone": "Telefon raqam",
-        "examInterest": "Qiziqqan imtihon",
-        "preferredTime": "Qayta qo�ng�iroq uchun qulay vaqt",
-        "message": "Xabar (ixtiyoriy)"
-      },
-      "placeholders": {
-        "name": "Ismingizni kiriting",
-        "phone": "+998 (90) 000-00-00",
-        "examInterest": "Imtihonni tanlang",
-        "message": "Sizga qanday yordam bera olamiz?"
-      },
-      "examOptions": {
-        "ielts": "IELTS",
-        "sat": "SAT",
-        "gmat": "GMAT",
-        "general": "General English"
-      },
-      "submit": "So�rov yuborish",
-      "success": "So�rovingiz muvaffaqiyatli yuborildi.",
-      "error": "Yuborishda xatolik. Qayta urinib ko�ring."
-    }
-  },
-  "leadCapture": {
-    "label": {
-      "fullName": "To'liq ism",
-      "phoneNumber": "Telefon raqam",
-      "examInterest": "Qiziqqan imtihon",
-      "preferredTime": "Qulay vaqt",
-      "email": "Email manzil",
-      "message": "Xabar",
-      "currentLevel": "Joriy daraja"
-    },
-    "placeholder": {
-      "fullName": "To'liq ismingizni kiriting",
-      "phoneNumber": "+998 (90) 000-00-00",
-      "email": "name@example.com",
-      "currentLevel": "Darajani tanlang",
-      "message": "Maqsadingiz haqida yozing"
-    },
-    "exam": {
-      "IELTS": "IELTS",
-      "SAT": "SAT",
-      "GMAT": "GMAT",
-      "GeneralEnglish": "General English"
-    },
-    "level": {
-      "Beginner": "Beginner",
-      "Intermediate": "Intermediate",
-      "Advanced": "Advanced",
-      "HighSchool": "Maktab o'quvchisi",
-      "Undergraduate": "Bakalavr",
-      "Postgraduate": "Magistratura/yuqori"
-    },
-    "button": {
-      "submit": "So'rov yuborish"
-    },
-    "toast": {
-      "success": "So'rovingiz muvaffaqiyatli yuborildi.",
-      "error": "Yuborishda xatolik. Qayta urinib ko'ring."
-    }
-  }
+	"navbar": {
+		"brand": "NaviGate Academy",
+		"cta": "Bepul daraja testi",
+		"links": {
+			"home": "Bosh sahifa",
+			"courses": "Kurslar",
+			"results": "Natijalar",
+			"teachers": "Ustozlar",
+			"about": "Biz haqimizda",
+			"contact": "Aloqa"
+		},
+		"languageLabel": "Tilni o�zgartirish",
+		"languages": {
+			"en": "English",
+			"ru": "Русский",
+			"uz": "O'zbek"
+		}
+	},
+	"home": {
+		"hero": {
+			"badge": "Global imtihon mukammalligi",
+			"titleStart": "Tayyorlaning:",
+			"titleHighlight": "IELTS, SAT va GMAT",
+			"titleEnd": "NaviGate Academy bilan",
+			"subtitle": "Dunyodagi eng tan olingan xalqaro imtihonlarga tajribali mentorlar va aniq reja asosida puxta tayyorlaning.",
+			"primaryButton": "Bugun boshlang",
+			"secondaryButton": "Barcha kurslar"
+		},
+		"stats": {
+			"students": {
+				"value": "1200+",
+				"label": "Talaba"
+			},
+			"scores": {
+				"value": "200+",
+				"label": "Yuqori ball"
+			},
+			"coaches": {
+				"value": "Sertifikatlangan",
+				"label": "Murabbiylar"
+			},
+			"plans": {
+				"value": "Moslashuvchan",
+				"label": "Tayyorgarlik rejalari"
+			}
+		},
+		"programs": {
+			"title": "Asosiy dasturlarimiz",
+			"subtitle": "Keyingi katta maqsadingiz uchun zamonaviy tayyorgarlik dasturlari.",
+			"explore": "Barchasini ko'rish",
+			"enroll": "Ro'yxatdan o'tish",
+			"cards": {
+				"ielts": {
+					"badge": "IELTS Academic",
+					"title": "IELTS Academic",
+					"duration": "Davomiylik: 8-12 hafta",
+					"target": "Maqsad ball: 7.5+",
+					"price": "$349.00"
+				},
+				"sat": {
+					"badge": "SAT Prep",
+					"title": "SAT Prep",
+					"duration": "Davomiylik: 10 hafta",
+					"target": "Maqsad ball: 1500+",
+					"price": "$499.00"
+				},
+				"gmat": {
+					"badge": "GMAT Track",
+					"title": "GMAT Track",
+					"duration": "Davomiylik: 14 hafta",
+					"target": "Maqsad ball: 700+",
+					"price": "$599.00"
+				},
+				"general": {
+					"badge": "General English",
+					"title": "General English",
+					"duration": "Davomiylik: moslashuvchan",
+					"target": "Daraja: A1-C2",
+					"price": "$199.00"
+				}
+			}
+		},
+		"results": {
+			"title": "Isbotlangan ball o'sishi",
+			"subtitle": "O'quvchilarimiz erishgan real natijalar.",
+			"cards": {
+				"arjun": {
+					"name": "Arjun Mehta",
+					"exam": "IELTS Academic",
+					"before": "5.5",
+					"after": "7.5"
+				},
+				"daniel": {
+					"name": "Daniel Kim",
+					"exam": "SAT Prep",
+					"before": "1280",
+					"after": "1540"
+				},
+				"sofia": {
+					"name": "Sofia Rodriguez",
+					"exam": "GMAT Intensive",
+					"before": "610",
+					"after": "720"
+				}
+			}
+		},
+		"method": {
+			"title": "NaviGate Metodi",
+			"subtitle": "Tez o'sish uchun moslashtirilgan shaxsiy strategiyalar.",
+			"features": {
+				"diagnostic": {
+					"title": "Diagnostik kirish",
+					"description": "Hozirgi darajangiz va asosiy zaif tomonlaringizning batafsil tahlili."
+				},
+				"curriculum": {
+					"title": "Shaxsiy o'quv dasturi",
+					"description": "Darslar sizning imtihoningiz va maqsad ballingizga moslashtiriladi."
+				},
+				"simulation": {
+					"title": "Mock simulyatsiya",
+					"description": "Har haftalik imtihon sharoiti orqali ishonch va vaqt boshqaruvi kuchayadi."
+				},
+				"feedback": {
+					"title": "1 ga 1 fikr-mulohaza",
+					"description": "Writing va speaking bo'yicha ekspert tutorlardan bevosita coaching."
+				}
+			}
+		},
+		"faculty": {
+			"title": "Bizning Elite Ustozlar",
+			"subtitle": "Sobiq examinerlar va native-darajadagi mutaxassislardan o'rganing.",
+			"items": {
+				"helena": {
+					"name": "Dr. Helena Vance",
+					"role": "Senior IELTS Specialist",
+					"meta": "12+ yillik tajriba • Former Examiner"
+				},
+				"marcus": {
+					"name": "Marcus Sterling",
+					"role": "PTE Core Lead Tutor",
+					"meta": "8+ yillik tajriba • Applied Linguistics MA"
+				},
+				"emily": {
+					"name": "Emily Ross",
+					"role": "Speaking & Writing Coach",
+					"meta": "10+ yillik tajriba • CELTA Certified"
+				}
+			}
+		},
+		"testimonials": {
+			"title": "Talabalarimiz fikri",
+			"subtitle": "Haqiqiy tajriba. Haqiqiy ball o'sishi.",
+			"items": {
+				"james": {
+					"quote": "Writing bo'yicha feedback tizimi men uchun burilish nuqtasi bo'ldi. 4 haftada 6.0 dan 7.5 ga chiqdim.",
+					"name": "James Wilson",
+					"meta": "University of Melbourne talabasi"
+				},
+				"ananya": {
+					"quote": "NaviGate PTE baholash tizimini juda tushunarli qildi. Mock testlar haqiqiy imtihonga juda o'xshash edi.",
+					"name": "Ananya Roy",
+					"meta": "Kanadaga ko'chgan"
+				},
+				"ahmed": {
+					"quote": "Ustozlar juda sabrli. Ular faqat ingliz tilini emas, imtihon mantiqini ham o'rgatadi.",
+					"name": "Ahmed Al-Sayed",
+					"meta": "IELTS Academic nomzodi"
+				}
+			}
+		},
+		"lead": {
+			"title": "Balni oshirishga tayyormisiz?",
+			"subtitle": "Bosh mentor bilan bepul 20 daqiqalik konsultatsiyaga yoziling va shaxsiy yo'l xaritasini oling.",
+			"benefits": {
+				"diagnostic": "Shaxsiy diagnostika hisobot",
+				"guidance": "Maqsad universitet bo'yicha yo'l-yo'riq",
+				"plan": "Moslashtirilgan o'quv rejasi"
+			}
+		},
+		"leadForm": {
+			"fields": {
+				"name": "Ism",
+				"phone": "Telefon",
+				"examInterest": "Qiziqqan imtihon",
+				"preferredTime": "Qulay vaqt"
+			},
+			"placeholders": {
+				"name": "To'liq ism",
+				"phone": "+998 (00) 000-00-00"
+			},
+			"examOptions": {
+				"ielts": "IELTS Academic",
+				"sat": "SAT Prep",
+				"gmat": "GMAT Track",
+				"general": "General English"
+			},
+			"submit": "So'rov yuborish",
+			"success": "So'rovingiz muvaffaqiyatli yuborildi.",
+			"error": "Yuborishda xatolik. Qayta urinib ko'ring."
+		}
+	},
+	"coursesPage": {
+		"header": {
+			"title": "Akademik va Ingliz tili dasturlari",
+			"subtitle": "Global muvaffaqiyat uchun ishlab chiqilgan ingliz tili va xalqaro imtihon tayyorgarlik dasturlarini ko'rib chiqing."
+		},
+		"filters": {
+			"all": "Barcha dasturlar",
+			"ielts": "IELTS",
+			"sat": "SAT",
+			"gmat": "GMAT",
+			"general": "General English"
+		},
+		"labels": {
+			"open": "Qabul ochiq",
+			"premium": "Premium dastur"
+		},
+		"buttons": {
+			"enroll": "Ro'yxatdan o'tish"
+		},
+		"english": {
+			"title": "Ingliz tili dasturlari"
+		},
+		"exam": {
+			"title": "Xalqaro imtihon tayyorgarligi"
+		},
+		"courses": {
+			"ieltsAcademic": {
+				"badge": "IELTS Academic",
+				"title": "Complete Mastery: Academic",
+				"duration": "12 hafta intensiv",
+				"level": "Daraja: Intermediate",
+				"schedule": "Du, Ch, Ju (18:00 - 20:00)"
+			},
+			"generalFluency": {
+				"badge": "General English",
+				"title": "Foundations of Fluency",
+				"duration": "16 hafta",
+				"level": "Daraja: Beginner to Intermediate",
+				"schedule": "Se, Pa, Sha (10:00 - 12:00)"
+			},
+			"skillsFocus": {
+				"badge": "Skills Focus",
+				"title": "Native-Level Speaking",
+				"duration": "8 hafta fokus",
+				"level": "Daraja: Intermediate +",
+				"schedule": "Shanba (14:00 - 18:00)"
+			},
+			"satElite": {
+				"badge": "SAT Prep",
+				"title": "SAT Elite: Path to IVY League",
+				"description": "Reading, Writing va Math bo'yicha chuqurlashtirilgan strategiyalar. To'liq formatdagi raqamli mock imtihonlar va shaxsiy natija tahlili kiradi.",
+				"duration": "14 hafta",
+				"level": "Daraja: Advanced Academic",
+				"schedule": "Se, Pa (16:00 - 19:00)",
+				"groupSize": "Guruhda maksimum 10 talaba"
+			},
+			"gmatExecutive": {
+				"badge": "GMAT Focus",
+				"title": "GMAT Executive Preparation",
+				"description": "Top MBA qabul jarayonlari uchun Quantitative Reasoning, Data Insights va Verbal Reasoning bo'yicha to'liq qamrov.",
+				"duration": "12 hafta",
+				"level": "Daraja: Graduate Academic",
+				"schedule": "Du, Ch (19:00 - 21:30)",
+				"groupSize": "Yakuniy sertifikat beriladi"
+			}
+		},
+		"featureRow": {
+			"smallGroups": "Kichik guruhlar",
+			"mockExams": "Mock imtihonlar",
+			"feedback": "Shaxsiy fikr-mulohaza",
+			"speaking": "Speaking amaliyoti",
+			"tracking": "Progress kuzatuvi"
+		},
+		"success": {
+			"title": "So'nggi muvaffaqiyat hikoyalari",
+			"subtitle": "Orzu qilingan natijalarga erishgan bitiruvchilarimiz safiga qo'shiling.",
+			"link": "Natijalarni ko'rish",
+			"cards": {
+				"arjun": {
+					"name": "Arjun Mehta",
+					"program": "IELTS Academic",
+					"result": "5.5 → 7.5"
+				},
+				"liwei": {
+					"name": "Li Wei",
+					"program": "General English",
+					"result": "B1 → C1"
+				},
+				"sarah": {
+					"name": "Sarah Jenkins",
+					"program": "Corporate English",
+					"result": "Lavozim oshdi"
+				}
+			}
+		},
+		"cta": {
+			"title": "Qaysi kurs sizga mosligini bilmayapsizmi?",
+			"subtitle": "Hozirgi ingliz tili darajangiz bo'yicha professional baholash oling va bosh tutorlarimizdan shaxsiy tavsiyalarni qo'lga kiriting.",
+			"button": "Bepul daraja testi"
+		},
+		"lead": {
+			"title": "Qaysi imtihon sizga mosligini bilmayapsizmi?",
+			"subtitle": "Karyera yoki ta'lim maqsadlaringizga mos dastur tanlash uchun bepul strategik sessiyaga yoziling.",
+			"benefits": {
+				"diagnostic": "Diagnostik baholash kiritilgan",
+				"guidance": "Universitet yo'nalishi bo'yicha yo'l-yo'riq",
+				"plan": "Moslashtirilgan o'quv reja"
+			}
+		}
+	},
+	"courses": {
+		"leadForm": {
+			"fields": {
+				"name": "To'liq ism",
+				"phone": "Telefon raqam",
+				"examInterest": "Qiziqqan imtihon",
+				"currentLevel": "Joriy daraja (agar ma'lum bo'lsa)"
+			},
+			"placeholders": {
+				"name": "John Doe",
+				"phone": "+998 (90) 000-00-00",
+				"currentLevel": "Darajani tanlang"
+			},
+			"examOptions": {
+				"ielts": "IELTS Academic / General",
+				"sat": "SAT",
+				"gmat": "GMAT",
+				"general": "General English"
+			},
+			"levelOptions": {
+				"beginner": "Beginner",
+				"intermediate": "Intermediate",
+				"advanced": "Advanced"
+			},
+			"submit": "Dastur qo'llanmasini so'rash",
+			"success": "So'rovingiz muvaffaqiyatli yuborildi.",
+			"error": "Yuborishda xatolik. Qayta urinib ko'ring."
+		}
+	},
+	"resultsPage": {
+		"header": {
+			"badge": "Talaba yutuqlari",
+			"titleStart": "Muvaffaqiyat hikoyalari:",
+			"titleHighlight": "IELTS, SAT va GMAT",
+			"subtitle": "Talabalarimiz qanday qilib kuchli tayyorgarlik va mentorlik orqali akademik maqsadlariga erishganini ko'ring."
+		},
+		"stats": {
+			"ielts": {
+				"value": "200+",
+				"label": "IELTS 7+ natijalar"
+			},
+			"sat": {
+				"value": "50+",
+				"label": "SAT 1400+ natijalar"
+			},
+			"gmat": {
+				"value": "30+",
+				"label": "GMAT 700+ natijalar"
+			}
+		},
+		"cards": {
+			"scoreImprovementLabel": "Natija o'sishi",
+			"arjun": {
+				"name": "Arjun Mehta",
+				"category": "IELTS Academic",
+				"before": "5.5",
+				"after": "7.0",
+				"quote": "\"Writing bo'yicha shaxsiy feedback 8 haftada ikki band sakrashimga yordam berdi.\""
+			},
+			"sophia": {
+				"name": "Sophia Chen",
+				"category": "SAT Prep",
+				"before": "1180",
+				"after": "1450",
+				"quote": "\"NaviGate'ning matematika va reading strategiyalari Ivy League arizamda hal qiluvchi bo'ldi.\""
+			},
+			"ahmed": {
+				"name": "Ahmed Al-Sayed",
+				"category": "GMAT Focus",
+				"before": "520",
+				"after": "680",
+				"quote": "\"Verbal reasoning eng qiyin bo'lim edi, lekin ustozlar murakkab mantiqni juda sodda tushuntirdi.\""
+			},
+			"elena": {
+				"name": "Elena Rossi",
+				"category": "IELTS General",
+				"before": "6.0",
+				"after": "8.0",
+				"quote": "\"Migratsiya uchun yuqori ball kerak edi. NaviGate'dagi mock testlar real imtihondek bo'ldi.\""
+			},
+			"mark": {
+				"name": "Mark Jenkins",
+				"category": "SAT Prep",
+				"before": "1250",
+				"after": "1520",
+				"quote": "\"Ustozlar chin dildan yordam beradi. 1500+ natija imkonsizdek tuyulardi, lekin NaviGate bilan uddaladik.\""
+			},
+			"daniel": {
+				"name": "Daniel Kim",
+				"category": "GMAT Intensive",
+				"before": "610",
+				"after": "740",
+				"quote": "\"Quant bo'yicha strategiyalar hayotimni o'zgartirdi. Top MBA dasturiga to'liq grant oldim.\""
+			}
+		},
+		"voices": {
+			"title": "Muvaffaqiyat ovozlari",
+			"items": {
+				"james": {
+					"quote": "\"Diagnostik kirish testi juda foydali bo'ldi. Zaif joylarimni aniq topib, tezda tuzatdik.\"",
+					"name": "James Wilson",
+					"descriptor": "IELTS nomzodi"
+				},
+				"ananya": {
+					"quote": "\"Bir semestrda SAT balim 270 ga oshdi. O'qitish metodikasi haqiqatan ham juda kuchli.\"",
+					"name": "Ananya Roy",
+					"descriptor": "Harvard abiturienti"
+				},
+				"ahmed": {
+					"quote": "\"Bu yerda faqat ingliz tili emas, GMAT imtihon mantiqini ham o'rgatishadi. Juda tavsiya qilaman.\"",
+					"name": "Ahmed Al-Sayed",
+					"descriptor": "MBA nomzodi"
+				}
+			}
+		},
+		"lead": {
+			"title": "Balni oshirishga tayyormisiz?",
+			"subtitle": "Hozirgi darajangizni aniqlash va maqsadli natijaga yo'l xaritasi tuzish uchun bepul 20 daqiqalik konsultatsiyaga yoziling.",
+			"benefits": {
+				"diagnostic": "Bepul diagnostik hisobot",
+				"plan": "Shaxsiy o'quv reja",
+				"materials": "Bepul namunaviy materiallar"
+			}
+		}
+	},
+	"results": {
+		"leadForm": {
+			"fields": {
+				"name": "To'liq ism",
+				"phone": "Telefon raqam",
+				"examInterest": "Qiziqqan imtihon",
+				"preferredTime": "Qulay konsultatsiya vaqti"
+			},
+			"placeholders": {
+				"name": "John Doe",
+				"phone": "+998 (90) 000-00-00"
+			},
+			"examOptions": {
+				"ielts": "IELTS (Academic/General)",
+				"sat": "SAT",
+				"gmat": "GMAT",
+				"general": "General English"
+			},
+			"submit": "So'rov yuborish",
+			"success": "So'rovingiz muvaffaqiyatli yuborildi.",
+			"error": "Yuborishda xatolik. Qayta urinib ko'ring."
+		},
+		"hero": {
+			"badge": "Talaba yutuqlari",
+			"titlePrefix": "Muvaffaqiyat hikoyalari:",
+			"titleHighlight": "IELTS, SAT va GMAT",
+			"subtitle": "Talabalarimiz qanday qilib puxta tayyorgarlik va mentorlik orqali akademik maqsadlariga erishganini ko�ring. Haqiqiy orzular uchun haqiqiy natijalar."
+		}
+	},
+	"footer": {
+		"brand": "NaviGate Academy",
+		"brandDescription": "Talabalarni xalqaro imtihonlar uchun kuchli tayyorgarlik va shaxsiy yondashuv bilan qo'llab-quvvatlaymiz.",
+		"exams": {
+			"title": "Imtihonlar",
+			"ielts": "IELTS Academy",
+			"sat": "SAT Training",
+			"gmat": "GMAT Mastery",
+			"pte": "PTE va boshqalar"
+		},
+		"company": {
+			"title": "Kompaniya",
+			"about": "Biz haqimizda",
+			"success": "Muvaffaqiyat hikoyalari",
+			"careers": "Ustozlar uchun karyera",
+			"contact": "Aloqa"
+		},
+		"contact": {
+			"title": "Aloqa",
+			"address": "Level 5, Education Plaza, London, UK",
+			"phone": "+44 20 7946 0123",
+			"email": "info@navigate-academy.com"
+		}
+	},
+	"pages": {
+		"courses": {
+			"title": "Kurslar",
+			"description": "To'liq kurslar katalogi keyingi bosqichda qo'shiladi."
+		},
+		"results": {
+			"title": "Natijalar",
+			"description": "Bu yerda o'quvchilarimiz natijalari va ball o'sish dinamikasi beriladi."
+		},
+		"teachers": {
+			"title": "Ustozlar",
+			"description": "IELTS, SAT va GMAT bo'yicha sertifikatlangan murabbiylar bilan tanishing."
+		},
+		"about": {
+			"title": "Biz haqimizda",
+			"description": "NaviGate Academy talabalarni xalqaro qabul maqsadlariga yetaklaydi."
+		},
+		"contact": {
+			"title": "Aloqa",
+			"description": "Konsultatsiya, jadval va ro'yxatdan o'tish uchun biz bilan bog'laning."
+		}
+	},
+	"teachersPage": {
+		"header": {
+			"breadcrumbHome": "Bosh sahifa",
+			"breadcrumbCurrent": "Ustozlar",
+			"title": "Bizning ustozlar bilan tanishing",
+			"subtitle": "Dunyo darajasidagi pedagoglar va sobiq IELTS examinerlaridan global maqsadlaringiz uchun ta�lim oling."
+		},
+		"featured": {
+			"actions": {
+				"book": "Sessiyaga yozilish",
+				"profile": "To�liq profilni ko�rish"
+			},
+			"helena": {
+				"name": "Dr. Helena Vance",
+				"badge1": "IELTS mutaxassisi",
+				"badge2": "Sobiq examiner",
+				"meta": "12+ yillik tajriba � PhD Applied Linguistics",
+				"bio": "Dr. Vance 500 dan ortiq talabaga Band 8.0+ natijaga chiqishda yordam bergan. U psixologik yondashuv va imtihon strategiyasini birlashtiradi."
+			},
+			"marcus": {
+				"name": "Marcus Sterling",
+				"badge1": "SAT mentor",
+				"badge2": "Data-Driven Coach",
+				"meta": "8+ yillik tajriba � MA TESOL",
+				"bio": "Marcus SAT tayyorgarligini aniq tahlil va strategiya bilan olib boradi. Uning metodikasi talabalarni barqaror ravishda 1400+ ga olib chiqadi."
+			}
+		},
+		"team": {
+			"title": "Bizning metodik jamoa",
+			"subtitle": "Pedagogikaga ishtiyoqi baland, sertifikatlangan mutaxassislar.",
+			"items": {
+				"sarah": {
+					"name": "Sarah Johnson",
+					"role": "Speaking & Writing Coach",
+					"meta": "10+ yillik tajriba � CELTA Certified"
+				},
+				"daniel": {
+					"name": "Daniel Carter",
+					"role": "IELTS General mutaxassisi",
+					"meta": "7+ yillik tajriba � British Council Trained"
+				},
+				"elena": {
+					"name": "Elena Petrova",
+					"role": "Grammar & Syntax Lead",
+					"meta": "9+ yillik tajriba � DELTA Certified"
+				},
+				"sophia": {
+					"name": "Sophia Martinez",
+					"role": "Fluency Workshop Lead",
+					"meta": "8+ yillik tajriba � Linguistics Specialist"
+				}
+			}
+		},
+		"how": {
+			"title": "Biz qanday o�qitamiz",
+			"subtitle": "Yillar davomida sinovdan o�tgan, shaxsiylashtirilgan ta�lim yondashuvi.",
+			"items": {
+				"feedback": {
+					"title": "Shaxsiy feedback",
+					"description": "Har bir topshiriq bo�yicha batafsil tahlil va keyingi qadamlar."
+				},
+				"group": {
+					"title": "Kichik guruh formati",
+					"description": "Guruhda 8 tagacha talaba, kuchli nazorat va faol muloqot."
+				},
+				"adaptive": {
+					"title": "Moslashuvchan o�qitish",
+					"description": "Dars tempi va vazifalar haftalik natijangizga qarab moslashtiriladi."
+				},
+				"quality": {
+					"title": "Ekspert sifati",
+					"description": "Har bir ustoz taqdimot sifati va natija ko�rsatkichlari bo�yicha baholanadi."
+				}
+			}
+		},
+		"feedback": {
+			"title": "Talabalar fikri",
+			"subtitle": "Mentorlarimiz haqida real fikrlar.",
+			"items": {
+				"james": {
+					"quote": "Dr. Vance menga faqat til emas, examinercha fikrlashni o�rgatdi. Writing ballim 6.0 dan 7.5 ga chiqdi.",
+					"name": "James Wilson",
+					"descriptor": "IELTS Academic talaba"
+				},
+				"ananya": {
+					"quote": "Marcus juda puxta va sabrli ishlaydi. SAT ballimni 270 ga oshirdim va nihoyat ishonchim ortdi.",
+					"name": "Ananya Roy",
+					"descriptor": "PTE Priority Student"
+				},
+				"ahmed": {
+					"quote": "Sarah bilan speaking mashg�ulotlari o�zimga bo�lgan ishonchni keskin oshirdi. Amaliy drilllar juda foydali bo�ldi.",
+					"name": "Ahmed Al-Sayed",
+					"descriptor": "Speaking Intensive nomzodi"
+				}
+			}
+		},
+		"cta": {
+			"title": "Eng kuchli ingliz tili ustozlaridan o�rganing",
+			"subtitle": "Elite ustozlarimiz ishlab chiqqan shaxsiy o�quv rejasi bilan yo�lingizni bugun boshlang.",
+			"primary": "Bepul daraja testi",
+			"secondary": "Barcha kurslar"
+		},
+		"approach": {
+			"title": "Imtihonga mos maxsus yondashuvimiz",
+			"subtitle": "Dunyoning eng murakkab kirish imtihonlari uchun taktika va strategiyalar.",
+			"cards": {
+				"quant": {
+					"title": "Quant Mastery",
+					"description": "SAT va GMAT quant bo�limlari uchun formuladan tashqari mantiqiy yondashuv.",
+					"points": [
+						"SAT va GMAT Number Systems",
+						"Murakkab masala yechish taktikasi"
+					]
+				},
+				"verbal": {
+					"title": "Verbal Reasoning",
+					"description": "Yuqori ball uchun reading, critical reasoning va vocab aniqligini rivojlantiramiz.",
+					"points": ["Argument xaritasi", "Kontekst bo�yicha chiqarib tashlash"]
+				},
+				"mock": {
+					"title": "Mock Simulation",
+					"description": "Real vaqt rejimida to�liq formatdagi amaliyot orqali bardoshlilik va tezkor qaror qabul qilish.",
+					"points": ["Natija analitikasi", "Time management mashqlari"]
+				}
+			}
+		},
+		"consult": {
+			"titleStart": "Mutaxassis bilan",
+			"titleHighlight": "konsultatsiya",
+			"subtitle": "Joriy darajangizni professional baholash va maqsadli ball uchun shaxsiy yo�l xaritasini oling.",
+			"benefits": {
+				"diagnostic": {
+					"title": "Diagnostik score report",
+					"description": "Zaif nuqtalarni darhol aniqlaymiz."
+				},
+				"roadmap": {
+					"title": "Maqsadli roadmap",
+					"description": "Maqsad natijaga olib boruvchi bosqichma-bosqich reja."
+				}
+			}
+		}
+	},
+	"teachers": {
+		"leadForm": {
+			"fields": {
+				"name": "To�liq ism",
+				"phone": "Telefon raqam",
+				"examInterest": "Imtihon yo�nalishi",
+				"preferredTime": "Qulay konsultatsiya vaqti"
+			},
+			"placeholders": {
+				"name": "John Doe",
+				"phone": "+998 (90) 000-00-00"
+			},
+			"examOptions": {
+				"ielts": "IELTS",
+				"sat": "SAT",
+				"gmat": "GMAT",
+				"general": "General English"
+			},
+			"submit": "Baholashga yozilish",
+			"success": "So�rovingiz muvaffaqiyatli yuborildi.",
+			"error": "Yuborishda xatolik. Qayta urinib ko�ring."
+		},
+		"hero": {
+			"badge": "Jahon darajasidagi ustozlar"
+		}
+	},
+	"aboutPage": {
+		"hero": {
+			"badge": "Kelajak liderlarini tayyorlaymiz",
+			"titleStart": "Haqida",
+			"titleHighlight": "NaviGate",
+			"titleEnd": "Academy",
+			"subtitle": "SAT, GMAT va IELTS bo'yicha ixtisoslashgan tayyorgarlik orqali dunyoning nufuzli universitetlariga yo'lingizni ochamiz."
+		},
+		"mission": {
+			"imageAlt": "NaviGate ustozi va mentori",
+			"title": "Bizning global missiyamiz",
+			"p1": "NaviGate Academy chegaralar salohiyatni to'xtatmasligi kerak degan g'oya asosida tashkil etilgan. Bugun u xalqaro maqsadga intilgan talabalar uchun kuchli markazga aylandi.",
+			"p2": "Dasturlarimiz SAT, GMAT va IELTS murakkabliklarini yengish uchun tuzilgan: strategik fikrlash, akademik ko'nikmalar va til aniqligi.",
+			"p3": "Kuchli metodika va shaxsiy mentorlik orqali minglab talabalarimiz Shimoliy Amerika, Yevropa va Osiyodagi top universitetlarga kirishga erishdi.",
+			"badge": {
+				"value": "10+",
+				"label": "Yillik akademik mukammallik"
+			}
+		},
+		"values": {
+			"title": "Asosiy qadriyatlarimiz",
+			"subtitle": "Muvaffaqiyatingizga bo'lgan yondashuvimizni belgilovchi tamoyillar.",
+			"items": {
+				"excellence": {
+					"title": "Akademik mukammallik",
+					"description": "Yuqori standartlar va puxta yondashuv har bir talabaning salohiyatini ochadi."
+				},
+				"results": {
+					"title": "Natijaga yo'naltirilganlik",
+					"description": "Biz uchun muvaffaqiyat bu sizning balingiz va real qabul natijalaringizdir."
+				},
+				"access": {
+					"title": "Global imkoniyatlar",
+					"description": "Strategik tayyorgarlik orqali xalqaro ta'limga kirish yo'lini ochamiz."
+				},
+				"guidance": {
+					"title": "Ekspert yo'l-yo'riq",
+					"description": "Tajribali ustozlar va qabul bo'yicha mutaxassislar butun jarayonda siz bilan bo'ladi."
+				}
+			}
+		},
+		"numbers": {
+			"title": "Raqamlardagi yutuqlarimiz",
+			"stats": {
+				"admission": {
+					"value": "95%",
+					"label": "Qabul muvaffaqiyati"
+				},
+				"partners": {
+					"value": "150+",
+					"label": "Hamkor universitetlar"
+				},
+				"gmat": {
+					"value": "740",
+					"label": "O'rtacha GMAT bali"
+				},
+				"sat": {
+					"value": "1500+",
+					"label": "O'rtacha SAT bali"
+				}
+			},
+			"cards": {
+				"global": {
+					"title": "Best Global Prep Center",
+					"description": "International Education Forum 2025 mukofoti"
+				},
+				"certified": {
+					"title": "Sertifikatlangan tutorlar",
+					"description": "Ustozlarning 100% yuqori akademik darajaga ega"
+				}
+			}
+		},
+		"environment": {
+			"title": "Bizning o'quv muhiti",
+			"subtitle": "Diqqat va natija uchun yaratilgan zamonaviy ta'lim maydonlarini ko'ring.",
+			"items": {
+				"mentor": {
+					"image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=80",
+					"alt": "Akademiya studiyasidagi katta mentor"
+				},
+				"classroom": {
+					"image": "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80",
+					"alt": "Zamonaviy sinfdagi instruktor"
+				},
+				"faculty": {
+					"image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80",
+					"alt": "Akademiya ofisidagi ustoz portreti"
+				}
+			}
+		},
+		"why": {
+			"titleStart": "Nega",
+			"titleHighlight": "NaviGate Academy?",
+			"subtitle": "Biz akademik sifat va zamonaviy metodikani birlashtirib, maqsadli balingizga tezroq yetib borishingizga yordam beramiz.",
+			"promo": {
+				"title": "#1 tanlov",
+				"subtitle": "2026 yilda yuqori ball tayyorgarligi uchun"
+			},
+			"features": {
+				"ielts": {
+					"title": "Tuzilgan IELTS tayyorgarligi",
+					"description": "Listening, Reading, Writing va Speaking bo'yicha to'liq modullar."
+				},
+				"groups": {
+					"title": "Kichik guruhlar",
+					"description": "Klass hajmi cheklangan, shaxsiy yondashuv va kuchli nazorat."
+				},
+				"mocks": {
+					"title": "Haftalik mock testlar",
+					"description": "Progress va timingni yaxshilash uchun haftalik imtihon simulyatsiyasi."
+				},
+				"writing": {
+					"title": "Shaxsiy writing tahlili",
+					"description": "Essaylar bo'yicha batafsil fikr-mulohaza orqali struktura va aniqlikni oshiramiz."
+				},
+				"materials": {
+					"title": "Eksklyuziv materiallar",
+					"description": "Mualliflik qo'llanmalar va amaliy platformaga kirish."
+				}
+			}
+		},
+		"journeyCta": {
+			"titleStart": "Ingliz tilidagi yo'lingizni",
+			"titleHighlight": "NaviGate bilan boshlang",
+			"subtitle": "Maqsadli balingiz qo'lingizda. Natija ko'rsatgan talabalar jamoasiga qo'shiling.",
+			"primary": "Bepul daraja testi",
+			"secondary": "Barcha kurslar"
+		},
+		"journeyForm": {
+			"title": "Global yo'lingizni boshlang",
+			"subtitle": "Xalqaro qabulga tayyorgarlik holatingizni baholash uchun ixtisoslashgan konsultatsiyaga yoziling.",
+			"benefits": {
+				"diagnostic": "Rasmiy diagnostik mock test",
+				"portfolio": "Maqsad universitetlar portfeli",
+				"strategy": "Shaxsiy imtihon strategiyasi sessiyasi"
+			}
+		}
+	},
+	"about": {
+		"leadForm": {
+			"fields": {
+				"name": "To'liq ism",
+				"email": "Email manzil",
+				"examInterest": "Maqsad global imtihon",
+				"currentLevel": "Joriy ta'lim darajasi"
+			},
+			"placeholders": {
+				"name": "Alexander Hamilton",
+				"email": "alex@example.com"
+			},
+			"examOptions": {
+				"ielts": "IELTS tayyorgarlik",
+				"sat": "SAT tayyorgarlik",
+				"gmat": "GMAT tayyorgarlik",
+				"general": "General English"
+			},
+			"levelOptions": {
+				"highSchool": "Maktab o'quvchisi",
+				"undergraduate": "Bakalavr",
+				"postgraduate": "Magistratura/yuqori"
+			},
+			"submit": "So'rov yuborish",
+			"success": "So'rovingiz muvaffaqiyatli yuborildi.",
+			"error": "Yuborishda xatolik. Qayta urinib ko'ring."
+		}
+	},
+	"contactPage": {
+		"hero": {
+			"titleStart": "Bog�lanish",
+			"titleHighlight": "imtihon yordami",
+			"subtitle": "Yaqinlashayotgan imtihon bo�yicha savollaringiz bormi? Qo�llab-quvvatlash jamoamiz sizga yordam beradi."
+		},
+		"sidebar": {
+			"phone": {
+				"title": "Telefon yordami",
+				"description": "Du-Ju 09:00 dan 18:00 gacha.",
+				"detail": "+44 20 7946 0123"
+			},
+			"telegram": {
+				"title": "Telegram",
+				"description": "Tezkor savollar uchun eng tez javob.",
+				"detail": "@NaviGateSupport"
+			},
+			"address": {
+				"title": "Manzilimiz",
+				"description": "Level 5, Education Plaza, London, UK",
+				"detail": "Oldindan yozilish orqali tashrif"
+			},
+			"hours": {
+				"title": "Ish vaqti",
+				"description": "Du - Ju: 09:00 - 20:00",
+				"detail": "Sh: 10:00 - 16:00"
+			}
+		},
+		"form": {
+			"title": "Bizga xabar yuboring"
+		},
+		"map": {
+			"title": "Interaktiv xarita integratsiyasi",
+			"labelTitle": "NaviGate Academy London",
+			"labelAddress": "Level 5, Education Plaza, London, EC2V 6AA"
+		},
+		"cta": {
+			"title": "Zudlik bilan yordam kerakmi?",
+			"subtitle": "Maslahatchilarimiz WhatsApp orqali tezkor javob beradi va qabul jarayonida yordam ko�rsatadi.",
+			"primary": "WhatsAppda yozish",
+			"secondary": "Broshyurani yuklab olish"
+		}
+	},
+	"contact": {
+		"leadForm": {
+			"fields": {
+				"name": "To�liq ism",
+				"phone": "Telefon raqam",
+				"examInterest": "Qiziqqan imtihon",
+				"preferredTime": "Qayta qo�ng�iroq uchun qulay vaqt",
+				"message": "Xabar (ixtiyoriy)"
+			},
+			"placeholders": {
+				"name": "Ismingizni kiriting",
+				"phone": "+998 (90) 000-00-00",
+				"examInterest": "Imtihonni tanlang",
+				"message": "Sizga qanday yordam bera olamiz?"
+			},
+			"examOptions": {
+				"ielts": "IELTS",
+				"sat": "SAT",
+				"gmat": "GMAT",
+				"general": "General English"
+			},
+			"submit": "So�rov yuborish",
+			"success": "So�rovingiz muvaffaqiyatli yuborildi.",
+			"error": "Yuborishda xatolik. Qayta urinib ko�ring."
+		}
+	},
+	"leadCapture": {
+		"label": {
+			"fullName": "To'liq ism",
+			"phoneNumber": "Telefon raqam",
+			"examInterest": "Qiziqqan imtihon",
+			"preferredTime": "Qulay vaqt",
+			"email": "Email manzil",
+			"message": "Xabar",
+			"currentLevel": "Joriy daraja"
+		},
+		"placeholder": {
+			"fullName": "To'liq ismingizni kiriting",
+			"phoneNumber": "+998 (90) 000-00-00",
+			"email": "name@example.com",
+			"currentLevel": "Darajani tanlang",
+			"message": "Maqsadingiz haqida yozing"
+		},
+		"exam": {
+			"IELTS": "IELTS",
+			"SAT": "SAT",
+			"GMAT": "GMAT",
+			"GeneralEnglish": "General English"
+		},
+		"level": {
+			"Beginner": "Beginner",
+			"Intermediate": "Intermediate",
+			"Advanced": "Advanced",
+			"HighSchool": "Maktab o'quvchisi",
+			"Undergraduate": "Bakalavr",
+			"Postgraduate": "Magistratura/yuqori"
+		},
+		"button": {
+			"submit": "So'rov yuborish"
+		},
+		"toast": {
+			"success": "So'rovingiz muvaffaqiyatli yuborildi.",
+			"error": "Yuborishda xatolik. Qayta urinib ko'ring."
+		}
+	}
 }
