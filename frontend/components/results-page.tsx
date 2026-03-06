@@ -27,60 +27,6 @@ type TestimonialView = {
   image: string;
 };
 
-const fallbackResults: ResultView[] = [
-  {
-    id: "arjun",
-    name: "Arjun Mehta",
-    category: "IELTS Academic",
-    before: "5.5",
-    after: "7.0",
-    quote: "The personalized feedback on writing tasks made all the difference.",
-    image: "https://randomuser.me/api/portraits/men/11.jpg",
-  },
-  {
-    id: "sophia",
-    name: "Sophia Chen",
-    category: "SAT Prep",
-    before: "1180",
-    after: "1450",
-    quote: "The SAT strategy sessions were practical and highly effective.",
-    image: "https://randomuser.me/api/portraits/women/22.jpg",
-  },
-  {
-    id: "ahmed",
-    name: "Ahmed Al-Sayed",
-    category: "GMAT Focus",
-    before: "520",
-    after: "680",
-    quote: "Complex verbal reasoning became clear after focused coaching.",
-    image: "https://randomuser.me/api/portraits/men/33.jpg",
-  },
-];
-
-const fallbackTestimonials: TestimonialView[] = [
-  {
-    id: "james",
-    name: "James Wilson",
-    quote: "The diagnostic entry test showed exactly what I needed to improve.",
-    descriptor: "IELTS Candidate",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    id: "ananya",
-    name: "Ananya Roy",
-    quote: "I improved my SAT score by 270 points in one term.",
-    descriptor: "SAT Candidate",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    id: "ahmed-testimonial",
-    name: "Ahmed Al-Sayed",
-    quote: "Instructors taught real exam logic, not just theory.",
-    descriptor: "GMAT Candidate",
-    image: "https://randomuser.me/api/portraits/men/74.jpg",
-  },
-];
-
 const leadBenefits = ["diagnostic", "plan", "materials"] as const;
 
 function mapResult(item: PublicResult, locale: LocaleCode): ResultView {
@@ -122,8 +68,8 @@ export function ResultsPage() {
   const tHero = useTranslations("results.hero");
   const locale = useLocale() as LocaleCode;
 
-  const [results, setResults] = useState<ResultView[]>(fallbackResults);
-  const [testimonials, setTestimonials] = useState<TestimonialView[]>(fallbackTestimonials);
+  const [results, setResults] = useState<ResultView[]>([]);
+  const [testimonials, setTestimonials] = useState<TestimonialView[]>([]);
 
   useEffect(() => {
     let active = true;
@@ -133,13 +79,8 @@ export function ResultsPage() {
 
       if (!active) return;
 
-      if (apiResults.length > 0) {
-        setResults(apiResults.map((item) => mapResult(item, locale)).slice(0, 6));
-      }
-
-      if (apiTestimonials.length > 0) {
-        setTestimonials(apiTestimonials.map((item) => mapTestimonial(item, locale)).slice(0, 3));
-      }
+      setResults(apiResults.map((item) => mapResult(item, locale)).slice(0, 6));
+      setTestimonials(apiTestimonials.map((item) => mapTestimonial(item, locale)).slice(0, 3));
     })();
 
     return () => {

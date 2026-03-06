@@ -14,7 +14,7 @@ import {
   FaUsers,
 } from "react-icons/fa";
 import { FiCheckCircle } from "react-icons/fi";
-import { getPublicCourses, type LocaleCode, type PublicCourse, pickLocalized } from "@/lib/api";
+import { getPublicCourses, getPublicResults, type LocaleCode, type PublicCourse, type PublicResult, pickLocalized } from "@/lib/api";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -37,76 +37,14 @@ type CourseView = {
   status: string;
 };
 
-const fallbackCourses: CourseView[] = [
-  {
-    id: "ielts-academic",
-    category: "ielts",
-    group: "english",
-    title: "IELTS Academic Mastery",
-    description: "Comprehensive IELTS preparation focused on high-band success.",
-    duration: "12 Weeks",
-    level: "Intermediate",
-    schedule: "Mon, Wed, Fri (18:00 - 20:00)",
-    price: "$299.00",
-    premium: false,
-    status: "Enrollment Open",
-  },
-  {
-    id: "general-english",
-    category: "general",
-    group: "english",
-    title: "Foundations of Fluency",
-    description: "Build speaking and grammar confidence for daily communication.",
-    duration: "16 Weeks",
-    level: "Beginner to Intermediate",
-    schedule: "Tue, Thu, Sat (10:00 - 12:00)",
-    price: "$180.00",
-    premium: false,
-    status: "Enrollment Open",
-  },
-  {
-    id: "skills-focus",
-    category: "general",
-    group: "english",
-    title: "Native-Level Speaking",
-    description: "Intensive speaking track with personalized pronunciation coaching.",
-    duration: "8 Weeks",
-    level: "Intermediate+",
-    schedule: "Saturdays (14:00 - 18:00)",
-    price: "$150.00",
-    premium: false,
-    status: "Enrollment Open",
-  },
-  {
-    id: "sat-elite",
-    category: "sat",
-    group: "exam",
-    title: "SAT Elite: Path to IVY League",
-    description: "Advanced SAT strategy with full-length digital mocks and analytics.",
-    duration: "14 Weeks",
-    level: "Advanced",
-    schedule: "Tue, Thu (16:00 - 19:00)",
-    price: "$850.00",
-    premium: true,
-    status: "Enrollment Open",
-  },
-  {
-    id: "gmat-executive",
-    category: "gmat",
-    group: "exam",
-    title: "GMAT Executive Preparation",
-    description: "Quant + verbal intensive program for top-tier MBA admissions.",
-    duration: "12 Weeks",
-    level: "Graduate",
-    schedule: "Mon, Wed (19:00 - 21:30)",
-    price: "$1,200.00",
-    premium: true,
-    status: "Enrollment Open",
-  },
-];
+type SuccessCardView = {
+  id: string;
+  name: string;
+  program: string;
+  result: string;
+};
 
 const filterOrder: Category[] = ["all", "ielts", "sat", "gmat", "general"];
-const successKeys = ["arjun", "liwei", "sarah"] as const;
 const featureKeys = ["smallGroups", "mockExams", "feedback", "speaking", "tracking"] as const;
 const leadBenefits = ["diagnostic", "guidance", "plan"] as const;
 const featureIcons = [FaUsers, FaCalendarAlt, FaCommentDots, FaMicrophone, FaChartLine];
@@ -148,19 +86,30 @@ function toCourseView(item: PublicCourse, locale: LocaleCode): CourseView {
   };
 }
 
+function toSuccessCardView(item: PublicResult): SuccessCardView {
+  return {
+    id: item.id,
+    name: item.studentName,
+    program: item.examType,
+    result: `${item.beforeScore} -> ${item.afterScore}`,
+  };
+}
+
 export function CoursesPage() {
   const t = useTranslations("coursesPage");
   const locale = useLocale() as LocaleCode;
   const [activeFilter, setActiveFilter] = useState<Category>("all");
-  const [courses, setCourses] = useState<CourseView[]>(fallbackCourses);
+  const [courses, setCourses] = useState<CourseView[]>([]);
+  const [successCards, setSuccessCards] = useState<SuccessCardView[]>([]);
 
   useEffect(() => {
     let active = true;
 
     void (async () => {
-      const apiCourses = await getPublicCourses();
-      if (!active || apiCourses.length === 0) return;
+      const [apiCourses, apiResults] = await Promise.all([getPublicCourses(), getPublicResults()]);
+      if (!active) return;
       setCourses(apiCourses.map((item) => toCourseView(item, locale)));
+      setSuccessCards(apiResults.slice(0, 3).map(toSuccessCardView));
     })();
 
     return () => {
@@ -318,12 +267,12 @@ export function CoursesPage() {
             </Button>
           </div>
           <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {successKeys.map((key) => (
-              <Card key={key} className="bg-card/70">
+            {successCards.map((item) => (
+              <Card key={item.id} className="bg-card/70">
                 <CardContent className="p-5">
-                  <p className="font-semibold">{t(`success.cards.${key}.name`)}</p>
-                  <p className="text-xs uppercase tracking-wide text-muted-foreground">{t(`success.cards.${key}.program`)}</p>
-                  <p className="mt-2 text-lg font-bold text-primary">{t(`success.cards.${key}.result`)}</p>
+                  <p className="font-semibold">{item.name}</p>
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground">{item.program}</p>
+                  <p className="mt-2 text-lg font-bold text-primary">{item.result}</p>
                 </CardContent>
               </Card>
             ))}

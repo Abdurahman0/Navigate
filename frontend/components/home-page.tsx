@@ -72,67 +72,6 @@ type TestimonialView = {
   image: string;
 };
 
-const fallbackPrograms: ProgramView[] = [
-  { id: "p1", badge: "IELTS", title: "IELTS Academic Mastery", duration: "12 Weeks", target: "Band 7+", price: "$349" },
-  { id: "p2", badge: "SAT", title: "SAT College Board Prep", duration: "10 Weeks", target: "1500+", price: "$499" },
-  { id: "p3", badge: "GMAT", title: "GMAT MBA Focus Track", duration: "14 Weeks", target: "700+", price: "$599" },
-  { id: "p4", badge: "General", title: "General English Fluency", duration: "Monthly Flex", target: "A1-C2", price: "$199" },
-];
-
-const fallbackResults: ResultView[] = [
-  { id: "r1", name: "Arjun Mehta", exam: "IELTS Academic", before: "5.5", after: "7.5" },
-  { id: "r2", name: "Daniel Kim", exam: "SAT Prep", before: "1280", after: "1540" },
-  { id: "r3", name: "Sofia Rodriguez", exam: "GMAT Intensive", before: "610", after: "720" },
-];
-
-const fallbackFaculty: FacultyView[] = [
-  {
-    id: "f1",
-    name: "Dr. Helena Vance",
-    role: "IELTS Specialist",
-    meta: "12+ Years Experience",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    id: "f2",
-    name: "Marcus Sterling",
-    role: "SAT Coach",
-    meta: "8+ Years Experience",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    id: "f3",
-    name: "Emily Ross",
-    role: "GMAT Coach",
-    meta: "10+ Years Experience",
-    image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=900&q=80",
-  },
-];
-
-const fallbackTestimonials: TestimonialView[] = [
-  {
-    id: "t1",
-    quote: "The feedback system improved my score in just weeks.",
-    name: "James Wilson",
-    meta: "IELTS Candidate",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    id: "t2",
-    quote: "The mock tests were exactly like the real exam.",
-    name: "Ananya Roy",
-    meta: "SAT Candidate",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    id: "t3",
-    quote: "They taught exam logic, not just grammar.",
-    name: "Ahmed Al-Sayed",
-    meta: "GMAT Candidate",
-    image: "https://randomuser.me/api/portraits/men/74.jpg",
-  },
-];
-
 function mapProgram(item: PublicCourse, locale: LocaleCode): ProgramView {
   const badge = item.category.toUpperCase();
   return {
@@ -187,10 +126,10 @@ export function HomePage() {
   const t = useTranslations("home");
   const locale = useLocale() as LocaleCode;
 
-  const [programs, setPrograms] = useState<ProgramView[]>(fallbackPrograms);
-  const [results, setResults] = useState<ResultView[]>(fallbackResults);
-  const [faculty, setFaculty] = useState<FacultyView[]>(fallbackFaculty);
-  const [testimonials, setTestimonials] = useState<TestimonialView[]>(fallbackTestimonials);
+  const [programs, setPrograms] = useState<ProgramView[]>([]);
+  const [results, setResults] = useState<ResultView[]>([]);
+  const [faculty, setFaculty] = useState<FacultyView[]>([]);
+  const [testimonials, setTestimonials] = useState<TestimonialView[]>([]);
 
   const stats = ["students", "scores", "coaches", "plans"] as const;
   const benefits = ["diagnostic", "guidance", "plan"] as const;
@@ -209,21 +148,10 @@ export function HomePage() {
 
       if (!active) return;
 
-      if (courseItems.length > 0) {
-        setPrograms(courseItems.slice(0, 4).map((item) => mapProgram(item, locale)));
-      }
-
-      if (resultItems.length > 0) {
-        setResults(resultItems.slice(0, 3).map(mapResult));
-      }
-
-      if (teacherItems.length > 0) {
-        setFaculty(teacherItems.slice(0, 3).map((item) => mapFaculty(item, locale)));
-      }
-
-      if (testimonialItems.length > 0) {
-        setTestimonials(testimonialItems.slice(0, 3).map((item) => mapTestimonial(item, locale)));
-      }
+      setPrograms(courseItems.slice(0, 4).map((item) => mapProgram(item, locale)));
+      setResults(resultItems.slice(0, 3).map(mapResult));
+      setFaculty(teacherItems.slice(0, 3).map((item) => mapFaculty(item, locale)));
+      setTestimonials(testimonialItems.slice(0, 3).map((item) => mapTestimonial(item, locale)));
     })();
 
     return () => {
@@ -231,10 +159,7 @@ export function HomePage() {
     };
   }, [locale]);
 
-  const paddedPrograms = useMemo(() => {
-    if (programs.length >= 4) return programs.slice(0, 4);
-    return [...programs, ...fallbackPrograms].slice(0, 4);
-  }, [programs]);
+  const topPrograms = useMemo(() => programs.slice(0, 4), [programs]);
 
   return (
     <main className="bg-background text-foreground">
@@ -288,7 +213,7 @@ export function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {paddedPrograms.map((program, index) => {
+            {topPrograms.map((program, index) => {
               const Icon = programIcons[index] || FiAward;
               return (
                 <Card key={program.id} className="group bg-card hover:-translate-y-1">

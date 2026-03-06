@@ -41,87 +41,6 @@ type FeedbackView = {
   image: string;
 };
 
-const fallbackTeachers: TeacherView[] = [
-  {
-    id: "helena",
-    name: "Dr. Helena Vance",
-    role: "IELTS Specialist",
-    bio: "Former examiner focused on high-band writing and speaking outcomes.",
-    experience: "12+ years",
-    specialization: "IELTS",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    id: "marcus",
-    name: "Marcus Sterling",
-    role: "SAT Math Coach",
-    bio: "Specialist in SAT strategy and high-score quantitative reasoning.",
-    experience: "8+ years",
-    specialization: "SAT",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    id: "sarah",
-    name: "Sarah Johnson",
-    role: "Speaking & Writing Coach",
-    bio: "Focused on speaking fluency and writing structure.",
-    experience: "6+ years",
-    specialization: "IELTS",
-    image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    id: "daniel",
-    name: "Daniel Carter",
-    role: "IELTS General Specialist",
-    bio: "Exam-oriented training for practical communication performance.",
-    experience: "7+ years",
-    specialization: "IELTS",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    id: "elena",
-    name: "Elena Petrov",
-    role: "Grammar & Syntax Lead",
-    bio: "Builds strong grammar foundations for exam confidence.",
-    experience: "9+ years",
-    specialization: "General English",
-    image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    id: "sophia",
-    name: "Sophia Martinez",
-    role: "Fluency Workshop Lead",
-    bio: "Improves speaking speed, clarity, and confidence.",
-    experience: "5+ years",
-    specialization: "General English",
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80",
-  },
-];
-
-const fallbackFeedback: FeedbackView[] = [
-  {
-    id: "james",
-    name: "James Wilson",
-    quote: "Focused mentor feedback accelerated my IELTS progress.",
-    descriptor: "IELTS Candidate",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    id: "ananya",
-    name: "Ananya Roy",
-    quote: "SAT strategy sessions improved my confidence and score.",
-    descriptor: "SAT Candidate",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    id: "ahmed",
-    name: "Ahmed Al-Sayed",
-    quote: "GMAT coaching helped me solve quant problems faster.",
-    descriptor: "GMAT Candidate",
-    image: "https://randomuser.me/api/portraits/men/74.jpg",
-  },
-];
-
 const teachFeatures = ["feedback", "group", "adaptive", "quality"] as const;
 const approachCards = ["quant", "verbal", "mock"] as const;
 const consultBenefits = ["diagnostic", "roadmap"] as const;
@@ -155,8 +74,8 @@ export function TeachersPage() {
   const tHero = useTranslations("teachers.hero");
   const locale = useLocale() as LocaleCode;
 
-  const [teachers, setTeachers] = useState<TeacherView[]>(fallbackTeachers);
-  const [feedback, setFeedback] = useState<FeedbackView[]>(fallbackFeedback);
+  const [teachers, setTeachers] = useState<TeacherView[]>([]);
+  const [feedback, setFeedback] = useState<FeedbackView[]>([]);
 
   useEffect(() => {
     let active = true;
@@ -165,13 +84,8 @@ export function TeachersPage() {
       const [teacherItems, testimonialItems] = await Promise.all([getPublicTeachers(), getPublicTestimonials()]);
       if (!active) return;
 
-      if (teacherItems.length > 0) {
-        setTeachers(teacherItems.map((item) => mapTeacher(item, locale)));
-      }
-
-      if (testimonialItems.length > 0) {
-        setFeedback(testimonialItems.map((item) => mapFeedback(item, locale)).slice(0, 3));
-      }
+      setTeachers(teacherItems.map((item) => mapTeacher(item, locale)));
+      setFeedback(testimonialItems.map((item) => mapFeedback(item, locale)).slice(0, 3));
     })();
 
     return () => {
