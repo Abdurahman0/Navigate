@@ -1,5 +1,6 @@
 import type { Request, Response } from "express";
 import { leadSchema } from "../../../shared/lead.schema";
+import { addLead } from "../repositories/admin.repository";
 import { sendLeadToTelegram } from "../services/telegram.service";
 
 export async function createLead(req: Request, res: Response) {
@@ -14,9 +15,16 @@ export async function createLead(req: Request, res: Response) {
 
   const lead = parsed.data;
 
-  // TODO: Persist lead to DB when driver is integrated.
-  await sendLeadToTelegram(lead);
+  const normalizedLead = {
+    ...lead,
+    preferredTime: lead.preferredTime ?? null,
+    message: lead.message ?? null,
+    currentLevel: lead.currentLevel ?? null,
+    email: lead.email ?? null,
+  };
+
+  await addLead(normalizedLead);
+  await sendLeadToTelegram(normalizedLead);
 
   return res.json({ ok: true });
 }
-

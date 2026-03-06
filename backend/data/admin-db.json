@@ -1,0 +1,18 @@
+﻿{
+  "leads": [],
+  "courses": [],
+  "teachers": [],
+  "results": [],
+  "testimonials": [],
+  "settings": {
+    "phone": "+44 20 7946 0123",
+    "email": "info@navigate-academy.com",
+    "telegram": "@NaviGateSupport",
+    "address": "Level 5, Education Plaza, London, UK",
+    "workingHours": "Mon-Fri 09:00-20:00",
+    "whatsappLink": "https://wa.me/442079460123",
+    "brochureLink": "https://example.com/brochure.pdf",
+    "seoTitle": "NaviGate Academy",
+    "seoDescription": "Global exam preparation for IELTS, SAT, GMAT."
+  }
+}

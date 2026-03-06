@@ -1,6 +1,10 @@
+﻿"use client";
+
 import Link from "next/link";
+import { useEffect, useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { FaFacebookF, FaInstagram, FaTelegramPlane } from "react-icons/fa";
+import { getPublicSettings, pickLocalized, type LocaleCode, type PublicSiteSettings } from "@/lib/api";
 
 function localePath(locale: string, slug = "") {
   return `/${locale}${slug}`;
@@ -8,7 +12,33 @@ function localePath(locale: string, slug = "") {
 
 export function Footer() {
   const t = useTranslations("footer");
-  const locale = useLocale();
+  const locale = useLocale() as LocaleCode;
+  const [settings, setSettings] = useState<PublicSiteSettings | null>(null);
+
+  useEffect(() => {
+    let active = true;
+
+    void (async () => {
+      const data = await getPublicSettings();
+      if (active && data) setSettings(data);
+    })();
+
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  const address = useMemo(() => {
+    if (!settings) return t("contact.address");
+    return pickLocalized(locale, {
+      en: settings.addressEn,
+      ru: settings.addressRu,
+      uz: settings.addressUz,
+    });
+  }, [locale, settings, t]);
+
+  const phone = settings?.phone || t("contact.phone");
+  const email = settings?.email || t("contact.email");
 
   return (
     <footer className="border-t border-border/60 bg-muted/20">
@@ -64,12 +94,12 @@ export function Footer() {
 
           <div className="space-y-3">
             <p className="font-semibold">{t("contact.title")}</p>
-            <p className="text-sm text-muted-foreground">{t("contact.address")}</p>
-            <Link href="tel:+442079460123" className="block text-sm text-muted-foreground hover:text-foreground">
-              {t("contact.phone")}
+            <p className="text-sm text-muted-foreground">{address}</p>
+            <Link href={`tel:${phone.replace(/\s+/g, "")}`} className="block text-sm text-muted-foreground hover:text-foreground">
+              {phone}
             </Link>
-            <Link href="mailto:info@navigate-academy.com" className="block text-sm text-muted-foreground hover:text-foreground">
-              {t("contact.email")}
+            <Link href={`mailto:${email}`} className="block text-sm text-muted-foreground hover:text-foreground">
+              {email}
             </Link>
           </div>
         </div>
@@ -77,3 +107,4 @@ export function Footer() {
     </footer>
   );
 }
+

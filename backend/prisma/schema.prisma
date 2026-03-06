@@ -1,0 +1,130 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum AdminRole {
+  ADMIN
+}
+
+enum LeadStatus {
+  New
+  Contacted
+  Enrolled
+  Rejected
+}
+
+model AdminUser {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  passwordHash String
+  role         AdminRole @default(ADMIN)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+}
+
+model Lead {
+  id            String     @id @default(cuid())
+  fullName      String
+  phoneNumber   String
+  examInterest  String
+  preferredTime String?
+  email         String?
+  message       String?
+  currentLevel  String?
+  source        String
+  locale        String
+  pagePath      String
+  status        LeadStatus @default(New)
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+}
+
+model Course {
+  id            String   @id @default(cuid())
+  slug          String   @unique
+  category      String
+  titleEn       String
+  titleRu       String
+  titleUz       String
+  descriptionEn String
+  descriptionRu String
+  descriptionUz String
+  duration      String
+  level         String
+  schedule      String
+  price         String
+  status        String
+  imageUrl      String?
+  isPublished   Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Teacher {
+  id             String   @id @default(cuid())
+  name           String
+  roleEn         String
+  roleRu         String
+  roleUz         String
+  bioEn          String
+  bioRu          String
+  bioUz          String
+  imageUrl       String
+  experience     String
+  specialization String
+  isPublished    Boolean  @default(true)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model Result {
+  id          String   @id @default(cuid())
+  studentName String
+  examType    String
+  beforeScore String
+  afterScore  String
+  quoteEn     String
+  quoteRu     String
+  quoteUz     String
+  imageUrl    String?
+  isPublished Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Testimonial {
+  id           String   @id @default(cuid())
+  name         String
+  quoteEn      String
+  quoteRu      String
+  quoteUz      String
+  descriptorEn String
+  descriptorRu String
+  descriptorUz String
+  imageUrl     String?
+  isPublished  Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model SiteSetting {
+  id             String   @id @default(cuid())
+  phone          String
+  email          String
+  telegram       String
+  whatsapp       String
+  brochureUrl    String
+  addressEn      String
+  addressRu      String
+  addressUz      String
+  workingHoursEn String
+  workingHoursRu String
+  workingHoursUz String
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}

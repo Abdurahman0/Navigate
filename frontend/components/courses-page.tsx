@@ -1,7 +1,7 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import {
   FaArrowRight,
@@ -11,9 +11,10 @@ import {
   FaCommentDots,
   FaMicrophone,
   FaSignal,
-  FaUsers
+  FaUsers,
 } from "react-icons/fa";
 import { FiCheckCircle } from "react-icons/fi";
+import { getPublicCourses, type LocaleCode, type PublicCourse, pickLocalized } from "@/lib/api";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -22,21 +23,86 @@ import { LeadCaptureForm } from "./lead-capture-form";
 type Category = "all" | "ielts" | "sat" | "gmat" | "general";
 type Group = "english" | "exam";
 
-type Course = {
+type CourseView = {
   id: string;
   category: Exclude<Category, "all">;
   group: Group;
+  title: string;
+  description: string;
+  duration: string;
+  level: string;
+  schedule: string;
   price: string;
-  status: "open";
-  premium?: boolean;
+  premium: boolean;
+  status: string;
 };
 
-const courses: Course[] = [
-  { id: "ieltsAcademic", category: "ielts", group: "english", price: "$299.00", status: "open" },
-  { id: "generalFluency", category: "general", group: "english", price: "$180.00", status: "open" },
-  { id: "skillsFocus", category: "general", group: "english", price: "$150.00", status: "open" },
-  { id: "satElite", category: "sat", group: "exam", price: "$850.00", status: "open", premium: true },
-  { id: "gmatExecutive", category: "gmat", group: "exam", price: "$1,200.00", status: "open", premium: true }
+const fallbackCourses: CourseView[] = [
+  {
+    id: "ielts-academic",
+    category: "ielts",
+    group: "english",
+    title: "IELTS Academic Mastery",
+    description: "Comprehensive IELTS preparation focused on high-band success.",
+    duration: "12 Weeks",
+    level: "Intermediate",
+    schedule: "Mon, Wed, Fri (18:00 - 20:00)",
+    price: "$299.00",
+    premium: false,
+    status: "Enrollment Open",
+  },
+  {
+    id: "general-english",
+    category: "general",
+    group: "english",
+    title: "Foundations of Fluency",
+    description: "Build speaking and grammar confidence for daily communication.",
+    duration: "16 Weeks",
+    level: "Beginner to Intermediate",
+    schedule: "Tue, Thu, Sat (10:00 - 12:00)",
+    price: "$180.00",
+    premium: false,
+    status: "Enrollment Open",
+  },
+  {
+    id: "skills-focus",
+    category: "general",
+    group: "english",
+    title: "Native-Level Speaking",
+    description: "Intensive speaking track with personalized pronunciation coaching.",
+    duration: "8 Weeks",
+    level: "Intermediate+",
+    schedule: "Saturdays (14:00 - 18:00)",
+    price: "$150.00",
+    premium: false,
+    status: "Enrollment Open",
+  },
+  {
+    id: "sat-elite",
+    category: "sat",
+    group: "exam",
+    title: "SAT Elite: Path to IVY League",
+    description: "Advanced SAT strategy with full-length digital mocks and analytics.",
+    duration: "14 Weeks",
+    level: "Advanced",
+    schedule: "Tue, Thu (16:00 - 19:00)",
+    price: "$850.00",
+    premium: true,
+    status: "Enrollment Open",
+  },
+  {
+    id: "gmat-executive",
+    category: "gmat",
+    group: "exam",
+    title: "GMAT Executive Preparation",
+    description: "Quant + verbal intensive program for top-tier MBA admissions.",
+    duration: "12 Weeks",
+    level: "Graduate",
+    schedule: "Mon, Wed (19:00 - 21:30)",
+    price: "$1,200.00",
+    premium: true,
+    status: "Enrollment Open",
+  },
 ];
 
 const filterOrder: Category[] = ["all", "ielts", "sat", "gmat", "general"];
@@ -45,15 +111,67 @@ const featureKeys = ["smallGroups", "mockExams", "feedback", "speaking", "tracki
 const leadBenefits = ["diagnostic", "guidance", "plan"] as const;
 const featureIcons = [FaUsers, FaCalendarAlt, FaCommentDots, FaMicrophone, FaChartLine];
 
+function categoryFromBackend(value: string): Exclude<Category, "all"> {
+  const normalized = value.toLowerCase();
+  if (normalized.includes("ielts")) return "ielts";
+  if (normalized.includes("sat")) return "sat";
+  if (normalized.includes("gmat")) return "gmat";
+  return "general";
+}
+
+function groupFromCategory(category: Exclude<Category, "all">): Group {
+  return category === "sat" || category === "gmat" ? "exam" : "english";
+}
+
+function toCourseView(item: PublicCourse, locale: LocaleCode): CourseView {
+  const category = categoryFromBackend(item.category);
+  return {
+    id: item.id,
+    category,
+    group: groupFromCategory(category),
+    title: pickLocalized(locale, {
+      en: item.titleEn,
+      ru: item.titleRu,
+      uz: item.titleUz,
+    }),
+    description: pickLocalized(locale, {
+      en: item.descriptionEn,
+      ru: item.descriptionRu,
+      uz: item.descriptionUz,
+    }),
+    duration: item.duration,
+    level: item.level,
+    schedule: item.schedule,
+    price: item.price,
+    premium: category === "sat" || category === "gmat",
+    status: item.status,
+  };
+}
+
 export function CoursesPage() {
   const t = useTranslations("coursesPage");
-  const locale = useLocale();
+  const locale = useLocale() as LocaleCode;
   const [activeFilter, setActiveFilter] = useState<Category>("all");
+  const [courses, setCourses] = useState<CourseView[]>(fallbackCourses);
+
+  useEffect(() => {
+    let active = true;
+
+    void (async () => {
+      const apiCourses = await getPublicCourses();
+      if (!active || apiCourses.length === 0) return;
+      setCourses(apiCourses.map((item) => toCourseView(item, locale)));
+    })();
+
+    return () => {
+      active = false;
+    };
+  }, [locale]);
 
   const filtered = useMemo(() => {
     if (activeFilter === "all") return courses;
     return courses.filter((course) => course.category === activeFilter);
-  }, [activeFilter]);
+  }, [activeFilter, courses]);
 
   const englishPrograms = filtered.filter((course) => course.group === "english");
   const examPrograms = filtered.filter((course) => course.group === "exam");
@@ -91,27 +209,27 @@ export function CoursesPage() {
                 <Card key={course.id} className="bg-card">
                   <CardHeader className="space-y-4">
                     <div className="flex items-center justify-between gap-2">
-                      <Badge variant="secondary">{t(`courses.${course.id}.badge`)}</Badge>
+                      <Badge variant="secondary">{course.category.toUpperCase()}</Badge>
                       <span className="inline-flex items-center gap-2 text-xs font-semibold text-emerald-500">
                         <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                        {t("labels.open")}
+                        {course.status || t("labels.open")}
                       </span>
                     </div>
-                    <CardTitle className="text-xl">{t(`courses.${course.id}.title`)}</CardTitle>
+                    <CardTitle className="text-xl">{course.title}</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li className="flex items-center gap-2">
                         <FaCalendarAlt className="text-primary" />
-                        {t(`courses.${course.id}.duration`)}
+                        {course.duration}
                       </li>
                       <li className="flex items-center gap-2">
                         <FaSignal className="text-primary" />
-                        {t(`courses.${course.id}.level`)}
+                        {course.level}
                       </li>
                       <li className="flex items-center gap-2">
                         <FaClock className="text-primary" />
-                        {t(`courses.${course.id}.schedule`)}
+                        {course.schedule}
                       </li>
                     </ul>
                     <p className="text-3xl font-extrabold text-primary">{course.price}</p>
@@ -133,29 +251,29 @@ export function CoursesPage() {
                 <Card key={course.id} className="bg-card">
                   <CardHeader className="space-y-4">
                     <div className="flex items-center justify-between gap-2">
-                      <Badge variant="secondary">{t(`courses.${course.id}.badge`)}</Badge>
+                      <Badge variant="secondary">{course.category.toUpperCase()}</Badge>
                       {course.premium ? <Badge>{t("labels.premium")}</Badge> : null}
                     </div>
-                    <CardTitle className="text-2xl">{t(`courses.${course.id}.title`)}</CardTitle>
-                    <p className="max-w-prose text-sm text-muted-foreground">{t(`courses.${course.id}.description`)}</p>
+                    <CardTitle className="text-2xl">{course.title}</CardTitle>
+                    <p className="max-w-prose text-sm text-muted-foreground">{course.description}</p>
                   </CardHeader>
                   <CardContent className="space-y-5">
                     <div className="grid grid-cols-1 gap-3 text-sm text-muted-foreground sm:grid-cols-2">
                       <p className="flex items-center gap-2">
                         <FaClock className="text-primary" />
-                        {t(`courses.${course.id}.duration`)}
+                        {course.duration}
                       </p>
                       <p className="flex items-center gap-2">
                         <FaSignal className="text-primary" />
-                        {t(`courses.${course.id}.level`)}
+                        {course.level}
                       </p>
                       <p className="flex items-center gap-2">
                         <FaCalendarAlt className="text-primary" />
-                        {t(`courses.${course.id}.schedule`)}
+                        {course.schedule}
                       </p>
                       <p className="flex items-center gap-2">
                         <FaUsers className="text-primary" />
-                        {t(`courses.${course.id}.groupSize`)}
+                        {t(`courses.satElite.groupSize`)}
                       </p>
                     </div>
                     <div className="flex flex-wrap items-center justify-between gap-4">
@@ -247,3 +365,4 @@ export function CoursesPage() {
     </main>
   );
 }
+
