@@ -1,4 +1,4 @@
-import type { LeadInput } from "../../../shared/lead.schema";
+import type { LeadInput } from "../schemas/lead.schema";
 
 const TELEGRAM_API = "https://api.telegram.org";
 

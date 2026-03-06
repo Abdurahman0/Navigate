@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import { leadSchema } from "../../../shared/lead.schema";
+import { leadSchema } from "../schemas/lead.schema";
 import { addLead } from "../repositories/admin.repository";
 import { sendLeadToTelegram } from "../services/telegram.service";
 
