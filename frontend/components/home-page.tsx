@@ -32,6 +32,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Skeleton } from "@/components/ui/skeleton";
 import { useLocale } from "next-intl";
 import { LeadCaptureForm } from "./lead-capture-form";
 
@@ -130,6 +131,7 @@ export function HomePage() {
   const [results, setResults] = useState<ResultView[]>([]);
   const [faculty, setFaculty] = useState<FacultyView[]>([]);
   const [testimonials, setTestimonials] = useState<TestimonialView[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const stats = ["students", "scores", "coaches", "plans"] as const;
   const benefits = ["diagnostic", "guidance", "plan"] as const;
@@ -137,6 +139,7 @@ export function HomePage() {
 
   useEffect(() => {
     let active = true;
+    setIsLoading(true);
 
     void (async () => {
       const [courseItems, resultItems, teacherItems, testimonialItems] = await Promise.all([
@@ -152,6 +155,7 @@ export function HomePage() {
       setResults(resultItems.slice(0, 3).map(mapResult));
       setFaculty(teacherItems.slice(0, 3).map((item) => mapFaculty(item, locale)));
       setTestimonials(testimonialItems.slice(0, 3).map((item) => mapTestimonial(item, locale)));
+      setIsLoading(false);
     })();
 
     return () => {
@@ -213,8 +217,24 @@ export function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {topPrograms.map((program, index) => {
+            {((isLoading ? Array.from({ length: 4 }) : topPrograms) as ProgramView[]).map((program, index) => {
               const Icon = programIcons[index] || FiAward;
+              if (isLoading) {
+                return (
+                  <Card key={`program-skeleton-${index}`} className="bg-card">
+                    <CardHeader className="space-y-4">
+                      <Skeleton className="h-6 w-20" />
+                      <Skeleton className="h-6 w-11/12" />
+                      <Skeleton className="h-4 w-32" />
+                    </CardHeader>
+                    <CardContent className="space-y-3">
+                      <Skeleton className="h-4 w-24" />
+                      <Skeleton className="h-8 w-20" />
+                      <Skeleton className="mt-3 h-10 w-full" />
+                    </CardContent>
+                  </Card>
+                );
+              }
               return (
                 <Card key={program.id} className="group bg-card hover:-translate-y-1">
                   <CardHeader className="space-y-4">
@@ -245,17 +265,30 @@ export function HomePage() {
           </div>
 
           <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
-            {results.map((item) => (
-              <Card key={item.id} className="bg-card/70 text-card-foreground dark:bg-card/60">
-                <CardContent className="p-5">
-                  <p className="font-semibold">{item.name}</p>
-                  <p className="text-xs uppercase tracking-wide text-muted-foreground">{item.exam}</p>
-                  <p className="mt-2 text-lg font-bold">
-                    {item.before} <span className="text-primary">&rarr;</span> {item.after}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+            {((isLoading ? Array.from({ length: 3 }) : results) as ResultView[]).map((item, index) => {
+              if (isLoading) {
+                return (
+                  <Card key={`result-skeleton-${index}`} className="bg-card/70 text-card-foreground dark:bg-card/60">
+                    <CardContent className="space-y-3 p-5">
+                      <Skeleton className="h-5 w-40" />
+                      <Skeleton className="h-3 w-24" />
+                      <Skeleton className="h-7 w-32" />
+                    </CardContent>
+                  </Card>
+                );
+              }
+              return (
+                <Card key={item.id} className="bg-card/70 text-card-foreground dark:bg-card/60">
+                  <CardContent className="p-5">
+                    <p className="font-semibold">{item.name}</p>
+                    <p className="text-xs uppercase tracking-wide text-muted-foreground">{item.exam}</p>
+                    <p className="mt-2 text-lg font-bold">
+                      {item.before} <span className="text-primary">&rarr;</span> {item.after}
+                    </p>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -296,25 +329,39 @@ export function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {faculty.map((member) => (
-              <Card key={member.id} className="overflow-hidden bg-card hover:-translate-y-1">
-                <div className="aspect-[4/3] w-full overflow-hidden">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    width={900}
-                    height={675}
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="h-auto w-full object-cover grayscale transition duration-300 hover:scale-105 hover:grayscale-0"
-                  />
-                </div>
-                <CardContent className="space-y-1 p-5">
-                  <p className="text-lg font-semibold">{member.name}</p>
-                  <p className="text-sm font-medium text-primary">{member.role}</p>
-                  <p className="text-xs text-muted-foreground">{member.meta}</p>
-                </CardContent>
-              </Card>
-            ))}
+            {((isLoading ? Array.from({ length: 3 }) : faculty) as FacultyView[]).map((member, index) => {
+              if (isLoading) {
+                return (
+                  <Card key={`faculty-skeleton-${index}`} className="overflow-hidden bg-card">
+                    <Skeleton className="aspect-[4/3] w-full rounded-none" />
+                    <CardContent className="space-y-2 p-5">
+                      <Skeleton className="h-5 w-40" />
+                      <Skeleton className="h-4 w-28" />
+                      <Skeleton className="h-3 w-36" />
+                    </CardContent>
+                  </Card>
+                );
+              }
+              return (
+                <Card key={member.id} className="overflow-hidden bg-card hover:-translate-y-1">
+                  <div className="aspect-[4/3] w-full overflow-hidden">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={900}
+                      height={675}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="h-auto w-full object-cover grayscale transition duration-300 hover:scale-105 hover:grayscale-0"
+                    />
+                  </div>
+                  <CardContent className="space-y-1 p-5">
+                    <p className="text-lg font-semibold">{member.name}</p>
+                    <p className="text-sm font-medium text-primary">{member.role}</p>
+                    <p className="text-xs text-muted-foreground">{member.meta}</p>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -327,26 +374,50 @@ export function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-            {testimonials.map((item) => (
-              <Card key={item.id} className="relative overflow-hidden bg-card hover:-translate-y-1">
-                <CardContent className="space-y-5 p-6">
-                  <span className="absolute right-4 top-3 text-5xl font-black leading-none text-primary/20">&ldquo;</span>
-                  <div className="flex gap-1 text-primary">
-                    {Array.from({ length: 5 }).map((_, i) => (
-                      <FiStar key={`${item.id}-${i}`} className="h-4 w-4 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-sm leading-6 text-muted-foreground">{item.quote}</p>
-                  <div className="flex items-center gap-3">
-                    <Image src={item.image} alt={item.name} width={40} height={40} sizes="40px" className="h-10 w-10 rounded-full object-cover" />
-                    <div>
-                      <p className="text-sm font-semibold">{item.name}</p>
-                      <p className="text-xs text-muted-foreground">{item.meta}</p>
+            {((isLoading ? Array.from({ length: 3 }) : testimonials) as TestimonialView[]).map((item, index) => {
+              if (isLoading) {
+                return (
+                  <Card key={`testimonial-skeleton-${index}`} className="relative overflow-hidden bg-card">
+                    <CardContent className="space-y-5 p-6">
+                      <div className="flex gap-1">
+                        {Array.from({ length: 5 }).map((_, i) => (
+                          <Skeleton key={`star-skeleton-${index}-${i}`} className="h-4 w-4 rounded-sm" />
+                        ))}
+                      </div>
+                      <Skeleton className="h-4 w-full" />
+                      <Skeleton className="h-4 w-11/12" />
+                      <div className="flex items-center gap-3">
+                        <Skeleton className="h-10 w-10 rounded-full" />
+                        <div className="w-full space-y-2">
+                          <Skeleton className="h-4 w-28" />
+                          <Skeleton className="h-3 w-20" />
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              }
+              return (
+                <Card key={item.id} className="relative overflow-hidden bg-card hover:-translate-y-1">
+                  <CardContent className="space-y-5 p-6">
+                    <span className="absolute right-4 top-3 text-5xl font-black leading-none text-primary/20">&ldquo;</span>
+                    <div className="flex gap-1 text-primary">
+                      {Array.from({ length: 5 }).map((_, i) => (
+                        <FiStar key={`${item.id}-${i}`} className="h-4 w-4 fill-current" />
+                      ))}
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                    <p className="text-sm leading-6 text-muted-foreground">{item.quote}</p>
+                    <div className="flex items-center gap-3">
+                      <Image src={item.image} alt={item.name} width={40} height={40} sizes="40px" className="h-10 w-10 rounded-full object-cover" />
+                      <div>
+                        <p className="text-sm font-semibold">{item.name}</p>
+                        <p className="text-xs text-muted-foreground">{item.meta}</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>

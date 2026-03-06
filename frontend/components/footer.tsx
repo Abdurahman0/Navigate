@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { FaFacebookF, FaInstagram, FaTelegramPlane } from "react-icons/fa";
 import { getPublicSettings, pickLocalized, type LocaleCode, type PublicSiteSettings } from "@/lib/api";
+import { Skeleton } from "@/components/ui/skeleton";
 
 function localePath(locale: string, slug = "") {
   return `/${locale}${slug}`;
@@ -14,13 +15,16 @@ export function Footer() {
   const t = useTranslations("footer");
   const locale = useLocale() as LocaleCode;
   const [settings, setSettings] = useState<PublicSiteSettings | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     let active = true;
+    setIsLoading(true);
 
     void (async () => {
       const data = await getPublicSettings();
       if (active && data) setSettings(data);
+      if (active) setIsLoading(false);
     })();
 
     return () => {
@@ -94,13 +98,23 @@ export function Footer() {
 
           <div className="space-y-3">
             <p className="font-semibold">{t("contact.title")}</p>
-            <p className="text-sm text-muted-foreground">{address}</p>
-            <Link href={`tel:${phone.replace(/\s+/g, "")}`} className="block text-sm text-muted-foreground hover:text-foreground">
-              {phone}
-            </Link>
-            <Link href={`mailto:${email}`} className="block text-sm text-muted-foreground hover:text-foreground">
-              {email}
-            </Link>
+            {isLoading ? (
+              <div className="space-y-2">
+                <Skeleton className="h-4 w-full" />
+                <Skeleton className="h-4 w-32" />
+                <Skeleton className="h-4 w-40" />
+              </div>
+            ) : (
+              <>
+                <p className="text-sm text-muted-foreground">{address}</p>
+                <Link href={`tel:${phone.replace(/\s+/g, "")}`} className="block text-sm text-muted-foreground hover:text-foreground">
+                  {phone}
+                </Link>
+                <Link href={`mailto:${email}`} className="block text-sm text-muted-foreground hover:text-foreground">
+                  {email}
+                </Link>
+              </>
+            )}
           </div>
         </div>
       </div>

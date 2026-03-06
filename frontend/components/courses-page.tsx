@@ -18,6 +18,7 @@ import { getPublicCourses, getPublicResults, type LocaleCode, type PublicCourse,
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Skeleton } from "@/components/ui/skeleton";
 import { LeadCaptureForm } from "./lead-capture-form";
 
 type Category = "all" | "ielts" | "sat" | "gmat" | "general";
@@ -101,15 +102,18 @@ export function CoursesPage() {
   const [activeFilter, setActiveFilter] = useState<Category>("all");
   const [courses, setCourses] = useState<CourseView[]>([]);
   const [successCards, setSuccessCards] = useState<SuccessCardView[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     let active = true;
+    setIsLoading(true);
 
     void (async () => {
       const [apiCourses, apiResults] = await Promise.all([getPublicCourses(), getPublicResults()]);
       if (!active) return;
       setCourses(apiCourses.map((item) => toCourseView(item, locale)));
       setSuccessCards(apiResults.slice(0, 3).map(toSuccessCardView));
+      setIsLoading(false);
     })();
 
     return () => {
@@ -149,89 +153,139 @@ export function CoursesPage() {
         </div>
       </section>
 
-      {englishPrograms.length > 0 ? (
+      {isLoading || englishPrograms.length > 0 ? (
         <section className="bg-muted/10 py-14 md:py-20">
           <div className="site-container space-y-8">
             <h2 className="text-2xl font-bold sm:text-3xl">{t("english.title")}</h2>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {englishPrograms.map((course) => (
-                <Card key={course.id} className="bg-card">
-                  <CardHeader className="space-y-4">
-                    <div className="flex items-center justify-between gap-2">
-                      <Badge variant="secondary">{course.category.toUpperCase()}</Badge>
-                      <span className="inline-flex items-center gap-2 text-xs font-semibold text-emerald-500">
-                        <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                        {course.status || t("labels.open")}
-                      </span>
-                    </div>
-                    <CardTitle className="text-xl">{course.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2">
-                        <FaCalendarAlt className="text-primary" />
-                        {course.duration}
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <FaSignal className="text-primary" />
-                        {course.level}
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <FaClock className="text-primary" />
-                        {course.schedule}
-                      </li>
-                    </ul>
-                    <p className="text-3xl font-extrabold text-primary">{course.price}</p>
-                    <Button className="w-full">{t("buttons.enroll")}</Button>
-                  </CardContent>
-                </Card>
-              ))}
+              {((isLoading ? Array.from({ length: 3 }) : englishPrograms) as CourseView[]).map((course, index) => {
+                if (isLoading) {
+                  return (
+                    <Card key={`english-skeleton-${index}`} className="bg-card">
+                      <CardHeader className="space-y-4">
+                        <div className="flex items-center justify-between gap-2">
+                          <Skeleton className="h-6 w-20" />
+                          <Skeleton className="h-4 w-28" />
+                        </div>
+                        <Skeleton className="h-6 w-11/12" />
+                      </CardHeader>
+                      <CardContent className="space-y-4">
+                        <Skeleton className="h-4 w-32" />
+                        <Skeleton className="h-4 w-36" />
+                        <Skeleton className="h-4 w-40" />
+                        <Skeleton className="h-8 w-24" />
+                        <Skeleton className="h-10 w-full" />
+                      </CardContent>
+                    </Card>
+                  );
+                }
+                return (
+                  <Card key={course.id} className="bg-card">
+                    <CardHeader className="space-y-4">
+                      <div className="flex items-center justify-between gap-2">
+                        <Badge variant="secondary">{course.category.toUpperCase()}</Badge>
+                        <span className="inline-flex items-center gap-2 text-xs font-semibold text-emerald-500">
+                          <span className="h-2 w-2 rounded-full bg-emerald-500" />
+                          {course.status || t("labels.open")}
+                        </span>
+                      </div>
+                      <CardTitle className="text-xl">{course.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-center gap-2">
+                          <FaCalendarAlt className="text-primary" />
+                          {course.duration}
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <FaSignal className="text-primary" />
+                          {course.level}
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <FaClock className="text-primary" />
+                          {course.schedule}
+                        </li>
+                      </ul>
+                      <p className="text-3xl font-extrabold text-primary">{course.price}</p>
+                      <Button className="w-full">{t("buttons.enroll")}</Button>
+                    </CardContent>
+                  </Card>
+                );
+              })}
             </div>
           </div>
         </section>
       ) : null}
 
-      {examPrograms.length > 0 ? (
+      {isLoading || examPrograms.length > 0 ? (
         <section className="bg-background py-14 md:py-20">
           <div className="site-container space-y-8">
             <h2 className="text-2xl font-bold sm:text-3xl">{t("exam.title")}</h2>
             <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
-              {examPrograms.map((course) => (
-                <Card key={course.id} className="bg-card">
-                  <CardHeader className="space-y-4">
-                    <div className="flex items-center justify-between gap-2">
-                      <Badge variant="secondary">{course.category.toUpperCase()}</Badge>
-                      {course.premium ? <Badge>{t("labels.premium")}</Badge> : null}
-                    </div>
-                    <CardTitle className="text-2xl">{course.title}</CardTitle>
-                    <p className="max-w-prose text-sm text-muted-foreground">{course.description}</p>
-                  </CardHeader>
-                  <CardContent className="space-y-5">
-                    <div className="grid grid-cols-1 gap-3 text-sm text-muted-foreground sm:grid-cols-2">
-                      <p className="flex items-center gap-2">
-                        <FaClock className="text-primary" />
-                        {course.duration}
-                      </p>
-                      <p className="flex items-center gap-2">
-                        <FaSignal className="text-primary" />
-                        {course.level}
-                      </p>
-                      <p className="flex items-center gap-2">
-                        <FaCalendarAlt className="text-primary" />
-                        {course.schedule}
-                      </p>
-                      <p className="flex items-center gap-2">
-                        <FaUsers className="text-primary" />
-                        {t(`courses.satElite.groupSize`)}
-                      </p>
-                    </div>
-                    <div className="flex flex-wrap items-center justify-between gap-4">
-                      <p className="text-3xl font-extrabold">{course.price}</p>
-                      <Button className="min-w-36">{t("buttons.enroll")}</Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+              {((isLoading ? Array.from({ length: 2 }) : examPrograms) as CourseView[]).map((course, index) => {
+                if (isLoading) {
+                  return (
+                    <Card key={`exam-skeleton-${index}`} className="bg-card">
+                      <CardHeader className="space-y-4">
+                        <div className="flex items-center justify-between gap-2">
+                          <Skeleton className="h-6 w-20" />
+                          <Skeleton className="h-6 w-24" />
+                        </div>
+                        <Skeleton className="h-7 w-10/12" />
+                        <Skeleton className="h-4 w-full" />
+                      </CardHeader>
+                      <CardContent className="space-y-5">
+                        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                          <Skeleton className="h-4 w-32" />
+                          <Skeleton className="h-4 w-28" />
+                          <Skeleton className="h-4 w-36" />
+                          <Skeleton className="h-4 w-24" />
+                        </div>
+                        <div className="flex flex-wrap items-center justify-between gap-4">
+                          <Skeleton className="h-8 w-24" />
+                          <Skeleton className="h-10 min-w-36" />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  );
+                }
+                return (
+                  <Card key={course.id} className="bg-card">
+                    <CardHeader className="space-y-4">
+                      <div className="flex items-center justify-between gap-2">
+                        <Badge variant="secondary">{course.category.toUpperCase()}</Badge>
+                        {course.premium ? <Badge>{t("labels.premium")}</Badge> : null}
+                      </div>
+                      <CardTitle className="text-2xl">{course.title}</CardTitle>
+                      <p className="max-w-prose text-sm text-muted-foreground">{course.description}</p>
+                    </CardHeader>
+                    <CardContent className="space-y-5">
+                      <div className="grid grid-cols-1 gap-3 text-sm text-muted-foreground sm:grid-cols-2">
+                        <p className="flex items-center gap-2">
+                          <FaClock className="text-primary" />
+                          {course.duration}
+                        </p>
+                        <p className="flex items-center gap-2">
+                          <FaSignal className="text-primary" />
+                          {course.level}
+                        </p>
+                        <p className="flex items-center gap-2">
+                          <FaCalendarAlt className="text-primary" />
+                          {course.schedule}
+                        </p>
+                        <p className="flex items-center gap-2">
+                          <FaUsers className="text-primary" />
+                          {t(`courses.satElite.groupSize`)}
+                        </p>
+                      </div>
+                      <div className="flex flex-wrap items-center justify-between gap-4">
+                        <p className="text-3xl font-extrabold">{course.price}</p>
+                        <Button className="min-w-36">{t("buttons.enroll")}</Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -267,15 +321,28 @@ export function CoursesPage() {
             </Button>
           </div>
           <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {successCards.map((item) => (
-              <Card key={item.id} className="bg-card/70">
-                <CardContent className="p-5">
-                  <p className="font-semibold">{item.name}</p>
-                  <p className="text-xs uppercase tracking-wide text-muted-foreground">{item.program}</p>
-                  <p className="mt-2 text-lg font-bold text-primary">{item.result}</p>
-                </CardContent>
-              </Card>
-            ))}
+            {((isLoading ? Array.from({ length: 3 }) : successCards) as SuccessCardView[]).map((item, index) => {
+              if (isLoading) {
+                return (
+                  <Card key={`success-skeleton-${index}`} className="bg-card/70">
+                    <CardContent className="space-y-3 p-5">
+                      <Skeleton className="h-5 w-36" />
+                      <Skeleton className="h-3 w-24" />
+                      <Skeleton className="h-7 w-28" />
+                    </CardContent>
+                  </Card>
+                );
+              }
+              return (
+                <Card key={item.id} className="bg-card/70">
+                  <CardContent className="p-5">
+                    <p className="font-semibold">{item.name}</p>
+                    <p className="text-xs uppercase tracking-wide text-muted-foreground">{item.program}</p>
+                    <p className="mt-2 text-lg font-bold text-primary">{item.result}</p>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>

@@ -21,6 +21,7 @@ import { getPublicTeachers, getPublicTestimonials, pickLocalized, type LocaleCod
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Skeleton } from "@/components/ui/skeleton";
 import { LeadCaptureForm } from "./lead-capture-form";
 
 type TeacherView = {
@@ -76,9 +77,11 @@ export function TeachersPage() {
 
   const [teachers, setTeachers] = useState<TeacherView[]>([]);
   const [feedback, setFeedback] = useState<FeedbackView[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     let active = true;
+    setIsLoading(true);
 
     void (async () => {
       const [teacherItems, testimonialItems] = await Promise.all([getPublicTeachers(), getPublicTestimonials()]);
@@ -86,6 +89,7 @@ export function TeachersPage() {
 
       setTeachers(teacherItems.map((item) => mapTeacher(item, locale)));
       setFeedback(testimonialItems.map((item) => mapFeedback(item, locale)).slice(0, 3));
+      setIsLoading(false);
     })();
 
     return () => {
@@ -110,30 +114,55 @@ export function TeachersPage() {
 
       <section className="bg-muted/10 py-14 md:py-20">
         <div className="site-container space-y-6 md:space-y-8">
-          {featuredTeachers.map((teacher, index) => (
-            <Card key={teacher.id} className="overflow-hidden rounded-3xl bg-card/90 shadow-md ring-1 ring-border/40">
-              <div className="grid grid-cols-1 md:grid-cols-2">
-                <div className={`relative aspect-[4/3] ${index === 1 ? "md:order-2" : ""}`}>
-                  <Image src={teacher.image} alt={teacher.name} fill sizes="(max-width: 768px) 100vw, 50vw" className="h-full w-full object-cover" />
-                </div>
-                <div className={`p-6 md:p-10 ${index === 1 ? "md:order-1" : ""}`}>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary">{teacher.role}</Badge>
-                    <Badge variant="secondary">{teacher.specialization}</Badge>
+          {((isLoading ? Array.from({ length: 2 }) : featuredTeachers) as TeacherView[]).map((teacher, index) => {
+            if (isLoading) {
+              return (
+                <Card key={`featured-skeleton-${index}`} className="overflow-hidden rounded-3xl bg-card/90 shadow-md ring-1 ring-border/40">
+                  <div className="grid grid-cols-1 md:grid-cols-2">
+                    <Skeleton className="aspect-[4/3] w-full rounded-none" />
+                    <div className="p-6 md:p-10">
+                      <div className="flex flex-wrap gap-2">
+                        <Skeleton className="h-6 w-24" />
+                        <Skeleton className="h-6 w-24" />
+                      </div>
+                      <Skeleton className="mt-4 h-8 w-56" />
+                      <Skeleton className="mt-3 h-4 w-28" />
+                      <Skeleton className="mt-4 h-4 w-full" />
+                      <Skeleton className="mt-2 h-4 w-11/12" />
+                      <div className="mt-6 flex flex-wrap gap-3">
+                        <Skeleton className="h-11 w-28" />
+                        <Skeleton className="h-11 w-32" />
+                      </div>
+                    </div>
                   </div>
-                  <h2 className="mt-4 text-2xl font-bold">{teacher.name}</h2>
-                  <p className="mt-2 text-sm font-semibold text-primary">{teacher.experience}</p>
-                  <p className="mt-4 max-w-prose text-sm leading-7 text-muted-foreground">{teacher.bio}</p>
-                  <div className="mt-6 flex flex-wrap gap-3">
-                    <Button className="h-11 cursor-pointer">{t("featured.actions.book")}</Button>
-                    <Button variant="outline" className="h-11 cursor-pointer">
-                      {t("featured.actions.profile")} <FaArrowRight className="ml-2 h-3.5 w-3.5" />
-                    </Button>
+                </Card>
+              );
+            }
+            return (
+              <Card key={teacher.id} className="overflow-hidden rounded-3xl bg-card/90 shadow-md ring-1 ring-border/40">
+                <div className="grid grid-cols-1 md:grid-cols-2">
+                  <div className={`relative aspect-[4/3] ${index === 1 ? "md:order-2" : ""}`}>
+                    <Image src={teacher.image} alt={teacher.name} fill sizes="(max-width: 768px) 100vw, 50vw" className="h-full w-full object-cover" />
+                  </div>
+                  <div className={`p-6 md:p-10 ${index === 1 ? "md:order-1" : ""}`}>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="secondary">{teacher.role}</Badge>
+                      <Badge variant="secondary">{teacher.specialization}</Badge>
+                    </div>
+                    <h2 className="mt-4 text-2xl font-bold">{teacher.name}</h2>
+                    <p className="mt-2 text-sm font-semibold text-primary">{teacher.experience}</p>
+                    <p className="mt-4 max-w-prose text-sm leading-7 text-muted-foreground">{teacher.bio}</p>
+                    <div className="mt-6 flex flex-wrap gap-3">
+                      <Button className="h-11 cursor-pointer">{t("featured.actions.book")}</Button>
+                      <Button variant="outline" className="h-11 cursor-pointer">
+                        {t("featured.actions.profile")} <FaArrowRight className="ml-2 h-3.5 w-3.5" />
+                      </Button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Card>
-          ))}
+              </Card>
+            );
+          })}
         </div>
       </section>
 
@@ -144,18 +173,32 @@ export function TeachersPage() {
             <p className="mt-2 text-muted-foreground">{t("team.subtitle")}</p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
-            {teamTeachers.map((teacher) => (
-              <Card key={teacher.id} className="overflow-hidden rounded-2xl bg-card transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
-                <div className="relative aspect-[4/5]">
-                  <Image src={teacher.image} alt={teacher.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw" className="h-full w-full object-cover" />
-                </div>
-                <CardContent className="space-y-1 p-5">
-                  <p className="font-semibold">{teacher.name}</p>
-                  <p className="text-sm font-medium text-primary">{teacher.role}</p>
-                  <p className="text-xs text-muted-foreground">{teacher.experience}</p>
-                </CardContent>
-              </Card>
-            ))}
+            {((isLoading ? Array.from({ length: 4 }) : teamTeachers) as TeacherView[]).map((teacher, index) => {
+              if (isLoading) {
+                return (
+                  <Card key={`team-skeleton-${index}`} className="overflow-hidden rounded-2xl bg-card">
+                    <Skeleton className="aspect-[4/5] w-full rounded-none" />
+                    <CardContent className="space-y-2 p-5">
+                      <Skeleton className="h-5 w-36" />
+                      <Skeleton className="h-4 w-28" />
+                      <Skeleton className="h-3 w-20" />
+                    </CardContent>
+                  </Card>
+                );
+              }
+              return (
+                <Card key={teacher.id} className="overflow-hidden rounded-2xl bg-card transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
+                  <div className="relative aspect-[4/5]">
+                    <Image src={teacher.image} alt={teacher.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw" className="h-full w-full object-cover" />
+                  </div>
+                  <CardContent className="space-y-1 p-5">
+                    <p className="font-semibold">{teacher.name}</p>
+                    <p className="text-sm font-medium text-primary">{teacher.role}</p>
+                    <p className="text-xs text-muted-foreground">{teacher.experience}</p>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -194,25 +237,49 @@ export function TeachersPage() {
             <p className="mt-2 text-muted-foreground">{t("feedback.subtitle")}</p>
           </div>
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-            {feedback.map((item) => (
-              <Card key={item.id} className="rounded-2xl bg-card shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
-                <CardContent className="space-y-5 p-6">
-                  <div className="flex gap-1 text-primary">
-                    {Array.from({ length: 5 }).map((_, i) => (
-                      <FaStar key={`${item.id}-${i}`} className="h-4 w-4" />
-                    ))}
-                  </div>
-                  <p className="text-sm leading-6 text-muted-foreground">{item.quote}</p>
-                  <div className="flex items-center gap-3">
-                    <Image src={item.image} alt={item.name} width={40} height={40} sizes="40px" className="h-10 w-10 rounded-full object-cover" />
-                    <div>
-                      <p className="text-sm font-semibold">{item.name}</p>
-                      <p className="text-xs text-muted-foreground">{item.descriptor}</p>
+            {((isLoading ? Array.from({ length: 3 }) : feedback) as FeedbackView[]).map((item, index) => {
+              if (isLoading) {
+                return (
+                  <Card key={`feedback-skeleton-${index}`} className="rounded-2xl bg-card">
+                    <CardContent className="space-y-5 p-6">
+                      <div className="flex gap-1">
+                        {Array.from({ length: 5 }).map((_, i) => (
+                          <Skeleton key={`feedback-star-${index}-${i}`} className="h-4 w-4 rounded-sm" />
+                        ))}
+                      </div>
+                      <Skeleton className="h-4 w-full" />
+                      <Skeleton className="h-4 w-11/12" />
+                      <div className="flex items-center gap-3">
+                        <Skeleton className="h-10 w-10 rounded-full" />
+                        <div className="w-full space-y-2">
+                          <Skeleton className="h-4 w-28" />
+                          <Skeleton className="h-3 w-20" />
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              }
+              return (
+                <Card key={item.id} className="rounded-2xl bg-card shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
+                  <CardContent className="space-y-5 p-6">
+                    <div className="flex gap-1 text-primary">
+                      {Array.from({ length: 5 }).map((_, i) => (
+                        <FaStar key={`${item.id}-${i}`} className="h-4 w-4" />
+                      ))}
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                    <p className="text-sm leading-6 text-muted-foreground">{item.quote}</p>
+                    <div className="flex items-center gap-3">
+                      <Image src={item.image} alt={item.name} width={40} height={40} sizes="40px" className="h-10 w-10 rounded-full object-cover" />
+                      <div>
+                        <p className="text-sm font-semibold">{item.name}</p>
+                        <p className="text-xs text-muted-foreground">{item.descriptor}</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>

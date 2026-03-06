@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { FaClock, FaMapMarkerAlt, FaPhoneAlt, FaPlane } from "react-icons/fa";
 import { getPublicSettings, pickLocalized, type LocaleCode, type PublicSiteSettings } from "@/lib/api";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Skeleton } from "@/components/ui/skeleton";
 import { LeadCaptureForm } from "./lead-capture-form";
 
 const infoKeys = ["phone", "telegram", "address", "hours"] as const;
@@ -14,13 +15,16 @@ export function ContactPage() {
   const t = useTranslations("contactPage");
   const locale = useLocale() as LocaleCode;
   const [settings, setSettings] = useState<PublicSiteSettings | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     let active = true;
+    setIsLoading(true);
 
     void (async () => {
       const data = await getPublicSettings();
       if (active && data) setSettings(data);
+      if (active) setIsLoading(false);
     })();
 
     return () => {
@@ -80,7 +84,7 @@ export function ContactPage() {
                     <div className="space-y-1">
                       <p className="font-semibold">{t(`sidebar.${key}.title`)}</p>
                       <p className="text-sm text-muted-foreground">{t(`sidebar.${key}.description`)}</p>
-                      <p className="text-sm font-semibold text-primary">{detail}</p>
+                      {isLoading ? <Skeleton className="h-4 w-32" /> : <p className="text-sm font-semibold text-primary">{detail}</p>}
                     </div>
                   </CardContent>
                 </Card>
@@ -112,7 +116,7 @@ export function ContactPage() {
             <Card className="absolute bottom-4 left-4 rounded-xl bg-card/95 shadow-md">
               <CardContent className="space-y-1 p-4">
                 <p className="text-sm font-semibold">{t("map.labelTitle")}</p>
-                <p className="text-xs text-muted-foreground">{address}</p>
+                {isLoading ? <Skeleton className="h-3 w-40" /> : <p className="text-xs text-muted-foreground">{address}</p>}
               </CardContent>
             </Card>
           </div>
