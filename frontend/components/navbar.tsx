@@ -68,8 +68,12 @@ export function Navbar() {
 				</nav>
 
 				<div className='flex items-center gap-2'>
-					<ThemeToggle />
-					<LanguageSwitcher />
+					<div className='hidden lg:block'>
+						<ThemeToggle />
+					</div>
+					<div className='hidden lg:block'>
+						<LanguageSwitcher />
+					</div>
 					<Sheet>
 						<SheetTrigger asChild>
 							<Button

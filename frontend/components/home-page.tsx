@@ -56,7 +56,7 @@ export function HomePage() {
       </section>
 
       <section className="bg-muted/10 py-14 md:py-20">
-        <div className="site-container grid grid-cols-2 gap-6 md:gap-8 lg:grid-cols-4">
+        <div className="site-container grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-4">
           {stats.map((item, index) => {
             const Icon = statIcons[index];
             return (
