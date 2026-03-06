@@ -5,7 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { leadSchema, type LeadInput } from "../../shared/lead.schema";
+import { leadSchema, type LeadInput } from "@/lib/lead.schema";
 import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
